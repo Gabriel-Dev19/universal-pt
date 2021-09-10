@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
+@import url(./padrao.css);
+@import url(./media-queries.css);
+@import url(./carousel-settings.css);
+
+:root{
+    /*------- Bootstrap -------*/
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #2a2f33;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #2a2f33 !important;
+
+    --azul: #008ccc;
+    --azul_opaco: #008bccbf;
+    --grafite: #2a2f33;
+    --whatsapp: #34af23;
+    --whatsapp_hover: #258c18;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    min-width: 360px;
+    color: #2a2f33;
+}
+button:focus, .btn:focus{
+    box-shadow: none !important;
+}
+.alert-form{
+    position: fixed;
+    top: 15%;
+    z-index: 20;
+}
+.font-wide{
+    font-family: 'Audiowide', cursive;
+}
+
+.font-wide.text-uppercase{
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+}
+
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1250px !important;
+    }
+}
+@media (min-width: 1600px) {
+    .container{
+        max-width: 1400px !important;
+    }
+}
+
+.progress {
+    background-color: #ffffff93 !important;
+}
+.progress-bar {
+    background-color: #ffffff !important;
+    transition: width 1s linear;
+}
+.borda{
+    border: 1px solid var(--danger);
+}
+.bg-cinza{
+    background-color: #e8e8e8;
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease, opacity .3s ease;
+}
+.no-underline:hover{
+    text-decoration: none !important;
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.3s;
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0.5;
+}
+
+.slide-bottom-enter-active,
+.slide-bottom-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+.slide-bottom-enter,
+.slide-bottom-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 15px, 0);
+}
+.bounce-enter-active {
+  transform-origin: top;
+  animation: bounce-in 0.8s;
+}
+.bounce-leave-active {
+  transform-origin: top;
+  animation: bounce-out 0.5s;
+}
+.height-100-vh{
+    height: 100vh;
+}
+.height-2-px{
+    height: 2px;
+}
+.text-italic{
+    font-style: italic;
+}
+.borda-top-preto-separation{
+    position: absolute;
+    top: 17px;
+    left: 45px;
+    width: 100%;
+    height: 2px;
+    border-top: #2c3e50 1px solid;
+}
+.modal-content{
+    padding: 0 !important;
+    background: transparent !important;
+}
+div#modal-whatsapp.modal{
+    padding-left: 0 !important;
+}
+#modal-whatsapp .modal-body, #modal-whatsapp .modal-header, #modal-whatsapp .modal-footer{
+    padding: 0 !important;
+}
+#modal-whatsapp .modal-footer{
+    margin: 0 !important;
+}
+
+#modal-whatsapp___BV_modal_outer_ .modal-backdrop{
+    background: #000;
+    opacity: 0.8;
+}
+#modal-whatsapp___BV_modal_outer_ .modal-backdrop.fade {
+    opacity: 0;
+}
+#modal-whatsapp___BV_modal_outer_ .modal-backdrop.show{
+    opacity: 0.8;
+}
+
+.modal-backdrop{
+    width: 100% !important;
+    height: 100% !important;
+}
+.modal-backdrop.show{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.text-preto-cidades{
+    color: #ffffff;
+}
+.text-preto-cidades:hover{
+    color: #e4e4e4;
+}
+.div-bolinha-letra-cidade{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: var(--white) 1px solid;
+    background-color: var(--white);
+}

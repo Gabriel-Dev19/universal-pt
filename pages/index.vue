@@ -1,7 +1,6 @@
 <template>
-  <Tutorial />
+  <div>
+    <NavbarMobile />
+    <Home name-btn="Nossos serviços" />
+  </div>
 </template>
-
-<script>
-export default {}
-</script>
