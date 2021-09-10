@@ -12,8 +12,7 @@
         <b-carousel-slide class="bg_home_3" />
       </b-carousel>
     </div>
-    <NavbarHome class="col-12 d-none d-xl-block px-0" />
-    <div class="container mt-5 pt-5 pt-xl-0 mt-xl-0">
+    <div class="container align-self-end mt-5 pt-5 pt-xl-0">
       <div class="d-flex justify-content-center">
         <div class="">
           <img src="../assets/img/logo-universal-branca.webp" width="200" class="img-fluid" alt="">
@@ -37,54 +36,65 @@
         </button>
       </div>
     </div>
-    <div class="nav_telefones d-none d-xl-block col-12">
+    <div class="nav_telefones align-self-end d-none d-xl-block col-12">
       <div class="container">
-        <div class="col_telefones">
-          <a href="tel:">
-            <ion-icon name="call-outline" />
-            <div class="separation_telefones" />
-            <div>
-              <h6>Florianópolis</h6>
-              <span>
-                (65) 3453-3453
-              </span>
-            </div>
-          </a>
+        <div class="mae_telefones">
+          <div class="col_telefones">
+            <a href="tel:">
+              <ion-icon name="call-outline" />
+              <div class="separation_telefones" />
+              <div>
+                <h6>Florianópolis</h6>
+                <span>
+                  (65) 3453-3453
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col_telefones">
+            <a href="tel:">
+              <ion-icon name="call-outline" />
+              <div class="separation_telefones" />
+              <div>
+                <h6>Baln. Camboriú</h6>
+                <span>
+                  (67) 3679-3685
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col_telefones">
+            <a href="tel:">
+              <ion-icon name="call-outline" />
+              <div class="separation_telefones" />
+              <div>
+                <h6>Curitiba</h6>
+                <span>
+                  (33) 3454-3455
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col_telefones">
+            <a href="tel:">
+              <ion-icon name="call-outline" />
+              <div class="separation_telefones" />
+              <div>
+                <h6>Caçador</h6>
+                <span>
+                  (44) 7567-5676
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="col_telefones">
+        <div class="col_whatsapp">
           <a href="tel:">
-            <ion-icon name="call-outline" />
+            <ion-icon name="logo-whatsapp" />
             <div class="separation_telefones" />
-            <div>
-              <h6>Baln. Camboriú</h6>
-              <span>
-                (67) 3679-3685
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="col_telefones">
-          <a href="tel:">
-            <ion-icon name="call-outline" />
-            <div class="separation_telefones" />
-            <div>
-              <h6>Curitiba</h6>
-              <span>
-                (33) 3454-3455
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="col_telefones">
-          <a href="tel:">
-            <ion-icon name="call-outline" />
-            <div class="separation_telefones" />
-            <div>
-              <h6>Caçador</h6>
-              <span>
-                (44) 7567-5676
-              </span>
-            </div>
+            <h6 class="font-wide text-uppercase">
+              Mensagem
+            </h6>
           </a>
         </div>
       </div>
@@ -99,8 +109,9 @@ export default {
 </script>
 <style lang="scss" scoped>
   section{
-    height: 750px;
+    height: 100vh;
     min-height: 750px;
+    max-height: 830px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -108,7 +119,6 @@ export default {
 
     @media (min-width: 1200px) {
       align-items: unset;
-      align-content: space-between;
     }
 
     // Aniamtes
@@ -158,10 +168,68 @@ export default {
 
       .container{
         display: flex;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: space-between;
 
-        .col_telefones{
-          width: 22%;
+        .mae_telefones{
+          display: flex;
+
+          .col_telefones{
+            width: auto;
+            margin-right: 80px;
+
+            &:last-child{
+              margin-right: 0 !important;
+            }
+
+            a{
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .separation_telefones{
+                height: 30px;
+                width: 1px;
+                background-color: var(--azul);
+                opacity: 0.7;
+                margin-left: 10px;
+                margin-right: 14px;
+              }
+
+              &:hover{
+                text-decoration: none;
+                ion-icon{
+                  animation-name: AnimateTelefones;
+                  animation-duration: .8s;
+                  color: var(--azul);
+                }
+              }
+
+              ion-icon{
+                font-size: 26px;
+                min-width: 26px;
+                margin-bottom: 2px;
+                transition: all .3s;
+                --ionicon-stroke-width: 20px;
+              }
+
+              h6{
+                font-weight: 400;
+                font-size: 15px;
+                margin-bottom: 0 !important;
+              }
+
+              span{
+                font-weight: 300;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+
+        .col_whatsapp{
+          width: auto;
 
           a{
             color: white;
@@ -197,16 +265,13 @@ export default {
 
             h6{
               font-weight: 400;
-              font-size: 15px;
+              font-size: 17px;
+              letter-spacing: 1.3px;
               margin-bottom: 0 !important;
             }
-
-            span{
-              font-weight: 300;
-              font-size: 15px;
-            }
           }
-        }
+          }
+
       }
     }
 

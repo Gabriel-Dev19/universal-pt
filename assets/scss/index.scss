@@ -52,7 +52,12 @@ button:focus, .btn:focus{
 .font-wide{
     font-family: 'Audiowide', cursive;
 }
-
+.text-grafite{
+    color: var(--grafite);
+}
+.text-azul{
+    color: var(--azul) !important;
+}
 .font-wide.text-uppercase{
     word-spacing: 5px;
     letter-spacing: 0.5px;
