@@ -47,7 +47,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   nav{
-    margin-bottom: 10px;
+    padding-top: 40px;
     .container{
       display: flex;
       align-items: center;

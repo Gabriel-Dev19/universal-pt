@@ -12,6 +12,31 @@
         <b-carousel-slide class="bg_home_3" />
       </b-carousel>
     </div>
+    <NavbarHome class="col-12 d-none d-xl-block px-0" />
+    <div class="container mt-5 pt-5 pt-xl-0 mt-xl-0">
+      <div class="d-flex justify-content-center">
+        <div class="">
+          <img src="../assets/img/logo-universal-branca.webp" width="200" class="img-fluid" alt="">
+        </div>
+      </div>
+      <h5 class="text-white text-center mb-0 text-uppercase mt-2 font-wide">
+        Detetives particulares
+      </h5>
+      <div class="separation_home mx-auto col-5" />
+      <h1 class="text-white font-wide fs-30 mt-4 col-7 mx-auto text-center text-uppercase">
+        Agência de detetives particulares
+      </h1>
+      <p class="mx-auto col-8 fw-300 text-center text-white">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
+        dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
+        quae eos odio vel. Assumenda!
+      </p>
+      <div class="d-flex mt-4 justify-content-center">
+        <button class="button_home btn font-wide">
+          {{ nameBtn }}
+        </button>
+      </div>
+    </div>
     <div class="nav_telefones d-none d-xl-block col-12">
       <div class="container">
         <div class="col_telefones">
@@ -64,31 +89,6 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5 pt-5 pt-xl-0 mt-xl-0">
-      <div class="d-flex justify-content-center">
-        <div class="">
-          <img src="../assets/img/logo-universal-branca.webp" width="200" class="img-fluid" alt="">
-        </div>
-      </div>
-      <h5 class="text-white text-center mb-0 text-uppercase mt-2 font-wide">
-        Detetives particulares
-      </h5>
-      <div class="separation_home mx-auto col-5" />
-      <h1 class="text-white font-wide fs-30 mt-4 col-7 mx-auto text-center text-uppercase">
-        Agência de detetives particulares
-      </h1>
-      <p class="mx-auto col-8 fw-300 text-center text-white">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
-        dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
-        quae eos odio vel. Assumenda!
-      </p>
-      <div class="d-flex mt-4 justify-content-center">
-        <button class="button_home btn font-wide">
-          {{ nameBtn }}
-        </button>
-      </div>
-    </div>
-    <NavbarHome class="col-12 d-none d-xl-block px-0" />
   </section>
 </template>
 <script>
@@ -154,7 +154,7 @@ export default {
     }
 
     .nav_telefones{
-      padding-top: 25px;
+      padding-bottom: 25px;
 
       .container{
         display: flex;
