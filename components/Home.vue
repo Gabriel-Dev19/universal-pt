@@ -284,16 +284,20 @@ export default {
         margin-bottom: 20px;
       }
 
+      p{
+        font-size: 15px;
+      }
+
       .button_home{
         background: transparent;
+        border-radius: 30px;
         border: 2px solid var(--azul);
         color: white;
         font-size: 15px;
         text-transform: uppercase;
         letter-spacing: 0.6px;
         word-spacing: 3px;
-        padding: 10px 25px;
-        border-radius: 0 !important;
+        padding: 10px 30px;
 
         &:hover{
           background-color: var(--azul);

@@ -17,6 +17,14 @@ $ npm run start
 $ npm run generate
 ```
 
+## Layout
+
+```
+1 - Cantos arredondados
+2 - Deixar itens destacados com background azul e letras brancas
+3 - Badges com background opacos da cor azul e com cor azul 1.0
+```
+
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories
