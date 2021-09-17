@@ -39,50 +39,14 @@
     <div class="nav_telefones align-self-end d-none d-xl-block col-12">
       <div class="container">
         <div class="mae_telefones">
-          <div class="col_telefones">
+          <div v-for="telefone in telefones" :key="telefone.name" class="col_telefones">
             <a href="tel:">
               <ion-icon name="call-outline" />
               <div class="separation_telefones" />
               <div>
-                <h6>Florianópolis</h6>
+                <h6> {{ telefone.name }} </h6>
                 <span>
-                  (65) 3453-3453
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="col_telefones">
-            <a href="tel:">
-              <ion-icon name="call-outline" />
-              <div class="separation_telefones" />
-              <div>
-                <h6>Baln. Camboriú</h6>
-                <span>
-                  (67) 3679-3685
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="col_telefones">
-            <a href="tel:">
-              <ion-icon name="call-outline" />
-              <div class="separation_telefones" />
-              <div>
-                <h6>Curitiba</h6>
-                <span>
-                  (33) 3454-3455
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="col_telefones">
-            <a href="tel:">
-              <ion-icon name="call-outline" />
-              <div class="separation_telefones" />
-              <div>
-                <h6>Caçador</h6>
-                <span>
-                  (44) 7567-5676
+                  {{ telefone.numero }}
                 </span>
               </div>
             </a>
@@ -104,7 +68,17 @@
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['nameBtn']
+  props: ['nameBtn'],
+  data () {
+    return {
+      telefones: [
+        { name: 'Florianópolis', numero: '(65) 3453-3453' },
+        { name: 'Baln. Camboriú', numero: '(67) 3679-3685' },
+        { name: 'Curitiba', numero: '(33) 3454-3455' },
+        { name: 'Caçador', numero: '(44) 7567-5676' }
+      ]
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
