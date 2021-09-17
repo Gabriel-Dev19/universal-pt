@@ -1,10 +1,10 @@
 <template>
   <header>
     <nav v-scroll="ScrollNav" :class="{'bg-light shadow-nav py-3': Nav_Scroll, 'pt-5': !Nav_Scroll}" class="nav navbar d-none d-xl-block fixed-top">
-      <div class="container" :class="{'justify-content-between': !Nav_Scroll, 'justify-content-end': Nav_Scroll}">
+      <div class="container" :class="{'justify-content-between my-0': !Nav_Scroll, 'justify-content-end my-1': Nav_Scroll}">
         <transition enter-active-class="animate__animated animate__fadeInUp">
           <a v-show="Nav_Scroll" href="" class="link_logo">
-            <img src="../assets/img/logo-universal.webp" width="130" alt="Logo Universal detetives">
+            <img src="../assets/img/logo-universal.webp" width="150" alt="Logo Universal detetives">
           </a>
         </transition>
         <transition enter-active-class="animate__animated animate__fadeInUp">
@@ -30,7 +30,7 @@
                 class="dropdown-servicos"
                 :class="{'position-right': Nav_Scroll}"
               >
-                <div class="box_content">
+                <div class="box_content shadow-lg">
                   <nuxt-link v-for="items in items_servicos" :key="items.name" :to="items.routeTo" class="btn links_box_dropdown">
                     {{ items.name }}
                     <div class="circulo_link">
@@ -54,7 +54,7 @@
                 class="dropdown-localidades"
                 :class="{'position-right': Nav_Scroll}"
               >
-                <div class="box_content">
+                <div class="box_content shadow-lg">
                   <nuxt-link v-for="items in items_localidades" :key="items.name" :to="items.routeTo" class="btn links_box_dropdown">
                     {{ items.name }}
                     <div class="circulo_link">
@@ -191,18 +191,18 @@ export default {
 
       .link_logo{
         position: absolute;
-        top: 0;
+        top: -5px;
         left: 0;
       }
 
       .circulo_branco{
         position: absolute;
-        top: 0;
-        left: 12px;
+        top: -5px;
+        left: 15px;
         background-color: var(--light);
         z-index: -1;
-        width: 105px;
-        height: 90px;
+        width: 116px;
+        height: 109px;
         border-radius: 50%;
         box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.097) !important;
       }
@@ -231,7 +231,7 @@ export default {
               content: '';
               position: absolute;
               left: 0;
-              bottom: 2px;
+              bottom: 3px;
               width: 0%;
               height: 2px;
               background-color: var(--azul);
@@ -275,7 +275,7 @@ export default {
             .links_box_dropdown{
               color: white;
               display: flex;
-              margin-top: 5px;
+              margin-top: 3px;
               align-items: center;
               padding: 3px 3px 3px 10px;
               width: 100%;
@@ -287,6 +287,7 @@ export default {
               letter-spacing: 0.4px;
               transition: all .3s;
               font-family: 'Montserrat', sans-serif;
+              font-size: 17px;
 
               &:first-child{
                 margin-top: 0 !important;
@@ -294,16 +295,16 @@ export default {
 
               .circulo_link{
                 margin-left: 10px;
-                min-width: 30px;
+                min-width: 27px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 30px;
+                min-height: 27px;
                 border-radius: 50%;
                 background-color: white;
 
                 ion-icon{
-                  font-size: 20px;
+                  font-size: 17px;
                   color: var(--grafite);
                   margin-left: 3px;
                 }
@@ -363,7 +364,7 @@ export default {
             .links_box_dropdown{
               color: white;
               display: flex;
-              margin-top: 5px;
+              margin-top: 3px;
               align-items: center;
               padding: 3px 3px 3px 10px;
               width: 100%;
@@ -375,6 +376,7 @@ export default {
               letter-spacing: 0.4px;
               transition: all .3s;
               font-family: 'Montserrat', sans-serif;
+              font-size: 17px;
 
               &:first-child{
                 margin-top: 0 !important;
@@ -382,16 +384,16 @@ export default {
 
               .circulo_link{
                 margin-left: 10px;
-                min-width: 30px;
+                min-width: 27px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 30px;
+                min-height: 27px;
                 border-radius: 50%;
                 background-color: white;
 
                 ion-icon{
-                  font-size: 20px;
+                  font-size: 17px;
                   color: var(--grafite);
                   margin-left: 3px;
                 }
