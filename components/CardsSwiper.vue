@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container">
+    <div class="container" @mouseenter="stopSlide" @mouseleave="runSlide">
       <div class="box_titulo_explore px-2">
         <h2>
           Explore nosso trabalho!
@@ -11,8 +11,17 @@
           </button>
         </div>
       </div>
-      <swiper id="swiper-explore" class="swiper p-2" :options="swiperOption">
-        <swiper-slide v-for="swipers in slides" :key="swipers.title" class="shadow-sm">
+      <swiper
+        id="swiper-explore"
+        ref="swiperCards"
+        class="swiper p-2"
+        :options="swiperOption"
+      >
+        <swiper-slide
+          v-for="swipers in slides"
+          :key="swipers.title"
+          class="shadow-sm"
+        >
           <div class="circulo_icon">
             <ion-icon :name="swipers.icon" />
           </div>
@@ -48,6 +57,10 @@ export default {
         grabCursor: true,
         navigation: {
           nextEl: '.button-next'
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
         }
       },
       slides: [
@@ -92,6 +105,14 @@ export default {
           icon: 'heart-dislike'
         }
       ]
+    }
+  },
+  methods: {
+    stopSlide () {
+      this.$refs.swiperCards.$swiper.autoplay.stop()
+    },
+    runSlide () {
+      this.$refs.swiperCards.$swiper.autoplay.start()
     }
   }
 }
