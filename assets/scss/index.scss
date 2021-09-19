@@ -45,6 +45,9 @@ body{
 button:focus, .btn:focus{
     box-shadow: none !important;
 }
+.w-auto{
+    width: auto;
+}
 .alert-form{
     position: fixed;
     top: 15%;

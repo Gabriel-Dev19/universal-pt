@@ -3,12 +3,12 @@
     <nav v-scroll="ScrollNavMobile" class="navbar nav fixed-top d-xl-none" :class="{'pt-not-scroll': !Nav_Scroll, 'py-3 bg-light shadow-nav': Nav_Scroll}">
       <div class="filha-nav d-flex justify-content-end">
         <transition enter-active-class="animate__animated animate__fadeInUp">
-          <a v-show="Nav_Scroll" href="" class="link_logo">
+          <a v-show="Show_Logo" href="" class="link_logo">
             <img src="../assets/img/logo-universal.webp" width="120" alt="Logo Universal detetives">
           </a>
         </transition>
         <transition enter-active-class="animate__animated animate__fadeInUp">
-          <div v-show="Nav_Scroll" class="circulo_branco" />
+          <div v-show="Show_Logo" class="circulo_branco" />
         </transition>
         <button class="btn d-flex justify-content-center align-items-center" @click="Toggle_Nav">
           <ion-icon name="menu-outline" />
@@ -25,20 +25,30 @@ export default {
   data () {
     return {
       Nav_Scroll: false,
-      Hide_nav: false
+      Hide_nav: false,
+      Show_Logo: false
     }
   },
   methods: {
     ScrollNavMobile () {
       if (window.scrollY > 10) {
         this.Nav_Scroll = true
+        this.Show_Logo = true
       } else {
         this.Nav_Scroll = false
+        this.Show_Logo = false
       }
     },
     Toggle_Nav () {
-      this.Hide_nav = !this.Hide_nav
-      this.Nav_Scroll = false
+      if (window.scrollY > 10) {
+        this.Hide_nav = !this.Hide_nav
+        this.Nav_Scroll = true
+        this.Show_Logo = !this.Show_Logo
+      } else {
+        this.Hide_nav = !this.Hide_nav
+        this.Nav_Scroll = false
+        this.Show_Logo = false
+      }
     }
   }
 }

@@ -2,9 +2,12 @@
   <section>
     <div class="container" @mouseenter="stopSlide" @mouseleave="runSlide">
       <div class="box_titulo_explore px-2">
-        <h2>
-          Explore nosso trabalho!
-        </h2>
+        <div class="row titulo_swiper mx-0">
+          <Badge name="nos conheça" class="mb-2" />
+          <h2 class="col-12 px-0">
+            Explore nosso trabalho!
+          </h2>
+        </div>
         <div>
           <button class="btn p-0 button-next">
             <ion-icon name="arrow-forward-circle-outline" />
@@ -40,6 +43,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+import Badge from './parts/Badge.vue'
 
 export default {
   // eslint-disable-next-line vue/component-definition-name-casing
@@ -47,7 +51,8 @@ export default {
   title: 'Grab cursor',
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    Badge
   },
   data () {
     return {
@@ -132,9 +137,9 @@ export default {
   .box_titulo_explore{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
-    h2{
+    .titulo_swiper{
       max-width: 320px;
     }
 
