@@ -192,13 +192,13 @@ export default {
       .link_logo{
         position: absolute;
         top: -5px;
-        left: 0;
+        left: 15px;
       }
 
       .circulo_branco{
         position: absolute;
         top: -5px;
-        left: 15px;
+        left: 30px;
         background-color: var(--light);
         z-index: -1;
         width: 116px;

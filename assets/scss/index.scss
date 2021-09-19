@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
-@import url(./padrao.css);
-@import url(./media-queries.css);
 @import url(./carousel-settings.css);
 
 :root{
@@ -64,6 +62,21 @@ button:focus, .btn:focus{
 .font-wide.text-uppercase{
     word-spacing: 5px;
     letter-spacing: 0.5px;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 600;
+
+    @media (max-width: 576px) {
+        &{
+            font-size: 27px;
+        }
+    }
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }
 
 @media (min-width: 1400px) {

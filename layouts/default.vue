@@ -1,5 +1,9 @@
 <template>
-  <Nuxt />
+  <div>
+    <NavbarMobile />
+    <NavbarDesktop />
+    <Nuxt />
+  </div>
 </template>
 
 <script>

@@ -55,54 +55,60 @@ export default {
         slidesPerView: 'auto',
         spaceBetween: 35,
         grabCursor: true,
+        loop: true,
         navigation: {
           nextEl: '.button-next'
         },
         autoplay: {
-          delay: 2500,
+          delay: 1500,
           disableOnInteraction: false
         }
       },
       slides: [
         {
-          title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
-          icon: 'heart-dislike'
+          title: 'Investigação empresarial',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'cash-outline'
         },
         {
           title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
           icon: 'heart-dislike'
         },
         {
-          title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
-          icon: 'heart-dislike'
+          title: 'Localização de pessoas',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'locate-outline'
         },
         {
-          title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
-          icon: 'heart-dislike'
+          title: 'Filhos rebeldes',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'man-outline'
         },
         {
-          title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
-          icon: 'heart-dislike'
+          title: 'Curso de detetive',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'school'
         },
         {
-          title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
-          icon: 'heart-dislike'
+          title: 'Investigação política',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'document-attach-outline'
         },
         {
-          title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
-          icon: 'heart-dislike'
+          title: 'Celular VIP',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'phone-portrait'
         },
         {
-          title: 'Investigação conjugal',
-          description: 'Alguma coisa de algum tema qualquer de coisa',
-          icon: 'heart-dislike'
+          title: 'Coleta de provas',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'finger-print-outline'
+        },
+        {
+          title: 'Campanas',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          icon: 'footsteps-outline'
         }
       ]
     }
@@ -129,8 +135,6 @@ export default {
     align-items: center;
 
     h2{
-      font-size: 35px;
-      font-weight: 600;
       max-width: 320px;
     }
 
@@ -143,66 +147,48 @@ export default {
   .swiper{
     margin-top: 30px;
 
-    .swiper-slide{
-      padding: 25px;
-      border-radius: 20px;
-      background-color: white;
-      color: var(--grafite);
-      width: 300px;
+    .swiper-wrapper{
+      .swiper-slide{
+        padding: 25px;
+        border-radius: 20px;
+        background-color: white;
+        color: var(--grafite);
+        width: 300px;
 
-      .circulo_icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background-color: var(--cinza_claro);
+        .circulo_icon{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background-color: var(--cinza_claro);
 
-        ion-icon{
-          font-size: 28px;
+          ion-icon{
+            font-size: 28px;
+          }
+        }
+
+        h6{
+          margin-top: 18px;
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        p{
+          font-size: 14px;
+          margin-bottom: 0 !important;
         }
       }
+      .swiper-slide[data-swiper-slide-index="1"],
+      .swiper-slide[data-swiper-slide-index="4"],
+      .swiper-slide[data-swiper-slide-index="6"]{
+        background-color: var(--azul);
+        color: var(--white);
 
-      h6{
-        margin-top: 18px;
-        font-weight: 600;
-      }
-
-      p{
-        font-size: 14px;
-        margin-bottom: 0 !important;
-      }
-    }
-    .swiper-slide:nth-child(2){
-      padding: 25px;
-      border-radius: 20px;
-      background-color: var(--azul);
-      color: var(--white);
-      width: 300px;
-
-      .circulo_icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background-color: var(--azul_super_escuro);
-
-        ion-icon{
-          font-size: 28px;
+        .circulo_icon{
+          background-color: var(--azul_super_escuro);
         }
-      }
-
-      h6{
-        margin-top: 18px;
-        font-weight: 600;
-      }
-
-      p{
-        font-size: 14px;
-        margin-bottom: 0 !important;
       }
     }
   }

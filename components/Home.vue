@@ -12,7 +12,7 @@
         <b-carousel-slide class="bg_home_3" />
       </b-carousel>
     </div>
-    <div class="container align-self-end mt-5 pt-5 pt-xl-0">
+    <div class="container align-self-end mt-4 pt-4 mt-xl-5 pt-xl-0">
       <div class="d-flex justify-content-center">
         <div class="">
           <img src="../assets/img/logo-universal-branca.webp" width="200" class="img-fluid" alt="">
@@ -22,10 +22,10 @@
         Detetives particulares
       </h5>
       <div class="separation_home mx-auto col-5" />
-      <h1 class="text-white font-wide fs-30 mt-4 col-7 mx-auto text-center text-uppercase">
+      <h1 class="text-white font-wide mt-4 px-0 col-md-8 mx-auto text-center text-uppercase">
         Agência de detetives particulares
       </h1>
-      <p class="mx-auto col-8 fw-300 text-center text-white">
+      <p class="mx-auto px-0 col-md-8 fw-300 text-center text-white">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
         dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
         quae eos odio vel. Assumenda!
@@ -36,9 +36,9 @@
         </button>
       </div>
     </div>
-    <div class="nav_telefones align-self-end d-none d-xl-block col-12">
+    <div class="nav_telefones align-self-end col-12">
       <div class="container">
-        <div class="mae_telefones">
+        <div class="mae_telefones d-none d-xl-flex">
           <div v-for="telefone in telefones" :key="telefone.name" class="col_telefones">
             <a href="tel:">
               <ion-icon name="call-outline" />
@@ -275,6 +275,24 @@ export default {
 
         &:hover{
           background-color: var(--azul);
+        }
+      }
+
+      h5{
+        @media (max-width: 576px) {
+          &{
+            font-size: 17px;
+          }
+        }
+      }
+
+      h1{
+        font-size: 30px;
+
+        @media (max-width: 576px) {
+          &{
+            font-size: 23px;
+          }
         }
       }
     }
