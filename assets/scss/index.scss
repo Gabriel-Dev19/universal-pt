@@ -67,6 +67,14 @@ button:focus, .btn:focus{
     letter-spacing: 0.5px;
 }
 
+#swiper-valores{
+    .swiper-wrapper{
+        .swiper-slide{
+            height: min-content !important;
+        }
+    }
+}
+
 h2{
     font-size: 35px;
     font-weight: 600;

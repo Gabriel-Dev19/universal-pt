@@ -10,13 +10,42 @@
         <transition enter-active-class="animate__animated animate__fadeInUp">
           <div v-show="Show_Logo" class="circulo_branco" />
         </transition>
-        <button class="btn d-flex justify-content-center align-items-center" @click="Toggle_Nav">
+        <button class="btn d-flex justify-content-center align-items-center" :class="{'translate-button': Translate_button}" @click="Toggle_Nav">
           <ion-icon v-show="Toggle_Icon_Times" name="menu-outline" />
           <ion-icon v-show="!Toggle_Icon_Times" name="close-outline" />
         </button>
       </div>
       <transition enter-active-class="animate-show-nav" leave-active-class="animate-hide-nav">
-        <div v-show="Hide_nav" class="nav-event" />
+        <div v-show="Hide_nav" class="nav-event">
+          <h5 class="text-white mb-4 ml-3 pl-1">
+            Menu
+          </h5>
+          <nuxt-link to="/" class="nuxt-link-mobile">
+            Home
+            <ion-icon name="arrow-forward-outline" />
+          </nuxt-link>
+          <nuxt-link to="/" class="nuxt-link-mobile">
+            Sobre nós
+            <ion-icon name="arrow-forward-outline" />
+          </nuxt-link>
+          <div class="nuxt-link-mobile">
+            Serviços
+            <ion-icon name="menu-outline" />
+          </div>
+          <div class="nuxt-link-mobile">
+            Localidades atendidas
+            <ion-icon name="menu-outline" />
+          </div>
+          <nuxt-link to="/" class="nuxt-link-mobile">
+            Contate nossa equipe
+            <ion-icon name="arrow-forward-outline" />
+          </nuxt-link>
+          <div class="nav_redes_sociais mt-4 ml-3 pl-1">
+            <a v-for="items in redes_sociais" :key="items.icon" :href="items.linkTo">
+              <ion-icon :name="items.icon" />
+            </a>
+          </div>
+        </div>
       </transition>
     </nav>
   </header>
@@ -28,20 +57,32 @@ export default {
       Nav_Scroll: false,
       Hide_nav: false,
       Show_Logo: false,
-      Toggle_Icon_Times: true
+      Toggle_Icon_Times: true,
+      Translate_button: false,
+
+      redes_sociais: [
+        { icon: 'logo-twitter', linkTo: '/' },
+        { icon: 'logo-facebook', linkTo: '/' },
+        { icon: 'logo-instagram', linkTo: '/' },
+        { icon: 'logo-pinterest', linkTo: '/' },
+        { icon: 'logo-youtube', linkTo: '/' }
+      ]
     }
   },
   methods: {
     ScrollNavMobile () {
-      if (window.scrollY > 10) {
-        this.Nav_Scroll = true
-        this.Show_Logo = true
-      } else {
-        this.Nav_Scroll = false
-        this.Show_Logo = false
+      if (document.body.classList.contains('overflow-hidden') === false) {
+        if (window.scrollY > 10) {
+          this.Nav_Scroll = true
+          this.Show_Logo = true
+        } else {
+          this.Nav_Scroll = false
+          this.Show_Logo = false
+        }
       }
     },
     Toggle_Nav () {
+      this.Translate_button = !this.Translate_button
       this.Toggle_Icon_Times = !this.Toggle_Icon_Times
       document.body.classList.toggle('overflow-hidden')
       if (window.scrollY > 10) {
@@ -119,6 +160,7 @@ export default {
       width: 45px;
       border-radius: 50%;
       background-color: var(--azul);
+      transition: transform .5s;
 
       ion-icon[name="menu-outline"]{
         min-width: 29px;
@@ -130,11 +172,16 @@ export default {
         color: white;
         font-size: 32px !important;
       }
+
+      &.translate-button{
+        transform: translateX(25px);
+      }
     }
 
     .nav-event{
       position: absolute;
       height: 100vh;
+      padding-top: 26px;
       width: 100%;
       top: 0px;
       right: 0px;
@@ -142,16 +189,46 @@ export default {
       background-color: var(--azul);
       transition: all .5s;
 
-      &.if-hide-navbar{
-        top: 55px;
-        right: 50px;
-        border-radius: 50%;
+      .nuxt-link-mobile{
+        color: white;
+        width: 100% !important;
+        padding: 11px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ffffffb4;
+        font-size: 18px;
+
+        ion-icon{
+          color: #fff;
+          min-width: 23px;
+          font-size: 23px;
+        }
+
+        &:nth-child(2){
+          border-top: 1px solid #ffffffb4;
+        }
       }
 
-      &.if-show-navbar{
-        top: 0px;
-        right: 0px;
-        border-radius: 0%;
+      .nav_redes_sociais{
+        display: flex;
+
+        a{
+          margin-right: 20px;
+          position: relative;
+
+          &:last-child{
+            margin-right: 0 !important;
+          }
+
+          ion-icon{
+            font-size: 25px;
+            min-width: 25px;
+            width: 100%;
+            margin-bottom: -7px !important;
+            color: white;
+          }
+        }
       }
     }
   }

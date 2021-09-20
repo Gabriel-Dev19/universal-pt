@@ -12,8 +12,8 @@ export default {
 <style lang="scss" scoped>
   div{
     width: auto;
-    padding: 4px 10px;
-    border-radius: 3px;
+    padding: 4px 13px;
+    border-radius: 20px;
     background-color: #c3e4f5;
 
     p{

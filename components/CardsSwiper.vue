@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="container" @mouseenter="stopSlide" @mouseleave="runSlide">
-      <div class="box_titulo_explore px-2">
+      <div class="box_titulo_explore px-1">
         <div class="row titulo_swiper mx-0">
-          <Badge name="nos conheça" class="mb-2" />
+          <Badge name="nos conheça" class="mb-3" />
           <h2 class="col-12 px-0">
             Explore nosso trabalho!
           </h2>
@@ -17,7 +17,7 @@
       <swiper
         id="swiper-explore"
         ref="swiperCards"
-        class="swiper p-2"
+        class="swiper py-2 px-1"
         :options="swiperOption"
       >
         <swiper-slide
