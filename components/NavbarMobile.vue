@@ -11,7 +11,8 @@
           <div v-show="Show_Logo" class="circulo_branco" />
         </transition>
         <button class="btn d-flex justify-content-center align-items-center" @click="Toggle_Nav">
-          <ion-icon name="menu-outline" />
+          <ion-icon v-show="Toggle_Icon_Times" name="menu-outline" />
+          <ion-icon v-show="!Toggle_Icon_Times" name="close-outline" />
         </button>
       </div>
       <transition enter-active-class="animate-show-nav" leave-active-class="animate-hide-nav">
@@ -26,7 +27,8 @@ export default {
     return {
       Nav_Scroll: false,
       Hide_nav: false,
-      Show_Logo: false
+      Show_Logo: false,
+      Toggle_Icon_Times: true
     }
   },
   methods: {
@@ -40,13 +42,15 @@ export default {
       }
     },
     Toggle_Nav () {
+      this.Toggle_Icon_Times = !this.Toggle_Icon_Times
+      document.body.classList.toggle('overflow-hidden')
       if (window.scrollY > 10) {
         this.Hide_nav = !this.Hide_nav
         this.Nav_Scroll = true
         this.Show_Logo = !this.Show_Logo
       } else {
         this.Hide_nav = !this.Hide_nav
-        this.Nav_Scroll = false
+        this.Nav_Scroll = !this.Nav_Scroll
         this.Show_Logo = false
       }
     }
@@ -116,10 +120,15 @@ export default {
       border-radius: 50%;
       background-color: var(--azul);
 
-      ion-icon{
+      ion-icon[name="menu-outline"]{
         min-width: 29px;
         color: white;
         font-size: 29px !important;
+      }
+      ion-icon[name="close-outline"]{
+        min-width: 32px;
+        color: white;
+        font-size: 32px !important;
       }
     }
 

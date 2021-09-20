@@ -12,7 +12,7 @@ export default {
 <style lang="scss" scoped>
   div{
     width: auto;
-    padding: 4px 12px;
+    padding: 4px 10px;
     border-radius: 3px;
     background-color: #c3e4f5;
 
