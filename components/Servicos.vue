@@ -19,7 +19,7 @@
             </p>
             <nuxt-link :to="items.routerTo" class="nuxt-link-servicos">
               {{ items.linkTitle }}
-              <div class="circulo-azul">
+              <div class="seta">
                 <ion-icon name="chevron-forward-outline" />
               </div>
             </nuxt-link>
@@ -173,24 +173,29 @@ export default {
           font-size: 17px;
 
           &:hover{
-            text-decoration: underline;
+            text-decoration: none;
+
+            .seta{
+              width: 40px;
+            }
           }
 
-          .circulo-azul{
-            min-height: 25px;
-            min-width: 25px;
-            border-radius: 50%;
-            background-color: var(--azul_escuro);
-            color: white;
-            margin-left: 10px;
+          .seta{
+            position: relative;
             display: flex;
-            justify-content: center;
             align-items: center;
+            width: 25px;
+            height: 1px;
+            color: var(--azul_escuro);
+            margin-left: 15px;
+            transition: all .3s;
+            background-color: var(--azul_escuro);
 
             ion-icon{
-              font-size: 16px;
-              min-width: 16px;
-              margin-bottom: 1px;
+              position: absolute;
+              right: -10px;
+              font-size: 15px;
+              min-width: 15px;
               margin-left: 1px;
             }
           }
