@@ -62,6 +62,9 @@ button:focus, .btn:focus{
 .text-azul{
     color: var(--azul) !important;
 }
+.text-azul-escuro{
+    color: var(--azul_escuro) !important;
+}
 .font-wide.text-uppercase{
     word-spacing: 5px;
     letter-spacing: 0.5px;
@@ -97,7 +100,7 @@ h2{
 }
 @media (min-width: 1600px) {
     .container{
-        max-width: 1400px !important;
+        max-width: 1350px !important;
     }
 }
 

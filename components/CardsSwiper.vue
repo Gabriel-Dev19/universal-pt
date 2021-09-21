@@ -3,7 +3,7 @@
     <div class="container" @mouseenter="stopSlide" @mouseleave="runSlide">
       <div class="box_titulo_explore px-1">
         <div class="row titulo_swiper mx-0">
-          <Badge name="nos conheça" class="mb-3" />
+          <Badge name="nos conheça" />
           <h2 class="col-12 px-0">
             Explore nosso trabalho!
           </h2>
@@ -23,7 +23,6 @@
         <swiper-slide
           v-for="swipers in slides"
           :key="swipers.title"
-          class="shadow-sm"
         >
           <div class="circulo_icon">
             <ion-icon :name="swipers.icon" />
@@ -58,7 +57,7 @@ export default {
     return {
       swiperOption: {
         slidesPerView: 'auto',
-        spaceBetween: 35,
+        spaceBetween: 25,
         grabCursor: true,
         loop: true,
         navigation: {
@@ -159,6 +158,7 @@ export default {
         background-color: white;
         color: var(--grafite);
         width: 300px;
+        box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.309) !important;
 
         .circulo_icon{
           display: flex;

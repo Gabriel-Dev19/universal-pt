@@ -3,7 +3,7 @@
     <div class="container">
       <div class="col-12 mb-5 row justify-content-between align-items-center mx-auto px-0">
         <div class="titulo_functions row mx-0">
-          <Badge name="acredite na universal" class="mb-3" />
+          <Badge name="acredite na universal" />
           <h2 class="col-12 px-0">
             Nossos valores, visões e qualidades
           </h2>

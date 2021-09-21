@@ -15,6 +15,7 @@ export default {
     padding: 4px 13px;
     border-radius: 20px;
     background-color: #c3e4f5;
+    margin-bottom: 10px;
 
     p{
       margin-bottom: 0 !important;

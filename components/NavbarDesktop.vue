@@ -313,7 +313,7 @@ export default {
               &:hover{
                 background-color: white;
                 color: var(--grafite);
-                padding: 3px 3px 3px 18px;
+                padding: 3px 3px 3px 25px;
 
                 .circulo_link{
                   background-color: var(--azul_escuro);
@@ -327,7 +327,7 @@ export default {
               &.nuxt-link-exact-active{
                 background-color: white;
                 color: var(--grafite);
-                padding: 3px 3px 3px 18px;
+                padding: 3px 3px 3px 25px;
 
                 .circulo_link{
                   background-color: var(--azul_escuro);
@@ -402,7 +402,7 @@ export default {
               &:hover{
                 background-color: white;
                 color: var(--grafite);
-                padding: 3px 3px 3px 18px;
+                padding: 3px 3px 3px 25px;
 
                 .circulo_link{
                   background-color: var(--azul_escuro);
@@ -416,7 +416,7 @@ export default {
               &.nuxt-link-exact-active{
                 background-color: white;
                 color: var(--grafite);
-                padding: 3px 3px 3px 18px;
+                padding: 3px 3px 3px 25px;
 
                 .circulo_link{
                   background-color: var(--azul_escuro);

@@ -28,14 +28,40 @@
             Sobre nós
             <ion-icon name="arrow-forward-outline" />
           </nuxt-link>
-          <div class="nuxt-link-mobile">
+          <div v-b-toggle.collapse-servicos class="nuxt-link-mobile">
             Serviços
             <ion-icon name="menu-outline" />
           </div>
-          <div class="nuxt-link-mobile">
+          <b-collapse id="collapse-servicos" class="col-12 px-0">
+            <div class="collapse-body">
+              <nuxt-link
+                v-for="items in LinksMobileCollapseServicos"
+                :key="items.name"
+                :to="items.routeTo"
+                class="nuxt_link_mobile_collapse"
+              >
+                {{ items.name }}
+                <ion-icon name="arrow-forward-outline" />
+              </nuxt-link>
+            </div>
+          </b-collapse>
+          <div v-b-toggle.collapse-localidades class="nuxt-link-mobile">
             Localidades atendidas
             <ion-icon name="menu-outline" />
           </div>
+          <b-collapse id="collapse-localidades" class="col-12 px-0">
+            <div class="collapse-body">
+              <nuxt-link
+                v-for="items in LinksMobileCollapseLocalidades"
+                :key="items.name"
+                :to="items.routeTo"
+                class="nuxt_link_mobile_collapse"
+              >
+                {{ items.name }}
+                <ion-icon name="arrow-forward-outline" />
+              </nuxt-link>
+            </div>
+          </b-collapse>
           <nuxt-link to="/" class="nuxt-link-mobile">
             Contate nossa equipe
             <ion-icon name="arrow-forward-outline" />
@@ -66,6 +92,49 @@ export default {
         { icon: 'logo-instagram', linkTo: '/' },
         { icon: 'logo-pinterest', linkTo: '/' },
         { icon: 'logo-youtube', linkTo: '/' }
+      ],
+
+      LinksMobileCollapseServicos: [
+        {
+          name: 'Investigação conjugal',
+          routeTo: '/investigacao-conjugal'
+        },
+        {
+          name: 'Investigação empresarial',
+          routeTo: '/investigacao-empresarial'
+        },
+        {
+          name: 'Investigação politica',
+          routeTo: '/investigacao-politica'
+        },
+        {
+          name: 'Localização de pessoas',
+          routeTo: '/localização-de-pessoas'
+        },
+        {
+          name: 'Acompanhamento de filhos',
+          routeTo: '/acompanhamento-de-filhos'
+        },
+        {
+          name: 'Curso de detetive particular',
+          routeTo: '/curso-de-detetive-particular'
+        },
+        {
+          name: 'Celular VIP',
+          routeTo: '/celular-VIP'
+        }
+      ],
+
+      LinksMobileCollapseLocalidades: [
+        { name: 'Santa Catarina', routeTo: '/investigacao-empresarial' },
+        { name: 'Paraná', routeTo: '/investigacao-conjugal' },
+        { name: 'Rio Grande do Sul', routeTo: '/investigacao-politica' },
+        { name: 'São Paulo', routeTo: '/localizacao-de-pessoas' },
+        { name: 'Rio de Janeiro', routeTo: '/curso-de-detetive-particular' },
+        { name: 'Distrito Federal', routeTo: '/celular-VIP' },
+        { name: 'Minas Gerais', routeTo: '/curso-de-detetive-particular' },
+        { name: 'Mato Grosso do Sul', routeTo: '/acompanhamento-de-filhos' },
+        { name: 'Goiás', routeTo: '/acompanhamento-de-filhos' }
       ]
     }
   },
@@ -188,12 +257,15 @@ export default {
       z-index: -1;
       background-color: var(--azul);
       transition: all .5s;
+      overflow-y: scroll;
+      padding-bottom: 30px;
 
       .nuxt-link-mobile{
         color: white;
         width: 100% !important;
         padding: 11px 20px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #ffffffb4;
@@ -207,6 +279,31 @@ export default {
 
         &:nth-child(2){
           border-top: 1px solid #ffffffb4;
+        }
+      }
+
+      .collapse-body{
+        background-color: var(--azul_super_escuro);
+        padding: 15px 20px 15px 30px;
+        width: 100%;
+        border-bottom: 1px solid #ffffffb4;
+
+        .nuxt_link_mobile_collapse{
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: white;
+
+          ion-icon{
+            color: #fff;
+            min-width: 18px;
+            font-size: 18px;
+          }
+
+          &:first-child{
+            margin-top: 0 !important;
+          }
         }
       }
 
