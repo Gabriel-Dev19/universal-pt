@@ -76,11 +76,11 @@ export default {
           depth: 100,
           modifier: 1,
           slideShadows: false
+        },
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false
         }
-        // autoplay: {
-        //   delay: 1500,
-        //   disableOnInteraction: false
-        // }
       },
       profiles: [
         {
@@ -127,15 +127,15 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    stopSlide () {
+      this.$refs.swiperQuestions.$swiper.autoplay.stop()
+    },
+    runSlide () {
+      this.$refs.swiperQuestions.$swiper.autoplay.start()
+    }
   }
-  // methods: {
-  //   stopSlide () {
-  //     this.$refs.swiperQuestions.$swiper.autoplay.stop()
-  //   },
-  //   runSlide () {
-  //     this.$refs.swiperQuestions.$swiper.autoplay.start()
-  //   }
-  // }
 }
 </script>
 
