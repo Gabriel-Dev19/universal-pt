@@ -4,6 +4,7 @@
     <CardsSwiper />
     <SwiperVertical />
     <Servicos />
+    <Questions />
     <section class="height-100-vh" />
   </div>
 </template>
