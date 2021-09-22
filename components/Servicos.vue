@@ -1,9 +1,18 @@
 <template>
   <section>
     <div class="container">
-      <HeaderSections :is-reverse="true" />
+      <HeaderSections
+        :is-reverse="true"
+        title-badge="serviços"
+        parte-azul="Nossos serviços"
+        title-header="de investigação particular"
+        subtitle="Realizamos todos os tipos de serviços de investigação particular"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          quam voluptatem at porro commodi excepturi consectetur impedit animi, eum ratione saepe,
+          magni aliquam ad? Voluptatibus assumenda voluptatem voluptas dolores amet!"
+      />
       <div class="mae_cards">
-        <div v-for="items in cardsServices" :key="items.tile" class="cards">
+        <div v-for="items in cardsServices" :key="items.tile" class="cards border">
           <div class="slot_img">
             <img :src="items.img" class="img-fluid" :alt="items.altImg">
           </div>
@@ -38,64 +47,58 @@ export default {
     return {
       cardsServices: [
         {
-          img: require('../assets/img/detetive-lupa.webp'),
+          img: require('../assets/img/servicos/investigacao-empresarial.webp'),
           altImg: 'Investigação empresarial',
           badge: 'Aividades ilícitas',
-          icon: 'cash-outline',
           title: 'Investigação empresarial',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Investigação empresarial',
           routerTo: '/investigacao-empresarial'
         },
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          altImg: 'Investigação empresarial',
-          badge: 'Aividades ilícitas',
-          icon: 'cash-outline',
-          title: 'Investigação empresarial',
+          img: require('../assets/img/servicos/investigacao-conjugal.webp'),
+          altImg: 'Investigação conjugal',
+          badge: 'Infidelidade e traição',
+          title: 'Investigação conjugal',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
-          linkTitle: 'Investigação empresarial',
-          routerTo: '/investigacao-empresarial'
+          linkTitle: 'Investigação conjugal',
+          routerTo: '/investigacao-conjugal'
         },
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          altImg: 'Investigação empresarial',
-          badge: 'Aividades ilícitas',
-          icon: 'cash-outline',
-          title: 'Investigação empresarial',
+          img: require('../assets/img/servicos/investigacao-politica.webp'),
+          altImg: 'Investigação politica',
+          badge: 'Eleições fraudulentas',
+          title: 'Investigação politica',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
-          linkTitle: 'Investigação empresarial',
-          routerTo: '/investigacao-empresarial'
+          linkTitle: 'Investigação politica',
+          routerTo: '/investigacao-politica'
         },
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          altImg: 'Investigação empresarial',
-          badge: 'Aividades ilícitas',
-          icon: 'cash-outline',
-          title: 'Investigação empresarial',
+          img: require('../assets/img/servicos/localizacao-de-pessoas.webp'),
+          altImg: 'Localizacao de pessoas',
+          badge: 'Pessoas desaparecidas',
+          title: 'Localizacao de pessoas',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
-          linkTitle: 'Investigação empresarial',
-          routerTo: '/investigacao-empresarial'
+          linkTitle: 'Localizacao de pessoas',
+          routerTo: '/localizacao-de-pessoas'
         },
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          altImg: 'Investigação empresarial',
-          badge: 'Aividades ilícitas',
-          icon: 'cash-outline',
-          title: 'Investigação empresarial',
+          img: require('../assets/img/servicos/acompanhamento-de-filhos.webp'),
+          altImg: 'Acompanhamento de filhos',
+          badge: 'Filhos rebeldes',
+          title: 'Acompanhamento de filhos',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
-          linkTitle: 'Investigação empresarial',
-          routerTo: '/investigacao-empresarial'
+          linkTitle: 'Acompanhamento de filhos',
+          routerTo: '/acompanhamento-de-filhos'
         },
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          altImg: 'Investigação empresarial',
-          badge: 'Aividades ilícitas',
-          icon: 'cash-outline',
-          title: 'Investigação empresarial',
+          img: require('../assets/img/servicos/celular-vip.webp'),
+          altImg: 'Celular VIP',
+          badge: 'Celular VIP',
+          title: 'Celular VIP',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
-          linkTitle: 'Investigação empresarial',
-          routerTo: '/investigacao-empresarial'
+          linkTitle: 'Celular VIP',
+          routerTo: '/celular-VIP'
         }
       ]
     }
@@ -116,10 +119,15 @@ export default {
 
     .cards{
       border-radius: 20px;
-      box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.274) !important;
+      box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.35) !important;
       overflow: hidden;
       padding-bottom: 25px;
       margin-top: 40px;
+      transition: all .2s;
+
+      &:hover{
+        transform: scale3d(1.03, 1.03, 1.03);
+      }
 
       .slot_img{
         height: 250px;

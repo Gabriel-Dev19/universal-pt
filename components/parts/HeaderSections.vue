@@ -6,19 +6,17 @@
       </div>
       <div class="col-11 col-sm-8 col-lg-9 col-xl-8 content_header_section">
         <div class="row mx-0 col-lg-5 px-0">
-          <Badge name="serviços" />
+          <Badge :name="titleBadge" />
           <h2 class="col-12 px-0">
-            <span class="text-azul-escuro">Nossos serviços</span> de investigação particular
+            <span class="text-azul-escuro"> {{ parteAzul }} </span> {{ titleHeader }}
           </h2>
         </div>
         <div class="col-lg px-0 ml-lg-5 mt-4 mt-lg-0">
           <h5>
-            Realizamos todos os tipos de serviços de investigação particular
+            {{ subtitle }}
           </h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam voluptatem at porro commodi
-            excepturi consectetur impedit animi, eum ratione saepe, magni aliquam ad? Voluptatibus assumenda voluptatem
-            voluptas dolores amet!
+            {{ description }}
           </p>
         </div>
       </div>
@@ -33,6 +31,26 @@ export default {
     isReverse: {
       type: Boolean,
       default: false
+    },
+    parteAzul: {
+      type: String,
+      default: ''
+    },
+    titleHeader: {
+      type: String,
+      default: ''
+    },
+    subtitle: {
+      type: String,
+      default: ''
+    },
+    description: {
+      type: String,
+      default: ''
+    },
+    titleBadge: {
+      type: String,
+      default: ''
     }
   }
 }

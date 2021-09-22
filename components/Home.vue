@@ -7,9 +7,18 @@
         no-hover-pause
         class="col-12 px-0 h-100"
       >
-        <b-carousel-slide class="bg_home_1" />
-        <b-carousel-slide class="bg_home_2" />
-        <b-carousel-slide class="bg_home_3" />
+        <b-carousel-slide class="bg_home_1">
+          <img src="../assets/img/detetive-examinando-evidencia.webp" alt="">
+          <div class="gradiente" />
+        </b-carousel-slide>
+        <b-carousel-slide class="bg_home_2">
+          <img src="../assets/img/linhas-investigacao.webp" alt="">
+          <div class="gradiente" />
+        </b-carousel-slide>
+        <b-carousel-slide class="bg_home_3">
+          <img src="../assets/img/mulher-com-lupa.webp" alt="">
+          <div class="gradiente" />
+        </b-carousel-slide>
       </b-carousel>
     </div>
     <div class="container align-self-end mt-4 pt-4 mt-xl-5 pt-xl-0">
@@ -123,17 +132,27 @@ export default {
       width: 100%;
       z-index: -1;
 
-      .bg_home_1{
-        background: linear-gradient(0deg, #000000dc 1%, #000000a4, #000000dc 99% ), url(../assets/img/detetive-examinando-evidencia.jpg) center center no-repeat;
-        background-size: cover;
+      .bg_home_1 img,
+      .bg_home_2 img,
+      .bg_home_3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
-      .bg_home_2{
-        background: linear-gradient(0deg, #000000dc 1%, #000000a4, #000000dc 99% ), url(../assets/img/linhas-investigacao.jpg) center center no-repeat;
-        background-size: cover;
-      }
+
+      .bg_home_1,
+      .bg_home_2,
       .bg_home_3{
-        background: linear-gradient(0deg, #000000dc 1%, #000000a4, #000000dc 99% ), url(../assets/img/mulher-com-lupa.jpg) center center no-repeat;
-        background-size: cover;
+        position: relative;
+
+        .gradiente{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(0deg, #000000dc 1%, #000000a4, #000000dc 99% );
+        }
       }
     }
 
