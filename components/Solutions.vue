@@ -202,6 +202,7 @@ section{
           min-width: 35px;
           font-size: 35px;
           color: var(--dark);
+          --ionicon-stroke-width: 25px;
         }
       }
 
