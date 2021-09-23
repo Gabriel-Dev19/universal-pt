@@ -23,6 +23,21 @@
           </p>
         </div>
       </div>
+      <div class="mae_numeros mt-5">
+        <div v-for="item in numeros" :key="item.numero" class="numeros shadow">
+          <div class="icon">
+            <ion-icon :name="item.icon" />
+          </div>
+          <div class="quadradro_branco">
+            <h2>
+              {{ item.numero }}{{ item.porcent }}
+            </h2>
+            <span>
+              {{ item.description }}
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -50,6 +65,29 @@ export default {
           title: 'Registro de provas e documentação completa',
           description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero iste nesciunt
             ipsum dolor sit am adipisicing elit. Facilis, libero iste nesciunt`
+        }
+      ],
+      numeros: [
+        {
+          numero: 302,
+          description: 'clientes satisfeitos',
+          icon: 'happy-outline'
+        },
+        {
+          numero: 670,
+          description: 'xícaras de café',
+          icon: 'cafe-outline'
+        },
+        {
+          numero: 57,
+          description: 'detetives credenciados',
+          icon: 'medal-outline'
+        },
+        {
+          numero: 100,
+          porcent: '%',
+          description: 'dos casos resolvidos',
+          icon: 'trophy-outline'
         }
       ]
     }
@@ -137,6 +175,83 @@ section{
         }
       }
     }
+  }
+
+  .mae_numeros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .numeros{
+      padding-top: 7px;
+      padding-left: 7px;
+      margin-top: 50px;
+      background-color: var(--azul_escuro);
+      border-radius: 30px 30px 0 30px;
+
+      .icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+
+        ion-icon{
+          min-width: 35px;
+          font-size: 35px;
+          color: var(--dark);
+        }
+      }
+
+      .quadradro_branco{
+        margin-left: 40px;
+        border-radius: 30px 30px 0 30px;
+        background-color: white;
+        padding: 50px 25px 25px 25px;
+
+        h2{
+          font-size: 50px;
+          font-weight: 300;
+          line-height: 0;
+        }
+
+        span{
+          display: block;
+          margin-top: 40px;
+          width: 125px;
+          text-transform: uppercase;
+          font-size: 15px;
+        }
+      }
+
+      @media (max-width: 575.95px) {
+        &{
+          width: 100%;
+          max-width: 280px;
+        }
+      }
+
+      @media (min-width: 576px) and (max-width: 1200px) {
+        &{
+          width: 45%;
+        }
+      }
+    }
+
+    @media (max-width: 575.95px) {
+      &{
+        justify-content: center;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+      &{
+        justify-content: space-between;
+      }
+    }
+
   }
 }
 </style>
