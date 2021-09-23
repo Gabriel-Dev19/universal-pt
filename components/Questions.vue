@@ -1,17 +1,21 @@
 <template>
   <section>
     <div class="container">
-      <div class="col-12 mb-5 row justify-content-between align-items-center mx-auto px-0">
+      <div class="col-12 mb-5 row justify-content-between align-items-end mx-auto px-0">
         <div class="titulo_functions row mx-0">
           <Badge name="feedbacks" />
-          <h2 class="col-12 px-0">
+          <h2 class="col-12 pl-0">
             Veja o que as pessoas dizem sobre nós.
           </h2>
         </div>
-        <p class="p-title mt-3 mt-md-0">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias architecto magni
-          impedit rem facere ex soluta ipsum aut. Neque, quae? Earum aliquid placeat.
-        </p>
+        <div class="d-flex justify-content-end col-12 ml-auto pl-0 mt-4 mt-md-0 passadores">
+          <button class="btn prev-slide-questions p-0">
+            <ion-icon name="arrow-back-circle-outline" />
+          </button>
+          <button class="btn next-slide-questions ml-3 p-0">
+            <ion-icon name="arrow-forward-circle-outline" />
+          </button>
+        </div>
       </div>
       <div class="quadradro-azul" />
     </div>
@@ -80,6 +84,10 @@ export default {
         autoplay: {
           delay: 1500,
           disableOnInteraction: false
+        },
+        navigation: {
+          nextEl: '.next-slide-questions',
+          prevEl: '.prev-slide-questions'
         }
       },
       profiles: [
@@ -151,12 +159,18 @@ section{
   }
 
   .titulo_functions{
-    max-width: 380px;
+    max-width: 400px;
   }
 
-  .p-title{
-    max-width: 500px;
-    margin-bottom: 0 !important;
+  .passadores{
+    max-width: 200px !important;
+
+    ion-icon{
+      color: var(--azul);
+      min-width: 45px;
+      font-size: 45px;
+      --ionicon-stroke-width: 19px;
+    }
   }
 
   .mae_slides {
