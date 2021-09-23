@@ -4,6 +4,7 @@
     <CardsSwiper />
     <SwiperVertical />
     <Servicos />
+    <Solutions />
     <Questions />
     <section class="height-100-vh" />
   </div>
