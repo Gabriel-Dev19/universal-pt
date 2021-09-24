@@ -38,13 +38,17 @@
           </div>
         </div>
       </div>
+      <div class="d-flex mt-5 pt-3 justify-content-center">
+        <ButtonScrollContatoSeta name="Entre em contato com nossa equipe" />
+      </div>
     </div>
   </section>
 </template>
 <script>
+import ButtonScrollContatoSeta from './buttons/button-scroll-contato-seta.vue'
 import Badge from './parts/Badge.vue'
 export default {
-  components: { Badge },
+  components: { Badge, ButtonScrollContatoSeta },
   data () {
     return {
       cars_solutions: [
@@ -207,7 +211,8 @@ section{
       }
 
       .quadradro_branco{
-        margin-left: 40px;
+        margin-left: 45px;
+        margin-top: 5px;
         border-radius: 30px 30px 0 30px;
         background-color: white;
         padding: 50px 25px 25px 25px;

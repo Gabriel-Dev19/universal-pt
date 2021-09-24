@@ -23,7 +23,7 @@
             @mouseenter="Shown_Dropdown_Servicos"
             @mouseleave="Hide_Dropdown_Servicos"
           >
-            Serviços <ion-icon class="text-azul fs-18" style="margin-bottom: -4px" name="chevron-down-outline" />
+            Serviços <ion-icon class="text-azul fs-19" style="margin-bottom: -1px" name="chevron-down-outline" />
             <transition enter-active-class="enter_animate_dropdown" leave-active-class="leave_animate_dropdown">
               <div
                 v-show="Show_Dropdown_Servicos"
@@ -47,7 +47,7 @@
             @mouseenter="Shown_Dropdown_Localidades"
             @mouseleave="Hide_Dropdown_Localidades"
           >
-            Localidades <ion-icon class="text-azul fs-18" style="margin-bottom: -4px" name="chevron-down-outline" />
+            Localidades <ion-icon class="text-azul fs-19" style="margin-bottom: -1px" name="chevron-down-outline" />
             <transition enter-active-class="enter_animate_dropdown" leave-active-class="leave_animate_dropdown">
               <div
                 v-show="Show_Dropdown_Localidades"

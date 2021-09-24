@@ -32,12 +32,10 @@
       </h5>
       <div class="separation_home mx-auto col-5" />
       <h1 class="text-white font-wide mt-4 px-0 col-md-8 mx-auto text-center text-uppercase">
-        Agência de detetives particulares
+        {{ titlePrincipal }}
       </h1>
       <p class="mx-auto px-0 col-md-8 fw-300 text-center text-white">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
-        dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
-        quae eos odio vel. Assumenda!
+        {{ description }}
       </p>
       <div class="d-flex mt-4 justify-content-center">
         <button class="button_home btn font-wide">
@@ -77,7 +75,7 @@
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['nameBtn'],
+  props: ['nameBtn', 'titlePrincipal', 'description'],
   data () {
     return {
       telefones: [

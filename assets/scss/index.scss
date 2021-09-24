@@ -54,6 +54,55 @@ button:focus, .btn:focus{
     top: 15%;
     z-index: 20;
 }
+.btn-azul-lg{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--azul);
+    color: white;
+    font-size: 17px;
+
+    &:hover{
+        background-color: var(--azul_super_escuro);
+        color: white;
+    }
+}
+.link-seta{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    color: var(--azul_escuro) !important;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    font-size: 17px;
+
+    &:hover{
+      text-decoration: none;
+
+      .seta{
+        width: 40px;
+      }
+    }
+
+    .seta{
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 25px;
+      height: 1px;
+      color: var(--azul_escuro);
+      margin-left: 15px;
+      transition: all .3s;
+      background-color: var(--azul_escuro);
+
+      ion-icon{
+        position: absolute;
+        right: -10px;
+        font-size: 15px;
+        min-width: 15px;
+        margin-left: 1px;
+      }
+    }
+  }
 .font-wide{
     font-family: 'Audiowide', cursive;
 }

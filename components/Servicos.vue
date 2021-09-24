@@ -26,7 +26,7 @@
             <p>
               {{ items.description }}
             </p>
-            <nuxt-link :to="items.routerTo" class="nuxt-link-servicos">
+            <nuxt-link :to="items.routerTo" class="link-seta">
               {{ items.linkTitle }}
               <div class="seta">
                 <ion-icon name="chevron-forward-outline" />
@@ -169,44 +169,6 @@ export default {
         p{
           margin-bottom: 0 !important;
           font-size: 15px;
-        }
-
-        .nuxt-link-servicos{
-          display: flex;
-          align-items: center;
-          margin-top: 25px;
-          color: var(--azul_escuro) !important;
-          font-weight: 600;
-          letter-spacing: 0.3px;
-          font-size: 17px;
-
-          &:hover{
-            text-decoration: none;
-
-            .seta{
-              width: 40px;
-            }
-          }
-
-          .seta{
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: 25px;
-            height: 1px;
-            color: var(--azul_escuro);
-            margin-left: 15px;
-            transition: all .3s;
-            background-color: var(--azul_escuro);
-
-            ion-icon{
-              position: absolute;
-              right: -10px;
-              font-size: 15px;
-              min-width: 15px;
-              margin-left: 1px;
-            }
-          }
         }
       }
 

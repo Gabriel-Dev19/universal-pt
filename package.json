@@ -20,7 +20,8 @@
     "sass": "^1.39.0",
     "sass-loader": "^10.1.1",
     "swiper": "^5.4.5",
-    "vue-awesome-swiper": "^4.1.1"
+    "vue-awesome-swiper": "^4.1.1",
+    "vue2-smooth-scroll": "^1.5.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
