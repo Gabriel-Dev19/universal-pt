@@ -1,9 +1,11 @@
 <template lang="">
   <div>
-    <button class="link-seta p-0 btn cursor-pointer" @click="ScrollContato">
+    <button class="link-seta pl-0 text-left pt-0 pb-0 btn cursor-pointer" @click="ScrollContato">
       {{ name }}
-      <div class="seta">
-        <ion-icon name="chevron-forward-outline" />
+      <div class="mae_seta">
+        <div class="seta">
+          <ion-icon name="chevron-forward-outline" />
+        </div>
       </div>
     </button>
   </div>

@@ -34,13 +34,13 @@
     --grafite: #2a2f33;
     --cinza_claro: #ededed;
     --cinza_super_claro: #f5f5f5;
+    --cinza_escuro: #6c757d;
     --whatsapp: #34af23;
     --whatsapp_hover: #258c18;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
-    min-width: 360px;
     color: #2a2f33;
 }
 button:focus, .btn:focus{
@@ -68,39 +68,58 @@ button:focus, .btn:focus{
 }
 .link-seta{
     display: flex;
+    width: auto;
     align-items: center;
-    margin-top: 25px;
     color: var(--azul_escuro) !important;
     font-weight: 600;
     letter-spacing: 0.3px;
     font-size: 17px;
+    position: relative;
+    padding-right: 50px;
 
     &:hover{
       text-decoration: none;
 
-      .seta{
-        width: 40px;
+      .mae_seta{
+        .seta{
+            width: 40px;
+        }
       }
     }
 
-    .seta{
-      position: relative;
-      display: flex;
-      align-items: center;
-      width: 25px;
-      height: 1px;
-      color: var(--azul_escuro);
-      margin-left: 15px;
-      transition: all .3s;
-      background-color: var(--azul_escuro);
-
-      ion-icon{
+    .mae_seta{
+        margin-top: 1px;
         position: absolute;
-        right: -10px;
-        font-size: 15px;
-        min-width: 15px;
-        margin-left: 1px;
-      }
+        left: calc(100% - 40px);
+        .seta{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 25px;
+            height: 1px;
+            color: var(--azul_escuro);
+            transition: all .3s;
+            background-color: var(--azul_escuro);
+      
+            ion-icon{
+              position: absolute;
+              right: -10px;
+              font-size: 15px;
+              min-width: 15px;
+              margin-left: 1px;
+            }
+        }
+    }
+
+    &.cinza{
+        color: var(--cinza_escuro) !important;
+
+        .mae_seta{
+            .seta{
+                color: var(--cinza_escuro) !important;
+                background-color: var(--cinza_escuro) !important;
+            }
+        }
     }
   }
 .font-wide{

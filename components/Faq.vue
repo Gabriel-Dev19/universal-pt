@@ -14,7 +14,9 @@
         <button class="btn-azul-lg shadow mt-4 btn">
           Faça uma pergunta
         </button>
-        <ButtonScrollContatoSeta name="Contate nossa equipe" />
+        <div class="col-12 mt-4 pt-2 px-0">
+          <ButtonScrollContatoSeta name="Contate nossa equipe" />
+        </div>
       </div>
       <div class="mae_perguntas col-lg ml-lg-5 pl-lg-5 px-0">
         <div v-for="(item, index) in faqs" :key="item.question" class="faq">

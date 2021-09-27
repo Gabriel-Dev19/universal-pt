@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex mt-5 pt-3 justify-content-center">
+      <div class="d-flex mt-5 pt-4 justify-content-center">
         <ButtonScrollContatoSeta name="Entre em contato com nossa equipe" />
       </div>
     </div>

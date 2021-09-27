@@ -26,12 +26,16 @@
             <p>
               {{ items.description }}
             </p>
-            <nuxt-link :to="items.routerTo" class="link-seta">
-              {{ items.linkTitle }}
-              <div class="seta">
-                <ion-icon name="chevron-forward-outline" />
-              </div>
-            </nuxt-link>
+            <div class="d-flex">
+              <nuxt-link :to="items.routerTo" class="link-seta mt-4">
+                {{ items.linkTitle }}
+                <div class="mae_seta">
+                  <div class="seta">
+                    <ion-icon name="chevron-forward-outline" />
+                  </div>
+                </div>
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>

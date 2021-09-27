@@ -97,14 +97,14 @@
               </a>
             </div>
           </div>
-          <div class="contatos_description mt-4 pt-2 col-12 px-0">
+          <div class="contatos_description overflow-hidden mt-4 pt-2 px-0">
             <ion-icon name="mail-outline" />
-            <div class="col px-0 ml-2 mt-2">
-              <h6>
+            <div class="col pl-0 pr-4 ml-2 mt-2">
+              <h6 class="mb-3">
                 E-mail:
               </h6>
-              <a href="" class="row mx-auto align-items-center mt-3">
-                <span class="text-grafite">contato@universaldetetives.com.br</span>
+              <a href="" class="d-block px-0">
+                <span class="text-grafite d-block col-11 px-0" style="word-wrap: break-word;">contato@universaldetetives.com.br</span>
               </a>
             </div>
           </div>

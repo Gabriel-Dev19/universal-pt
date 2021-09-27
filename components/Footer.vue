@@ -1,37 +1,59 @@
 <template>
   <footer>
     <div class="container">
-      <div class="col-12 mb-4 px-0">
-        <img src="../assets/img/logo-universal-sem-nome.webp" width="150" alt="">
+      <div class="col-12 d-flex justify-content-center justify-content-xl-start mb-4 px-0">
+        <div>
+          <img src="../assets/img/logo-universal-sem-nome.webp" width="150" alt="">
+        </div>
       </div>
-      <div class="col-lg-6 px-0">
-        <p>
+      <div class="col-xl mr-xl-5 px-0">
+        <p class="text-center text-xl-left">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quam rem dicta praesentium.
           Libero cumque placeat error repudiandae ullam fugiat adipisci soluta
         </p>
-        <p>
+        <p class="text-center text-xl-left">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quam rem dicta praesentium.
           Libero cumque placeat error repudiandae adipisicing elit. Sunt quam rem dicta praesentium.
           Libero cumque placeat error repudiandae
         </p>
-        <div class="row mt-4 mx-0">
-          <a v-for="item in redes_sociais" :key="item.icon" :href="item.href" class="mr-3">
+        <div class="row justify-content-center justify-content-xl-start mt-4 mx-0">
+          <a v-for="item in redes_sociais" :key="item.icon" :href="item.href" class="links_quadrados_redes_sociais">
             <div class="caixa-icon">
               <ion-icon :name="`logo-${item.icon}`" />
             </div>
           </a>
         </div>
       </div>
-      <div class="col-lg-6 row mx-0">
-        <div class="col-6">
+      <div class="col-xl-6 px-0 row mt-5 pt-5 pt-xl-0 mt-xl-0 mx-0">
+        <div class="col-sm px-0">
           <h5 style="font-weight: 600">
-            Serviços
+            Serviços:
           </h5>
+          <div v-for="item in links_rodape_servicos" :key="item.name" class="d-flex">
+            <nuxt-link :to="item.routerTo" class="link-seta cinza mt-2">
+              {{ item.name }}
+              <div class="mae_seta">
+                <div class="seta">
+                  <ion-icon name="chevron-forward-outline" />
+                </div>
+              </div>
+            </nuxt-link>
+          </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm px-0 mt-5 mt-sm-0 ml-sm-5">
           <h5 style="font-weight: 600">
-            Localidades atendidas
+            Localidades atendidas:
           </h5>
+          <div v-for="item in links_rodape_localidades" :key="item.name" class="d-flex">
+            <nuxt-link :to="item.routerTo" class="link-seta cinza mt-2">
+              {{ item.name }}
+              <div class="mae_seta">
+                <div class="seta">
+                  <ion-icon name="chevron-forward-outline" />
+                </div>
+              </div>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +69,70 @@ export default {
         { icon: 'instagram', href: '' },
         { icon: 'pinterest', href: '' },
         { icon: 'youtube', href: '' }
+      ],
+      links_rodape_servicos: [
+        {
+          name: 'Investigação empresarial',
+          routerTo: '/'
+        },
+        {
+          name: 'Investigação conjugal',
+          routerTo: '/'
+        },
+        {
+          name: 'Investigação política',
+          routerTo: '/'
+        },
+        {
+          name: 'Localização de pessoas',
+          routerTo: '/'
+        },
+        {
+          name: 'Celular VIP',
+          routerTo: '/'
+        },
+        {
+          name: 'Acompanhamento de filhos',
+          routerTo: '/'
+        }
+      ],
+      links_rodape_localidades: [
+        {
+          name: 'Santa Catarina',
+          routerTo: '/'
+        },
+        {
+          name: 'Paraná',
+          routerTo: '/'
+        },
+        {
+          name: 'Rio Grande do Sul',
+          routerTo: '/'
+        },
+        {
+          name: 'São Paulo',
+          routerTo: '/'
+        },
+        {
+          name: 'Rio de Janeiro',
+          routerTo: '/'
+        },
+        {
+          name: 'Distrito Federal',
+          routerTo: '/'
+        },
+        {
+          name: 'Minas Gerais',
+          routerTo: '/'
+        },
+        {
+          name: 'Mato Grosso do Sul',
+          routerTo: '/'
+        },
+        {
+          name: 'Goiás',
+          routerTo: '/'
+        }
       ]
     }
   }
@@ -74,6 +160,14 @@ footer{
         font-size: 23px;
         min-width: 23px;
         color: #6c757d;
+      }
+    }
+
+    .links_quadrados_redes_sociais{
+      margin-right: 15px;
+
+      &:last-child{
+        margin-right: 0 !important;
       }
     }
   }
