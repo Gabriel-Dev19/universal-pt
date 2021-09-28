@@ -1,6 +1,6 @@
 <template lang="">
   <div>
-    <button class="link-seta pl-0 text-left pt-0 pb-0 btn cursor-pointer" @click="ScrollContato">
+    <button v-if="variation === 'seta'" class="link-seta pl-0 text-left pt-0 pb-0 btn cursor-pointer" @click="ScrollContato">
       {{ name }}
       <div class="mae_seta">
         <div class="seta">
@@ -8,12 +8,15 @@
         </div>
       </div>
     </button>
+    <button v-if="variation === 'lg-azul'" class="btn-azul-lg shadow mt-4 btn" @click="ScrollContato">
+      {{ name }}
+    </button>
   </div>
 </template>
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['name'],
+  props: ['name', 'variation'],
   data () {
     return {
       Quantidade_retira_hash: 0
@@ -46,7 +49,7 @@ export default {
           document.body.scrollLeft = scrollH
         }
         this.Quantidade_retira_hash++
-        if (this.Quantidade_retira_hash > 15) { clearInterval(interval) }
+        if (this.Quantidade_retira_hash > 5) { clearInterval(interval) }
       }, 0)
     }
   }

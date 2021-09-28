@@ -156,6 +156,15 @@ h2{
             font-size: 27px;
         }
     }
+
+    &.azul{
+        color: var(--azul_escuro);
+        margin-top: 50px;
+
+        &:first-child{
+            margin-top: 0 !important;
+        }
+    }
 }
 
 .cursor-pointer{

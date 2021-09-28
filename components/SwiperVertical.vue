@@ -72,17 +72,17 @@ export default {
           icon: 'cash-outline'
         },
         {
-          title: 'Investigação empresarial',
+          title: 'Investigação conjugal',
           description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
           icon: 'cash-outline'
         },
         {
-          title: 'Investigação empresarial',
+          title: 'Investigação política',
           description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
           icon: 'cash-outline'
         },
         {
-          title: 'Investigação empresarial',
+          title: 'Localização de pessoas',
           description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
           icon: 'cash-outline'
         }

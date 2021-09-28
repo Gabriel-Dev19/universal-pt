@@ -1,8 +1,10 @@
 <template>
-  <section>
+  <section id="servicos">
     <div class="container">
       <HeaderSections
+        style="margin-top: 200px"
         :is-reverse="true"
+        :img="require('../assets/img/detetive-lupa.webp')"
         title-badge="serviços"
         parte-azul="Nossos serviços"
         title-header="de investigação particular"

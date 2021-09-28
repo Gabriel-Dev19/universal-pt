@@ -11,11 +11,11 @@
           fugiat quod enim, provident dolores, ex iusto mollitia aut pariatur sapiente alias non tempora
           ut molestiae? Pariatur!
         </p>
-        <button class="btn-azul-lg shadow mt-4 btn">
-          Faça uma pergunta
-        </button>
+        <div class="col-12 mt-4 px-0">
+          <ButtonScrollContato name="Faça uma pergunta" variation="lg-azul" />
+        </div>
         <div class="col-12 mt-4 pt-2 px-0">
-          <ButtonScrollContatoSeta name="Contate nossa equipe" />
+          <ButtonScrollContato name="Contate nossa equipe" variation="seta" />
         </div>
       </div>
       <div class="mae_perguntas col-lg ml-lg-5 pl-lg-5 px-0">
@@ -36,55 +36,55 @@
   </section>
 </template>
 <script>
-import ButtonScrollContatoSeta from './buttons/button-scroll-contato-seta.vue'
+import ButtonScrollContato from './buttons/button-scroll-contato.vue'
 import Badge from './parts/Badge.vue'
 export default {
-  components: { Badge, ButtonScrollContatoSeta },
+  components: { Badge, ButtonScrollContato },
   data () {
     return {
       faqs: [
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma pergunt',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma pergun',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma pergu',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma perg',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma per',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma pe',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma perguntaa',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma perguntaaa',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         },
         {
-          question: 'Alguma pergunta',
+          question: 'Alguma perguntaaaa',
           response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
                   deleniti doloremque possimus aut esse sapiente numquam`
         }

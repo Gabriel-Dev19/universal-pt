@@ -93,42 +93,42 @@ export default {
       profiles: [
         {
           img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alfredo',
+          name: 'José Silva',
           profission: 'Gerente de hotel',
           comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
               officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
         },
         {
           img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alfredo',
+          name: 'José Gabriel',
           profission: 'Gerente de hotel',
           comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
               officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
         },
         {
           img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alfredo',
+          name: 'José Alguma',
           profission: 'Gerente de hotel',
           comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
               officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
         },
         {
           img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alfredo',
+          name: 'José Coisa',
           profission: 'Gerente de hotel',
           comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
               officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
         },
         {
           img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alfredo',
+          name: 'José Alberto',
           profission: 'Gerente de hotel',
           comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
               officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
         },
         {
           img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alfredo',
+          name: 'José Goiás',
           profission: 'Gerente de hotel',
           comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
               officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`

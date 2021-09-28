@@ -39,28 +39,28 @@
         </div>
       </div>
       <div class="d-flex mt-5 pt-4 justify-content-center">
-        <ButtonScrollContatoSeta name="Entre em contato com nossa equipe" />
+        <ButtonScrollContato name="Entre em contato com nossa equipe" variation="seta" />
       </div>
     </div>
   </section>
 </template>
 <script>
-import ButtonScrollContatoSeta from './buttons/button-scroll-contato-seta.vue'
+import ButtonScrollContato from './buttons/button-scroll-contato.vue'
 import Badge from './parts/Badge.vue'
 export default {
-  components: { Badge, ButtonScrollContatoSeta },
+  components: { Badge, ButtonScrollContato },
   data () {
     return {
       cars_solutions: [
         {
           icon: 'finger-print',
-          title: 'Registro de provas e documentação completa',
+          title: 'Registro de provas e documentação',
           description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero iste nesciunt
             ipsum dolor sit am adipisicing elit. Facilis, libero iste nesciunt`
         },
         {
           icon: 'finger-print',
-          title: 'Registro de provas e documentação completa',
+          title: 'Registro de provas e',
           description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero iste nesciunt
             ipsum dolor sit am adipisicing elit. Facilis, libero iste nesciunt`
         },

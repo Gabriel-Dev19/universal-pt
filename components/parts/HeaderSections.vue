@@ -2,7 +2,7 @@
   <section>
     <div class="row position-relative mx-auto align-items-start col-12 px-0" :class="{'justify-content-end': !isReverse}">
       <div class="img_header_section col-sm-6 col-lg-4 col-xl-5 position-absolute px-0" :class="{'right-0': isReverse, 'left-0': !isReverse}">
-        <img src="../../assets/img/detetive-lupa.webp" class="shadow border" alt="">
+        <img :src="img" class="shadow border" alt="">
       </div>
       <div class="col-11 col-sm-8 col-lg-9 col-xl-8 content_header_section">
         <div class="row mx-0 col-lg-5 px-0">
@@ -32,6 +32,10 @@ export default {
       type: Boolean,
       default: false
     },
+    img: {
+      type: String,
+      default: ''
+    },
     parteAzul: {
       type: String,
       default: ''
@@ -57,8 +61,6 @@ export default {
 </script>
 <style lang="scss" scoped>
   section{
-    margin-top: 200px;
-
     .img_header_section{
       height: 400px;
 

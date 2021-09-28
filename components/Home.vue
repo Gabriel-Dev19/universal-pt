@@ -34,11 +34,11 @@
       <h1 class="text-white font-wide mt-4 px-0 col-md-8 mx-auto text-center text-uppercase">
         {{ titlePrincipal }}
       </h1>
-      <p class="mx-auto px-0 col-md-8 fw-300 text-center text-white">
+      <p v-if="description.length > 1" class="mx-auto px-0 col-md-8 fw-300 text-center text-white">
         {{ description }}
       </p>
-      <div class="d-flex mt-4 justify-content-center">
-        <button class="button_home btn font-wide">
+      <div v-if="nameBtn.length > 1" class="d-flex mt-4 justify-content-center">
+        <button class="button_home btn font-wide" @click="ScrollServicos">
           {{ nameBtn }}
         </button>
       </div>
@@ -47,7 +47,7 @@
       <div class="container">
         <div class="mae_telefones d-none d-xl-flex">
           <div v-for="telefone in telefones" :key="telefone.name" class="col_telefones">
-            <a href="tel:">
+            <a :href="`tel:${telefone.href}`">
               <ion-icon name="call-outline" />
               <div class="separation_telefones" />
               <div>
@@ -75,15 +75,47 @@
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['nameBtn', 'titlePrincipal', 'description'],
+  props: ['nameBtn', 'titlePrincipal', 'description', 'hashBtn'],
   data () {
     return {
       telefones: [
-        { name: 'Florianópolis', numero: '(65) 3453-3453' },
-        { name: 'Baln. Camboriú', numero: '(67) 3679-3685' },
-        { name: 'Curitiba', numero: '(33) 3454-3455' },
-        { name: 'Caçador', numero: '(44) 7567-5676' }
-      ]
+        { name: 'Florianópolis', numero: '(48) 4052-8425', href: '4840528425' },
+        { name: 'Baln. Camboriú', numero: '(47) 4054-9580', href: '4740549580' },
+        { name: 'Curitiba', numero: '(41) 4063-9171', href: '4140639171' },
+        { name: 'Caçador', numero: '(49) 3240-0977', href: '4932400977' }
+      ],
+      Quantidade_retira_hash: 0
+    }
+  },
+  methods: {
+    ScrollServicos () {
+      this.$smoothScroll({
+        scrollTo: document.getElementById(this.hashBtn),
+        duration: 500,
+        offset: -190
+      })
+      setTimeout(() => {
+        this.HideHash()
+      }, 490)
+    },
+    HideHash () {
+      this.Quantidade_retira_hash = 0
+      const interval = setInterval(() => {
+        let scrollV; let scrollH; const loc = window.location
+        if ('replaceState' in history) {
+          history.replaceState('', document.title, loc.pathname + loc.search)
+        } else {
+          // Prevent scrolling by storing the page's current scroll offset
+          scrollV = document.body.scrollTop
+          scrollH = document.body.scrollLeft
+          loc.hash = ''
+          // Restore the scroll offset, should be flicker free
+          document.body.scrollTop = scrollV
+          document.body.scrollLeft = scrollH
+        }
+        this.Quantidade_retira_hash++
+        if (this.Quantidade_retira_hash > 5) { clearInterval(interval) }
+      }, 0)
     }
   }
 }
