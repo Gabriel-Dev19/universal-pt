@@ -12,7 +12,7 @@
       <HeaderSections
         style="margin-top: 150px"
         :is-reverse="true"
-        :img="require('../../../assets/img/servicos/celular-VIP.webp')"
+        :img="require('../../../assets/img/servicos/celular-vip.webp')"
         title-badge="filhos menores"
         parte-azul="Serviços:"
         title-header="Celular VIP"

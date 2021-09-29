@@ -2,9 +2,6 @@
   "name": "universal-dete",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": "12.16.2"
-  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
