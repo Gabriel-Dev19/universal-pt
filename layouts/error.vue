@@ -1,20 +1,22 @@
 <template>
-  <div class="page-404">
-    <NavbarMobile />
-    <NavbarDesktop />
-
-    <Home
-      name-btn=""
-      title-principal="404: erro ao requisitar a página :( tente novamente!"
-      description=""
-    />
-  </div>
+  <section>
+    <div class="page-404">
+      <NavbarMobile />
+      <NavbarDesktop />
+      <Home
+        name-btn=""
+        title-principal="404: erro ao requisitar a página :( tente novamente!"
+        description=""
+      />
+    </div>
+    <Contato />
+  </section>
 </template>
 
 <script>
 import Vue from 'vue'
-import VueSmoothScroll from '../node_modules/vue2-smooth-scroll'
-Vue.use(VueSmoothScroll)
+import VueScrollTo from '../node_modules/vue-scrollto'
+Vue.use(VueScrollTo)
 Vue.directive('scroll', {
   inserted (el, binding) {
     const f = function (evt) {

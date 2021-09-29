@@ -56,7 +56,8 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['vue-scrollto/nuxt', { duration: 500 }]
   ],
 
   router: {

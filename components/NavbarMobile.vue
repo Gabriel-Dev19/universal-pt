@@ -97,31 +97,31 @@ export default {
       LinksMobileCollapseServicos: [
         {
           name: 'Investigação conjugal',
-          routeTo: '/investigacao-conjugal'
+          routeTo: '/servicos/investigacao-conjugal'
         },
         {
           name: 'Investigação empresarial',
-          routeTo: '/investigacao-empresarial'
+          routeTo: '/servicos/investigacao-empresarial'
         },
         {
           name: 'Investigação politica',
-          routeTo: '/investigacao-politica'
+          routeTo: '/servicos/investigacao-politica'
         },
         {
           name: 'Localização de pessoas',
-          routeTo: '/localização-de-pessoas'
+          routeTo: '/servicos/localização-de-pessoas'
         },
         {
           name: 'Acompanhamento de filhos',
-          routeTo: '/acompanhamento-de-filhos'
+          routeTo: '/servicos/acompanhamento-de-filhos'
         },
         {
           name: 'Curso de detetive particular',
-          routeTo: '/curso-de-detetive-particular'
+          routeTo: '/servicos/curso-de-detetive-particular'
         },
         {
           name: 'Celular VIP',
-          routeTo: '/celular-VIP'
+          routeTo: '/servicos/celular-VIP'
         }
       ],
 

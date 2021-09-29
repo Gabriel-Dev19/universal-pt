@@ -59,7 +59,7 @@ export default {
           title: 'Investigação empresarial',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Investigação empresarial',
-          routerTo: '/investigacao-empresarial'
+          routerTo: '/servicos/investigacao-empresarial'
         },
         {
           img: require('../assets/img/servicos/investigacao-conjugal.webp'),
@@ -68,7 +68,7 @@ export default {
           title: 'Investigação conjugal',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Investigação conjugal',
-          routerTo: '/investigacao-conjugal'
+          routerTo: '/servicos/investigacao-conjugal'
         },
         {
           img: require('../assets/img/servicos/investigacao-politica.webp'),
@@ -77,7 +77,7 @@ export default {
           title: 'Investigação politica',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Investigação politica',
-          routerTo: '/investigacao-politica'
+          routerTo: '/servicos/investigacao-politica'
         },
         {
           img: require('../assets/img/servicos/localizacao-de-pessoas.webp'),
@@ -86,7 +86,7 @@ export default {
           title: 'Localizacao de pessoas',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Localizacao de pessoas',
-          routerTo: '/localizacao-de-pessoas'
+          routerTo: '/servicos/localizacao-de-pessoas'
         },
         {
           img: require('../assets/img/servicos/acompanhamento-de-filhos.webp'),
@@ -95,7 +95,7 @@ export default {
           title: 'Acompanhamento de filhos',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Acompanhamento de filhos',
-          routerTo: '/acompanhamento-de-filhos'
+          routerTo: '/servicos/acompanhamento-de-filhos'
         },
         {
           img: require('../assets/img/servicos/celular-vip.webp'),
@@ -104,7 +104,7 @@ export default {
           title: 'Celular VIP',
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Celular VIP',
-          routerTo: '/celular-VIP'
+          routerTo: '/servicos/celular-VIP'
         }
       ]
     }

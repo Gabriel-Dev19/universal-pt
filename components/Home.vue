@@ -38,7 +38,7 @@
         {{ description }}
       </p>
       <div v-if="nameBtn.length > 1" class="d-flex mt-4 justify-content-center">
-        <button class="button_home btn font-wide" @click="ScrollServicos">
+        <button v-scroll-to="optionsScroll" class="button_home btn font-wide">
           {{ nameBtn }}
         </button>
       </div>
@@ -84,38 +84,11 @@ export default {
         { name: 'Curitiba', numero: '(41) 4063-9171', href: '4140639171' },
         { name: 'Caçador', numero: '(49) 3240-0977', href: '4932400977' }
       ],
-      Quantidade_retira_hash: 0
-    }
-  },
-  methods: {
-    ScrollServicos () {
-      this.$smoothScroll({
-        scrollTo: document.getElementById(this.hashBtn),
-        duration: 500,
+      Quantidade_retira_hash: 0,
+      optionsScroll: {
+        el: '#' + this.hashBtn,
         offset: -190
-      })
-      setTimeout(() => {
-        this.HideHash()
-      }, 490)
-    },
-    HideHash () {
-      this.Quantidade_retira_hash = 0
-      const interval = setInterval(() => {
-        let scrollV; let scrollH; const loc = window.location
-        if ('replaceState' in history) {
-          history.replaceState('', document.title, loc.pathname + loc.search)
-        } else {
-          // Prevent scrolling by storing the page's current scroll offset
-          scrollV = document.body.scrollTop
-          scrollH = document.body.scrollLeft
-          loc.hash = ''
-          // Restore the scroll offset, should be flicker free
-          document.body.scrollTop = scrollV
-          document.body.scrollLeft = scrollH
-        }
-        this.Quantidade_retira_hash++
-        if (this.Quantidade_retira_hash > 5) { clearInterval(interval) }
-      }, 0)
+      }
     }
   }
 }

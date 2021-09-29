@@ -1,9 +1,9 @@
 <template>
   <section>
     <Home
-      name-btn="Sobre a agência"
+      name-btn="saiba mais"
       hash-btn="sobre"
-      title-principal="Sobre a universal detetives"
+      title-principal="Curso de detetive particular"
       description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
         dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
         quae eos odio vel. Assumenda!"
@@ -12,9 +12,10 @@
       <HeaderSections
         style="margin-top: 150px"
         :is-reverse="true"
-        :img="require('../../assets/img/detetive-lupa.webp')"
-        title-badge="sobre nós"
-        title-header="Sobre a agência universal detetives"
+        :img="require('../../../assets/img/servicos/localizacao-de-pessoas.webp')"
+        title-badge="aprendizado"
+        parte-azul="Serviços:"
+        title-header="Curso de detetive particular"
         subtitle="Somos uma agência comprometida com a excelência e a dedicação"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis
         aliquid perspiciatis quos, sequi ratione sunt possimus corrupti velit porro? Nobis

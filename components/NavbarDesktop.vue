@@ -14,7 +14,7 @@
           <nuxt-link to="/" class="nav-link" :class="{'text-white': !Nav_Scroll}">
             Home
           </nuxt-link>
-          <nuxt-link to="/sobre" class="nav-link" :class="{'text-white': !Nav_Scroll}">
+          <nuxt-link to="/sobre/" class="nav-link" :class="{'text-white': !Nav_Scroll}">
             Sobre nós
           </nuxt-link>
           <div
@@ -65,7 +65,7 @@
               </div>
             </transition>
           </div>
-          <a href="" class="nav-link" :class="{'text-white': !Nav_Scroll}">
+          <a v-scroll-to="{el: '#contato', offset: -190}" href="#contato" class="nav-link" :class="{'text-white': !Nav_Scroll}">
             Fale conosco
           </a>
         </div>
@@ -90,13 +90,13 @@ export default {
       Time_Espera_Dropdown_Servicos: undefined,
       Time_Espera_Dropdown_Localidades: undefined,
       items_servicos: [
-        { name: 'Investigação empresarial', routeTo: '/investigacao-empresarial' },
-        { name: 'Investigação conjugal', routeTo: '/investigacao-conjugal' },
-        { name: 'Investigação política', routeTo: '/investigacao-politica' },
-        { name: 'Localização de pessoas', routeTo: '/localizacao-de-pessoas' },
-        { name: 'Curso de detetive particular', routeTo: '/curso-de-detetive-particular' },
-        { name: 'Acompanhamento de filhos', routeTo: '/acompanhamento-de-filhos' },
-        { name: 'Celular VIP', routeTo: '/celular-VIP' }
+        { name: 'Investigação empresarial', routeTo: '/servicos/investigacao-empresarial' },
+        { name: 'Investigação conjugal', routeTo: '/servicos/investigacao-conjugal' },
+        { name: 'Investigação política', routeTo: '/servicos/investigacao-politica' },
+        { name: 'Localização de pessoas', routeTo: '/servicos/localizacao-de-pessoas' },
+        { name: 'Curso de detetive particular', routeTo: '/servicos/curso-de-detetive-particular' },
+        { name: 'Acompanhamento de filhos', routeTo: '/servicos/acompanhamento-de-filhos' },
+        { name: 'Celular VIP', routeTo: '/servicos/celular-VIP' }
       ],
       items_localidades: [
         { name: 'Santa Catarina', routeTo: '/investigacao-empresarial' },

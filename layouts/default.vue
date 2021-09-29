@@ -8,8 +8,8 @@
 
 <script>
 import Vue from 'vue'
-import VueSmoothScroll from '../node_modules/vue2-smooth-scroll'
-Vue.use(VueSmoothScroll)
+import VueScrollTo from '../node_modules/vue-scrollto'
+Vue.use(VueScrollTo)
 Vue.directive('scroll', {
   inserted (el, binding) {
     const f = function (evt) {
