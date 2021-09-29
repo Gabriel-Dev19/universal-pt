@@ -5,7 +5,13 @@
         <span v-show="ShowContent" class="times">
           &times;
         </span>
-        <ion-icon class="cursor-pointer animate-whatsapp" name="logo-whatsapp" />
+        <div class="logo-whats">
+          <ion-icon class="cursor-pointer animate-whatsapp" name="logo-whatsapp" />
+          <div v-show="!ShowContent" class="mt-1">
+            <span class="d-block" style="font-weight: 400; font-size: 10px;">Mande uma</span>
+            <span class="d-block" style="font-weight: 700; font-size: 11px;">Mensagem</span>
+          </div>
+        </div>
         <transition enter-active-class="animate_show_content_whatsapp">
           <h5 v-show="ShowContent" class="mb-0 font-wide" @click.stop="">
             Canal de atendimento
@@ -94,13 +100,7 @@ export default {
     })
   },
   methods: {
-    ScrollBtnWhatsapp () {
-      if (window.scrollY) {
-        this.ShowContent = false
-      }
-    },
     ToggleWhats () {
-      this.ShowContent ? document.body.classList.remove('overflow-hidden') : document.body.classList.add('overflow-hidden')
       this.ShowContent = !this.ShowContent
     }
   }
@@ -380,12 +380,12 @@ export default {
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 15px 0 15px 15px;
+    padding: 10px 0 10px 10px;
     border-radius: 20px 0 0 0;
     box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.44) !important;
     background-color: white;
-    min-height: 85px;
-    min-width: 75px;
+    min-height: 110px;
+    min-width: 80px;
     max-height: calc(100vh - 130px);
     max-width: calc(100vw - 35px);
     z-index: 1000;
@@ -415,18 +415,22 @@ export default {
         display: flex;
         align-items: center;
 
-        ion-icon{
+        .logo-whats{
           position: absolute;
           top: 0;
           left: 0;
-          font-size: 45px;
-          min-width: 45px;
-          color: var(--whatsapp);
+          cursor: pointer;
+
+          ion-icon{
+            font-size: 45px;
+            min-width: 45px;
+            color: var(--whatsapp);
+          }
         }
 
         .times{
           position: absolute;
-          left: -47px;
+          left: -42px;
           top: -10px;
           padding-right: 20px !important;
           font-size: 40px;
