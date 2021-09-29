@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="col_whatsapp">
-          <a href="tel:">
+          <a class="cursor-pointer" @click="$root.$emit('ShowWhats')">
             <ion-icon name="logo-whatsapp" />
             <div class="separation_telefones" />
             <h6 class="font-wide text-uppercase">

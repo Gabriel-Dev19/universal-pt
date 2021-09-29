@@ -3,12 +3,14 @@
     <NavbarMobile />
     <NavbarDesktop />
     <Nuxt />
+    <btnWhatsappFlutuante />
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import VueScrollTo from '../node_modules/vue-scrollto'
+import btnWhatsappFlutuante from '~/components/buttons/btn-whatsapp-flutuante.vue'
 Vue.use(VueScrollTo)
 Vue.directive('scroll', {
   inserted (el, binding) {
@@ -21,6 +23,7 @@ Vue.directive('scroll', {
   }
 })
 export default {
+  components: { btnWhatsappFlutuante }
 
 }
 </script>

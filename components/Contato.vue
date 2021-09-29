@@ -57,10 +57,10 @@
             </select>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Hora para contato">
+            <input type="text" class="form-control" placeholder="Data e hora para contato">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Data para contato">
+            <textarea class="form-control" placeholder="Sua mensagem aqui" />
           </div>
           <div class="d-flex mt-3 justify-content-end col-12 px-0">
             <button type="submit" class="btn btn-azul-lg">
@@ -169,14 +169,14 @@ export default {
         width: 100% !important;
 
         .form-group{
-          width: 47%;
+          width: 48%;
 
           &:nth-child(9){
             width: 100%;
           }
 
           input{
-            margin-top: 17px;
+            margin-top: 15px;
             padding-top: 21px !important;
             padding-bottom: 21px !important;
             background-color: var(--cinza_claro);
@@ -196,7 +196,7 @@ export default {
           }
 
           select{
-            margin-top: 17px;
+            margin-top: 15px;
             height: 42px;
             background-color: var(--cinza_claro);
             // box-shadow: 0 0rem 0.2rem rgba(0, 0, 0, 0.111) !important;
@@ -207,6 +207,28 @@ export default {
             font-size: 17px;
             color: #6c757d;
             cursor: pointer;
+
+            &:focus{
+              box-shadow: none !important;
+            }
+          }
+
+          textarea{
+            margin-top: 15px;
+            padding-top: 10px !important;
+            padding-bottom: 21px !important;
+            background-color: var(--cinza_claro);
+            // box-shadow: 0 0rem 0.2rem rgba(0, 0, 0, 0.111) !important;
+            border: none !important;
+            border-radius: 0 !important;
+            font-size: 17px;
+            min-height: 120px;
+            max-height: 120px;
+
+            &::placeholder{
+              font-weight: 500 !important;
+              font-size: 17px;
+            }
 
             &:focus{
               box-shadow: none !important;
