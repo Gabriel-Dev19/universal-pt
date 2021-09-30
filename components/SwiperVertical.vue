@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="col-5 d-none d-lg-block px-0 img_valores">
-        <img src="../assets/img/detetive-lupa.webp" class="img-fluid shadow border" alt="">
+        <img src="../assets/img/valores.webp" class="img-fluid shadow border" alt="">
       </div>
       <div class="col-lg-5 px-0 mae_swiper" @mouseenter="stopSlide" @mouseleave="runSlide">
         <swiper

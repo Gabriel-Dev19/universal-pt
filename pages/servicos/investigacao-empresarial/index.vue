@@ -4,9 +4,6 @@
       name-btn="saiba mais"
       hash-btn="sobre"
       title-principal="Investigação empresarial"
-      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
-        dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
-        quae eos odio vel. Assumenda!"
     />
     <div id="sobre" class="container">
       <HeaderSections

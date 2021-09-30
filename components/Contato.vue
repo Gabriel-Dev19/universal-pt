@@ -128,23 +128,23 @@ export default {
       ],
       telefones: [
         {
-          cidade: 'Baln. Camboriú',
-          numero: '+55 (47) 8543-3553',
-          href: ''
-        },
-        {
           cidade: 'Florianópolis',
-          numero: '+55 (47) 8543-3553',
+          numero: '+55 (48) 4052-8425',
           href: ''
         },
         {
-          cidade: 'Lages',
-          numero: '+55 (47) 8543-3553',
+          cidade: 'Baln. Camboriú',
+          numero: '+55 (47) 4054-9580',
           href: ''
         },
         {
           cidade: 'Curitiba',
-          numero: '+55 (47) 8543-3553',
+          numero: '+55 (41) 4063-9171',
+          href: ''
+        },
+        {
+          cidade: 'Caçador',
+          numero: '+55 (49) 3240-0977',
           href: ''
         }
       ]

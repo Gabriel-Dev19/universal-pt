@@ -57,6 +57,16 @@
         </div>
       </div>
     </div>
+    <div class="notas">
+      <div class="container">
+        <p class="mb-0 text-center text-lg-left col-lg px-0">
+          &copy; Copiright - Universal Detetives - Todos os direitos reservados
+        </p>
+        <a class="text-center text-lg-right col-lg px-0" href="https://wa.me/5588996912604?text=Olá,+Gabriel+gostaria+de+receber+mais+informações+sobre+seu+trabalho+como+programador" target="_blank" rel="noopener noreferrer">
+          Projetado e desenvolvido por Gabriel Camurça <ion-icon name="logo-vue" />
+        </a>
+      </div>
+    </div>
   </footer>
 </template>
 <script>
@@ -73,27 +83,31 @@ export default {
       links_rodape_servicos: [
         {
           name: 'Investigação empresarial',
-          routerTo: '/'
+          routerTo: '/servicos/investigacao-empresarial'
         },
         {
           name: 'Investigação conjugal',
-          routerTo: '/'
+          routerTo: '/servicos/investigacao-conjugal'
         },
         {
           name: 'Investigação política',
-          routerTo: '/'
+          routerTo: '/servicos/investigacao-politica'
         },
         {
           name: 'Localização de pessoas',
-          routerTo: '/'
+          routerTo: '/servicos/localizacao-de-pessoas'
         },
         {
           name: 'Celular VIP',
-          routerTo: '/'
+          routerTo: '/servicos/celular-VIP'
         },
         {
           name: 'Acompanhamento de filhos',
-          routerTo: '/'
+          routerTo: '/servicos/acompanhamento-de-filhos'
+        },
+        {
+          name: 'Curso de detetive',
+          routerTo: '/servicos/curso-de-detetive-particular'
         }
       ],
       links_rodape_localidades: [
@@ -141,7 +155,7 @@ export default {
 <style lang="scss" scoped>
 footer{
   margin-top: 130px;
-  padding: 50px 0;
+  padding-top: 50px;
   box-shadow: 0 -0.1rem 0.5rem rgba(0, 0, 0, 0.35) !important;
 
   .container{
@@ -170,6 +184,30 @@ footer{
         margin-right: 0 !important;
       }
     }
+  }
+
+  .notas{
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: var(--cinza_claro);
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-weight: 500;
+
+      a{
+        color: var(--grafite) !important;
+
+        ion-icon{
+          font-size: 20px;
+          min-width: 20px;
+          margin-bottom: -4px;
+        }
+      }
+    }
+
   }
 }
 </style>

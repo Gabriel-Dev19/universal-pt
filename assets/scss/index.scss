@@ -46,6 +46,10 @@ body{
 button:focus, .btn:focus{
     box-shadow: none !important;
 }
+.bg-azul-caixa-cidade{
+    background-color: var(--azul);
+    border-radius: 20px;
+}
 .w-auto{
     width: auto;
 }
@@ -266,6 +270,15 @@ h2{
     height: 2px;
     border-top: #2c3e50 1px solid;
 }
+.mt-30{
+    margin-top: 30px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.pl-65{
+    padding-left: 65px;
+}
 .modal-content{
     padding: 0 !important;
     background: transparent !important;
@@ -302,6 +315,7 @@ div#modal-whatsapp.modal{
 
 .text-preto-cidades{
     color: #ffffff;
+    font-size: 18px;
 }
 .text-preto-cidades:hover{
     color: #e4e4e4;

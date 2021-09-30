@@ -75,7 +75,26 @@
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['nameBtn', 'titlePrincipal', 'description', 'hashBtn'],
+  props: {
+    nameBtn: {
+      type: String,
+      default: ''
+    },
+    titlePrincipal: {
+      type: String,
+      default: 'Agência de detetives particulares'
+    },
+    description: {
+      type: String,
+      default: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
+        dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
+        quae eos odio vel. Assumenda!`
+    },
+    hashBtn: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
       telefones: [

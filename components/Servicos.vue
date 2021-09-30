@@ -105,6 +105,15 @@ export default {
           description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
           linkTitle: 'Celular VIP',
           routerTo: '/servicos/celular-VIP'
+        },
+        {
+          img: require('../assets/img/servicos/celular-vip.webp'),
+          altImg: 'Curso de detetive particular universal detetives',
+          badge: 'aprendizado',
+          title: 'Curso de detetive',
+          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          linkTitle: 'Curso de detetive',
+          routerTo: '/servicos/curso-de-detetive-particular'
         }
       ]
     }

@@ -99,15 +99,15 @@ export default {
         { name: 'Celular VIP', routeTo: '/servicos/celular-VIP' }
       ],
       items_localidades: [
-        { name: 'Santa Catarina', routeTo: '/investigacao-empresarial' },
-        { name: 'Paraná', routeTo: '/investigacao-conjugal' },
-        { name: 'Rio Grande do Sul', routeTo: '/investigacao-politica' },
-        { name: 'São Paulo', routeTo: '/localizacao-de-pessoas' },
-        { name: 'Rio de Janeiro', routeTo: '/curso-de-detetive-particular' },
-        { name: 'Distrito Federal', routeTo: '/celular-VIP' },
-        { name: 'Minas Gerais', routeTo: '/curso-de-detetive-particular' },
-        { name: 'Mato Grosso do Sul', routeTo: '/acompanhamento-de-filhos' },
-        { name: 'Goiás', routeTo: '/acompanhamento-de-filhos' }
+        { name: 'Santa Catarina', routeTo: '/detetive-particular-em-Santa-Catarina' },
+        { name: 'Paraná', routeTo: '/detetive-particular-no-Parana' },
+        { name: 'Rio Grande do Sul', routeTo: '/detetive-particular-no-Rio-Grande-do-Sul' },
+        { name: 'São Paulo', routeTo: '/detetive-particular-em-Sao-Paulo' },
+        { name: 'Rio de Janeiro', routeTo: '/detetive-particular-no-Rio-de-Janeiro' },
+        { name: 'Distrito Federal', routeTo: '/detetive-particular-no-Distrito-Federal' },
+        { name: 'Minas Gerais', routeTo: '/detetive-particular-em-Minas-Gerais' },
+        { name: 'Mato Grosso do Sul', routeTo: '/detetive-particular-no-Mato-Grosso-do-Sul' },
+        { name: 'Goiás', routeTo: '/detetive-particular-em-Goias' }
       ],
       redes_sociais: [
         { icon: 'logo-twitter', linkTo: '/' },
