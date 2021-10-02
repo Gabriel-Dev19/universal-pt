@@ -20,8 +20,10 @@
     "sass": "^1.39.0",
     "sass-loader": "^10.1.1",
     "swiper": "^5.4.5",
+    "v-mask": "^2.3.0",
     "vue-awesome-swiper": "^4.1.1",
-    "vue-scrollto": "^2.20.0"
+    "vue-scrollto": "^2.20.0",
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

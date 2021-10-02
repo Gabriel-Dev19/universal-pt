@@ -20,11 +20,11 @@
           <h5 class="text-white mb-4 ml-3 pl-1">
             Menu
           </h5>
-          <nuxt-link to="/" class="nuxt-link-mobile">
+          <nuxt-link to="/" class="nuxt-link-mobile" @click.native="Toggle_Nav">
             Home
             <ion-icon name="arrow-forward-outline" />
           </nuxt-link>
-          <nuxt-link to="/" class="nuxt-link-mobile">
+          <nuxt-link to="/sobre" class="nuxt-link-mobile" @click.native="Toggle_Nav">
             Sobre nós
             <ion-icon name="arrow-forward-outline" />
           </nuxt-link>
@@ -37,8 +37,9 @@
               <nuxt-link
                 v-for="items in LinksMobileCollapseServicos"
                 :key="items.name"
-                :to="items.routeTo"
+                :to="items.routerTo"
                 class="nuxt_link_mobile_collapse"
+                @click.native="Toggle_Nav"
               >
                 {{ items.name }}
                 <ion-icon name="arrow-forward-outline" />
@@ -54,18 +55,19 @@
               <nuxt-link
                 v-for="items in LinksMobileCollapseLocalidades"
                 :key="items.name"
-                :to="items.routeTo"
+                :to="items.routerTo"
                 class="nuxt_link_mobile_collapse"
+                @click.native="Toggle_Nav"
               >
                 {{ items.name }}
                 <ion-icon name="arrow-forward-outline" />
               </nuxt-link>
             </div>
           </b-collapse>
-          <nuxt-link to="/" class="nuxt-link-mobile">
+          <a v-scroll-to="{ offset: -190, el: '#contato' }" class="nuxt-link-mobile" @click="Toggle_Nav">
             Contate nossa equipe
             <ion-icon name="arrow-forward-outline" />
-          </nuxt-link>
+          </a>
           <div class="nav_redes_sociais mt-4 ml-3 pl-1">
             <a v-for="items in redes_sociais" :key="items.icon" :href="items.linkTo">
               <ion-icon :name="items.icon" />
@@ -97,46 +99,50 @@ export default {
       LinksMobileCollapseServicos: [
         {
           name: 'Investigação conjugal',
-          routeTo: '/servicos/investigacao-conjugal'
+          routerTo: '/servicos/investigacao-conjugal'
         },
         {
           name: 'Investigação empresarial',
-          routeTo: '/servicos/investigacao-empresarial'
+          routerTo: '/servicos/investigacao-empresarial'
         },
         {
           name: 'Investigação politica',
-          routeTo: '/servicos/investigacao-politica'
+          routerTo: '/servicos/investigacao-politica'
         },
         {
           name: 'Localização de pessoas',
-          routeTo: '/servicos/localização-de-pessoas'
+          routerTo: '/servicos/localizacao-de-pessoas'
         },
         {
           name: 'Acompanhamento de filhos',
-          routeTo: '/servicos/acompanhamento-de-filhos'
+          routerTo: '/servicos/acompanhamento-de-filhos'
         },
         {
           name: 'Curso de detetive particular',
-          routeTo: '/servicos/curso-de-detetive-particular'
+          routerTo: '/servicos/curso-de-detetive-particular'
         },
         {
           name: 'Celular VIP',
-          routeTo: '/servicos/celular-VIP'
+          routerTo: '/servicos/celular-VIP'
         }
       ],
 
       LinksMobileCollapseLocalidades: [
-        { name: 'Santa Catarina', routeTo: '/investigacao-empresarial' },
-        { name: 'Paraná', routeTo: '/investigacao-conjugal' },
-        { name: 'Rio Grande do Sul', routeTo: '/investigacao-politica' },
-        { name: 'São Paulo', routeTo: '/localizacao-de-pessoas' },
-        { name: 'Rio de Janeiro', routeTo: '/curso-de-detetive-particular' },
-        { name: 'Distrito Federal', routeTo: '/celular-VIP' },
-        { name: 'Minas Gerais', routeTo: '/curso-de-detetive-particular' },
-        { name: 'Mato Grosso do Sul', routeTo: '/acompanhamento-de-filhos' },
-        { name: 'Goiás', routeTo: '/acompanhamento-de-filhos' }
+        { name: 'Santa Catarina', routerTo: '/detetive-particular-em-Santa-Catarina' },
+        { name: 'Paraná', routerTo: '/detetive-particular-no-Parana' },
+        { name: 'Rio Grande do Sul', routerTo: '/detetive-particular-no-Rio-Grande-do-Sul' },
+        { name: 'São Paulo', routerTo: '/detetive-particular-em-Sao-Paulo' },
+        { name: 'Rio de Janeiro', routerTo: '/detetive-particular-no-Rio-de-Janeiro' },
+        { name: 'Distrito Federal', routerTo: '/detetive-particular-no-Distrito-Federal' },
+        { name: 'Minas Gerais', routerTo: '/detetive-particular-em-Minas-Gerais' },
+        { name: 'Mato Grosso do Sul', routerTo: '/detetive-particular-no-Mato-Grosso-do-Sul' },
+        { name: 'Goiás', routerTo: '/detetive-particular-em-Goias' }
       ]
     }
+  },
+  mounted () {
+    document.body.classList.remove('overflow-hidden')
+    this.Hide_nav = false
   },
   methods: {
     ScrollNavMobile () {
@@ -279,6 +285,10 @@ export default {
 
         &:nth-child(2){
           border-top: 1px solid #ffffffb4;
+        }
+
+        &:focus{
+          outline: none !important;
         }
       }
 

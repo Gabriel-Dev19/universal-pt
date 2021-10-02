@@ -1,0 +1,56 @@
+.modal-content{
+    padding: 0 !important;
+}
+div#modal-whatsapp.modal{
+    padding-left: 0 !important;
+}
+#modal-success .modal-content{
+    background-color: var(--success) !important;
+    border: none;
+}
+#modal-success .modal-header{
+    padding: 5px 8px;
+    border: none;
+}
+#modal-success .modal-body, #modal-success .modal-footer{
+    padding: 0 !important;
+}
+#modal-success .modal-footer{
+    margin: 0 !important;
+}
+
+#modal-success___BV_modal_outer_ .modal-backdrop{
+    background: #000;
+    opacity: 0.6;
+}
+#modal-success___BV_modal_outer_ .modal-backdrop.fade {
+    opacity: 0;
+}
+#modal-success___BV_modal_outer_ .modal-backdrop.show{
+    opacity: 0.6;
+}
+
+.modal-backdrop{
+    width: 100% !important;
+    height: 100% !important;
+}
+.modal-backdrop.show{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.modal-body-success ion-icon{
+    color: white;
+    font-size: 70px !important;
+    min-width: 70px !important;
+}
+.modal-body-success p{
+    font-size: 15px;
+    line-height: 18px;
+}
+.modal-body-success button{
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

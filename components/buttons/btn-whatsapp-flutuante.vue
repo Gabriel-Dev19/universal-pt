@@ -1,5 +1,5 @@
 <template>
-  <div v-scroll="ScrollBtnWhatsapp" class="mae_btn cursor-pointer" :class="{'hide_content': !ShowContent, 'show_content': ShowContent}" @click="ToggleWhats">
+  <div class="mae_btn cursor-pointer" :class="{'hide_content': !ShowContent, 'show_content': ShowContent}" @click="ToggleWhats">
     <div class="content_btn">
       <div class="header_btn">
         <span v-show="ShowContent" class="times">

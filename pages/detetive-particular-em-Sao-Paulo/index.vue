@@ -2,32 +2,27 @@
   <div>
     <Home
       name-btn="Veja as cidades"
-      hash-btn="servicos"
+      hash-btn="cidades"
       title-principal="Detetive particular no estado de São Paulo"
     />
-    <section class="pt-100">
-      <div class="container">
-        <h1 class="font-teko position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
-          Contate um detetive particular em São Paulo
-          <div class="separation-tema" />
-        </h1>
-        <p class="mt-35 text-center fw-500 px-0">
-          A <b>Agência de Detetives Graziella Bastos</b> está em <b>São Paulo</b> e queremos ajudar você a desvendar suas
-          dúvidas. Com mais de 15 anos de experiência e muitos casos resolvidos, atuamos em todo o
-          território nacional.
+    <div class="container container-text-cidades row mx-auto justify-content-center">
+      <div class="col-10 px-0">
+        <h2 class="azul mb-3 text-center">
+          Encontre um detetive em São Paulo
+        </h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit blanditiis, minus tempora porro
+          vero quos voluptatem velit quae facere quis dolorem quod iste, itaque sequi corporis dolores
+          tempore accusantium voluptatum!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit blanditiis, minus tempora porro
+          vero quos voluptatem velit quae facere quis dolorem quod iste, itaque sequi corporis dolores
+          tempore accusantium voluptatum!
         </p>
-        <p class="text-center fw-500 px-0">
-          Nossa agência é especializada em investigações de caráter particular, conjugal, empresarial, acompanhamento de
-          filhos, localização de bens e pessoas desaparecidas, levantamento de provas para advogados, dentre outras.
-          Seja qual for o seu problema e complexidade do caso que você vem enfrentando, a Agência de Detetives
-          Graziella Bastos terá a satisfação em ajuda-lo a desvendar.
-        </p>
-        <h1 class="font-teko d-flex text-center text-uppercase mt-90 justify-content-center position-relative mb-1">
+        <h2 id="cidades" class="azul text-center">
           Confira as cidades atendidas
-          <div class="separation-tema" />
-        </h1>
+        </h2>
       </div>
-    </section>
+    </div>
     <section class="col-12 mt-50 px-0">
       <div class="container px-xs-0">
         <!-- Cidades S -->
@@ -50,7 +45,7 @@
 export default {
   layout: 'layoutSobre',
   head: {
-    title: 'Detetive particular em São Paulo - Agência de detetives Graziella Bastos'
+    title: 'Detetive particular em São Paulo - Universal Detetives Particulares'
   },
   methods: {
     SaoPaulo () {
@@ -75,6 +70,9 @@ export default {
     bottom: -1px;
     border-radius: 3px;
     background-color: var(--roxo_escuro);
+  }
+  .container-text-cidades{
+    padding-top: 100px;
   }
   ol.carousel-indicators li{
     width: 13px !important;

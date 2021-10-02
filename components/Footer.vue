@@ -60,7 +60,7 @@
     <div class="notas">
       <div class="container">
         <p class="mb-0 text-center text-lg-left col-lg px-0">
-          &copy; Copiright - Universal Detetives - Todos os direitos reservados
+          &copy; Copyright - Universal Detetives - Todos os direitos reservados
         </p>
         <a class="text-center text-lg-right col-lg px-0" href="https://wa.me/5588996912604?text=Olá,+Gabriel+gostaria+de+receber+mais+informações+sobre+seu+trabalho+como+programador" target="_blank" rel="noopener noreferrer">
           Projetado e desenvolvido por Gabriel Camurça <ion-icon name="logo-vue" />
@@ -111,42 +111,15 @@ export default {
         }
       ],
       links_rodape_localidades: [
-        {
-          name: 'Santa Catarina',
-          routerTo: '/'
-        },
-        {
-          name: 'Paraná',
-          routerTo: '/'
-        },
-        {
-          name: 'Rio Grande do Sul',
-          routerTo: '/'
-        },
-        {
-          name: 'São Paulo',
-          routerTo: '/'
-        },
-        {
-          name: 'Rio de Janeiro',
-          routerTo: '/'
-        },
-        {
-          name: 'Distrito Federal',
-          routerTo: '/'
-        },
-        {
-          name: 'Minas Gerais',
-          routerTo: '/'
-        },
-        {
-          name: 'Mato Grosso do Sul',
-          routerTo: '/'
-        },
-        {
-          name: 'Goiás',
-          routerTo: '/'
-        }
+        { name: 'Santa Catarina', routerTo: '/detetive-particular-em-Santa-Catarina' },
+        { name: 'Paraná', routerTo: '/detetive-particular-no-Parana' },
+        { name: 'Rio Grande do Sul', routerTo: '/detetive-particular-no-Rio-Grande-do-Sul' },
+        { name: 'São Paulo', routerTo: '/detetive-particular-em-Sao-Paulo' },
+        { name: 'Rio de Janeiro', routerTo: '/detetive-particular-no-Rio-de-Janeiro' },
+        { name: 'Distrito Federal', routerTo: '/detetive-particular-no-Distrito-Federal' },
+        { name: 'Minas Gerais', routerTo: '/detetive-particular-em-Minas-Gerais' },
+        { name: 'Mato Grosso do Sul', routerTo: '/detetive-particular-no-Mato-Grosso-do-Sul' },
+        { name: 'Goiás', routerTo: '/detetive-particular-em-Goias' }
       ]
     }
   }

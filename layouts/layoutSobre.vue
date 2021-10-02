@@ -10,14 +10,14 @@
     <Faq />
     <Contato />
     <Footer />
-    <btn-whatsapp-flutuante />
+    <btnWhatsappFlutuante />
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import VueScrollTo from '../node_modules/vue-scrollto'
-import BtnWhatsappFlutuante from '~/components/buttons/btn-whatsapp-flutuante.vue'
+import btnWhatsappFlutuante from '~/components/buttons/btn-whatsapp-flutuante.vue'
 Vue.use(VueScrollTo)
 Vue.directive('scroll', {
   inserted (el, binding) {
@@ -30,6 +30,6 @@ Vue.directive('scroll', {
   }
 })
 export default {
-  components: { BtnWhatsappFlutuante }
+  components: { btnWhatsappFlutuante }
 }
 </script>

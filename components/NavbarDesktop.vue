@@ -31,7 +31,7 @@
                 :class="{'position-right': Nav_Scroll}"
               >
                 <div class="box_content shadow-lg">
-                  <nuxt-link v-for="items in items_servicos" :key="items.name" :to="items.routeTo" class="btn links_box_dropdown">
+                  <nuxt-link v-for="items in items_servicos" :key="items.name" :to="items.routerTo" class="btn links_box_dropdown">
                     {{ items.name }}
                     <div class="circulo_link">
                       <ion-icon name="chevron-forward-outline" />
@@ -55,7 +55,7 @@
                 :class="{'position-right': Nav_Scroll}"
               >
                 <div class="box_content shadow-lg">
-                  <nuxt-link v-for="items in items_localidades" :key="items.name" :to="items.routeTo" class="btn links_box_dropdown">
+                  <nuxt-link v-for="items in items_localidades" :key="items.name" :to="items.routerTo" class="btn links_box_dropdown">
                     {{ items.name }}
                     <div class="circulo_link">
                       <ion-icon name="chevron-forward-outline" />
@@ -90,24 +90,24 @@ export default {
       Time_Espera_Dropdown_Servicos: undefined,
       Time_Espera_Dropdown_Localidades: undefined,
       items_servicos: [
-        { name: 'Investigação empresarial', routeTo: '/servicos/investigacao-empresarial' },
-        { name: 'Investigação conjugal', routeTo: '/servicos/investigacao-conjugal' },
-        { name: 'Investigação política', routeTo: '/servicos/investigacao-politica' },
-        { name: 'Localização de pessoas', routeTo: '/servicos/localizacao-de-pessoas' },
-        { name: 'Curso de detetive particular', routeTo: '/servicos/curso-de-detetive-particular' },
-        { name: 'Acompanhamento de filhos', routeTo: '/servicos/acompanhamento-de-filhos' },
-        { name: 'Celular VIP', routeTo: '/servicos/celular-VIP' }
+        { name: 'Investigação empresarial', routerTo: '/servicos/investigacao-empresarial' },
+        { name: 'Investigação conjugal', routerTo: '/servicos/investigacao-conjugal' },
+        { name: 'Investigação política', routerTo: '/servicos/investigacao-politica' },
+        { name: 'Localização de pessoas', routerTo: '/servicos/localizacao-de-pessoas' },
+        { name: 'Curso de detetive particular', routerTo: '/servicos/curso-de-detetive-particular' },
+        { name: 'Acompanhamento de filhos', routerTo: '/servicos/acompanhamento-de-filhos' },
+        { name: 'Celular VIP', routerTo: '/servicos/celular-VIP' }
       ],
       items_localidades: [
-        { name: 'Santa Catarina', routeTo: '/detetive-particular-em-Santa-Catarina' },
-        { name: 'Paraná', routeTo: '/detetive-particular-no-Parana' },
-        { name: 'Rio Grande do Sul', routeTo: '/detetive-particular-no-Rio-Grande-do-Sul' },
-        { name: 'São Paulo', routeTo: '/detetive-particular-em-Sao-Paulo' },
-        { name: 'Rio de Janeiro', routeTo: '/detetive-particular-no-Rio-de-Janeiro' },
-        { name: 'Distrito Federal', routeTo: '/detetive-particular-no-Distrito-Federal' },
-        { name: 'Minas Gerais', routeTo: '/detetive-particular-em-Minas-Gerais' },
-        { name: 'Mato Grosso do Sul', routeTo: '/detetive-particular-no-Mato-Grosso-do-Sul' },
-        { name: 'Goiás', routeTo: '/detetive-particular-em-Goias' }
+        { name: 'Santa Catarina', routerTo: '/detetive-particular-em-Santa-Catarina' },
+        { name: 'Paraná', routerTo: '/detetive-particular-no-Parana' },
+        { name: 'Rio Grande do Sul', routerTo: '/detetive-particular-no-Rio-Grande-do-Sul' },
+        { name: 'São Paulo', routerTo: '/detetive-particular-em-Sao-Paulo' },
+        { name: 'Rio de Janeiro', routerTo: '/detetive-particular-no-Rio-de-Janeiro' },
+        { name: 'Distrito Federal', routerTo: '/detetive-particular-no-Distrito-Federal' },
+        { name: 'Minas Gerais', routerTo: '/detetive-particular-em-Minas-Gerais' },
+        { name: 'Mato Grosso do Sul', routerTo: '/detetive-particular-no-Mato-Grosso-do-Sul' },
+        { name: 'Goiás', routerTo: '/detetive-particular-em-Goias' }
       ],
       redes_sociais: [
         { icon: 'logo-twitter', linkTo: '/' },

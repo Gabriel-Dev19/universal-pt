@@ -4,6 +4,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // server: {
+  //   host: '0.0.0.0' // default: localhost,
+  // },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Universal Detetives',
@@ -91,7 +95,7 @@ export default {
   },
 
   loading: {
-    color: '#6c5ce7',
+    color: '#008ccc',
     height: '3px',
     continuous: true
   },

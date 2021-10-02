@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
 @import url(./carousel-settings.css);
+@import url(./modal-settings.scss);
 
 :root{
     /*------- Bootstrap -------*/
@@ -278,39 +279,6 @@ h2{
 }
 .pl-65{
     padding-left: 65px;
-}
-.modal-content{
-    padding: 0 !important;
-    background: transparent !important;
-}
-div#modal-whatsapp.modal{
-    padding-left: 0 !important;
-}
-#modal-whatsapp .modal-body, #modal-whatsapp .modal-header, #modal-whatsapp .modal-footer{
-    padding: 0 !important;
-}
-#modal-whatsapp .modal-footer{
-    margin: 0 !important;
-}
-
-#modal-whatsapp___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.8;
-}
-#modal-whatsapp___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-whatsapp___BV_modal_outer_ .modal-backdrop.show{
-    opacity: 0.8;
-}
-
-.modal-backdrop{
-    width: 100% !important;
-    height: 100% !important;
-}
-.modal-backdrop.show{
-    width: 100% !important;
-    height: 100% !important;
 }
 
 .text-preto-cidades{

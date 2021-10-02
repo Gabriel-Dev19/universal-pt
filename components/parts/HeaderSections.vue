@@ -88,7 +88,7 @@ export default {
       border-radius: 25px;
       display: flex;
       flex-wrap: wrap;
-      align-items: start;
+      align-items: center;
 
       @media (max-width: 576px) {
         margin-top: 200px;
