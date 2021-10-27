@@ -13,11 +13,21 @@
           </div>
         </div>
         <transition enter-active-class="animate_show_content_whatsapp">
-          <h5 v-show="ShowContent" class="mb-0 font-wide" @click.stop="">
-            Canal de atendimento
-          </h5>
+          <div v-show="ShowContent" class="mae_texto">
+            <h5 class="mb-1 font-wide" @click.stop="">
+              Canal de atendimento
+            </h5>
+            <p class="small mb-1">
+              Fale com um especialista na sua região.
+            </p>
+            <div class="d-flex small align-items-center">
+              <div class="bolinha-verde" />
+              <b>Atendimento 24h</b>
+            </div>
+          </div>
         </transition>
       </div>
+      <hr>
       <transition enter-active-class="animate_show_content_whatsapp" leave-active-class="animate_hide_content_whatsapp">
         <div v-show="ShowContent" class="content_numeros" @click.stop="">
           <a v-for="item in numeros_whats" :key="item.name" :href="`https://wa.me/55${item.numeroLink}?text=Olá,+estou+visitando+o+site+da+Universal+Detetives+e+gostaria+de+receber+mais+informações`" target="_blank" class="pl-4 d-block">
@@ -376,6 +386,18 @@ export default {
     animation-direction: reverse;
   }
 
+  @keyframes animateBolinhaOn {
+    from{
+      transform: scale3d(1, 1, 1);
+    }
+    50%{
+      transform: scale3d(0.5, 0.5, 0.5);
+    }
+    to{
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
   .mae_btn{
     position: fixed;
     bottom: 0;
@@ -392,7 +414,7 @@ export default {
     transition: all .7s;
 
     &.show_content{
-      width: 332px;
+      width: 342px;
       height: 442px;
     }
     &.hide_content{
@@ -437,17 +459,33 @@ export default {
           cursor: pointer;
         }
 
-        h5{
+        .mae_texto{
           width: calc(100% - 55px);
           margin-left: auto;
+
+          p{
+            line-height: 15px;
+          }
+
+          .bolinha-verde{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-bottom: 0.5px;
+            background-color: var(--success);
+            animation-name: animateBolinhaOn;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+          }
         }
       }
 
       .content_numeros{
-        height: calc(100% - 60px);
+        height: calc(100% - 90px);
         width: 100%;
         padding-bottom: 40px;
-        margin-top: 28px;
+        margin-top: 18px;
         overflow-y: scroll;
 
         a{

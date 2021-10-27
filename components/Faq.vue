@@ -20,12 +20,12 @@
       </div>
       <div class="mae_perguntas col-lg ml-lg-5 pl-lg-5 px-0">
         <div v-for="(item, index) in faqs" :key="item.question" class="faq">
-          <button v-b-toggle="'faq-' + index" class="question text-left btn px-0">
+          <button v-b-toggle="`faq-${index}`" class="question text-left btn px-0">
             <h6>{{ item.question }}</h6>
             <ion-icon class="ml-2" name="add-outline" />
             <ion-icon class="ml-2" name="remove-outline" />
           </button>
-          <b-collapse :id="'faq-' + index">
+          <b-collapse :id="`faq-${index}`">
             <div class="response">
               {{ item.response }}
             </div>
