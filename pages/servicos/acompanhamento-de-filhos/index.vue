@@ -14,36 +14,24 @@
         parte-azul="Serviços:"
         title-header="Acompanhamento de filhos"
         subtitle="Somos uma agência comprometida com a excelência e a dedicação"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis
-        aliquid perspiciatis quos, sequi ratione sunt possimus corrupti velit porro? Nobis
-        ipsa dicta quasi repellendus, ducimus et deleniti tenetur delectus?"
+        description="Os seus filhos já não se contentam em ficar debaixo da sua vista, querem sair à noite com os
+        amigos, é normal. No entanto é necessário prevenir excessos..."
       />
       <div class="container-text">
         <h2 class="azul mb-3">
-          Como a universal trabalha?
+          O que preciso saber?
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
+          Os seus filhos já não se contentam em ficar debaixo da sua vista, querem sair à noite com os amigos, é normal. No entanto é necessário prevenir excessos...
         </p>
-        <h2 class="azul mb-3">
-          Algum outro tema?
-        </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
+          Os sinais de comportamento desviante nos jovens alertam para que sejam redobradas as atenções numa fase que se pode revelar complicada para uma família.
+        </p>
+        <p>
+          Como sabemos, por vezes a irreverência dos jovens compromete qualquer tentativa de abordagem por parte dos pais, que se esforçam por entender as bruscas mudanças de comportamento, temendo que muitas das vezes o jovem envergue pelo caminho da delinquência e do crime, e do consumo de drogas e entorpecentes.
+        </p>
+        <p>
+          Uma investigação deste género servirá para que os pais percebam em que tipo de atividades o jovem estará envolvido, em que meio se encontra inserido, e quais as pessoas que o rodeiam.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato name="Fale com um especialista" variation="lg-azul" />
@@ -58,7 +46,10 @@ import HeaderSections from '~/components/parts/HeaderSections.vue'
 
 export default {
   components: { HeaderSections, ButtonScrollContato },
-  layout: 'layoutSobre'
+  layout: 'layoutSobre',
+  head: {
+    title: 'Acompanhamento de filhos :: Universal Detetives'
+  }
 }
 </script>
 <style lang="scss" scoped>

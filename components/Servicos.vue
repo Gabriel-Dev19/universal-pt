@@ -9,9 +9,10 @@
         parte-azul="Nossos serviços"
         title-header="de investigação particular"
         subtitle="Realizamos todos os tipos de serviços de investigação particular"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          quam voluptatem at porro commodi excepturi consectetur impedit animi, eum ratione saepe,
-          magni aliquam ad? Voluptatibus assumenda voluptatem voluptas dolores amet!"
+        description="Conheça os nossos serviços de investigação direcionados para particulares e empresas.
+        Averiguamos todo o tipo de situações dentro do âmbito privado, resolvemos os mais variados
+        assuntos, tais como problemas com filhos menores, casos conjugais, setor industrial, comercial,
+        provas para advogados e muito mais. Consulte-nos!"
       />
       <div class="mae_cards">
         <div v-for="items in cardsServices" :key="items.tile" class="cards border">
@@ -57,7 +58,9 @@ export default {
           altImg: 'Investigação empresarial',
           badge: 'Aividades ilícitas',
           title: 'Investigação empresarial',
-          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          description: `Existem graves acontecimentos de ordem administrativa e laboral com que por vezes as empresas
+          se deparam. Fatores determinantes
+          de origem interna ou externa, colidem com os interesses econômicos, jurídicos e sociais da empresa.`,
           linkTitle: 'Investigação empresarial',
           routerTo: '/servicos/investigacao-empresarial'
         },
@@ -66,7 +69,10 @@ export default {
           altImg: 'Investigação conjugal',
           badge: 'Infidelidade e traição',
           title: 'Investigação conjugal',
-          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          description: `Quando os ciúmes e as desconfianças de traição, brigas e discussões sobre a infidelidade
+          do cônjuge são frequentes na vida do casal, pode ter certeza que é a hora de contratar um profissional
+          de investigação particular para tentar descobrir a verdade e acalmar seus ânimos afim de ter sua tão
+          sonhada paz novamente.`,
           linkTitle: 'Investigação conjugal',
           routerTo: '/servicos/investigacao-conjugal'
         },
@@ -75,7 +81,10 @@ export default {
           altImg: 'Investigação politica',
           badge: 'Eleições fraudulentas',
           title: 'Investigação politica',
-          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          description: `A equipe da Universal Detetives está apta a resolver desde os simples até os mais complexos casos
+          de investigação pública e política. Sempre mantendo o foco, nossos agentes recebem treinamentos para
+          estarem sempre bem informados, e assim, poderem chegar ao melhor resultado final desejado pelo cliente
+          com fatos e dados evidenciados.`,
           linkTitle: 'Investigação politica',
           routerTo: '/servicos/investigacao-politica'
         },
@@ -84,7 +93,8 @@ export default {
           altImg: 'Localizacao de pessoas',
           badge: 'Pessoas desaparecidas',
           title: 'Localizacao de pessoas',
-          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          description: `Localizamos pessoas desaparecidas, familiares e amigos que o tempo se encarregou de afastar
+          ou que eventualmente possam ter deixado de dar notícias, voluntária ou involuntariamente.`,
           linkTitle: 'Localizacao de pessoas',
           routerTo: '/servicos/localizacao-de-pessoas'
         },
@@ -93,7 +103,10 @@ export default {
           altImg: 'Acompanhamento de filhos',
           badge: 'Filhos rebeldes',
           title: 'Acompanhamento de filhos',
-          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          description: `Como sabemos, por vezes a irreverência dos jovens compromete qualquer tentativa de abordagem
+          por parte dos pais, que se esforçam por entender as bruscas mudanças de comportamento, temendo
+          que muitas das vezes o jovem envergue pelo caminho da delinquência e do crime, e do consumo de
+          drogas e entorpecentes.`,
           linkTitle: 'Acompanhamento de filhos',
           routerTo: '/servicos/acompanhamento-de-filhos'
         },
@@ -102,7 +115,9 @@ export default {
           altImg: 'Celular VIP',
           badge: 'Celular VIP',
           title: 'Celular VIP',
-          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          description: `Celular VIP é um incrível aplicativo de monitoramento móvel! Através dele você poderá gravar tudo,
+          desde o histórico de chamadas, mensagens de texto, as palavras digitadas, mesmo as deletadas, em todos os apps,
+          como Facebook e mais.`,
           linkTitle: 'Celular VIP',
           routerTo: '/servicos/celular-VIP'
         },
@@ -111,7 +126,9 @@ export default {
           altImg: 'Curso de detetive particular universal detetives',
           badge: 'aprendizado',
           title: 'Curso de detetive',
-          description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga nemo eum quis cumque dignissimos repellat fugit recusandae maxime tempore velit, exercitationem sequi',
+          description: `Venha se especializar com quem realmente entende do assunto. Realizando nosso Curso de Detetive
+          Particular da Universal Detetives, você estará recebendo online um material de qualidade para estudar em suas
+          horas vagas, dentro do seu próprio ritmo.`,
           linkTitle: 'Curso de detetive',
           routerTo: '/servicos/curso-de-detetive-particular'
         }
@@ -182,6 +199,11 @@ export default {
         }
 
         p{
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
           margin-bottom: 0 !important;
           font-size: 15px;
         }

@@ -7,9 +7,10 @@
           Perguntas frequentes
         </h2>
         <p class="col-12 px-0 mb-0 mt-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime eveniet quisquam doloribus,
-          fugiat quod enim, provident dolores, ex iusto mollitia aut pariatur sapiente alias non tempora
-          ut molestiae? Pariatur!
+          A profissão do detetive particular é completamente rodeada de mistérios. Consequentemente, é normal
+          que surjam diversas perguntas relacionadas ao dia a
+          dia desses profissionais e às agências de detetives. Afinal, existem muitos equívocos comuns
+          sobre o que ou como um investigador realmente é.
         </p>
         <div class="col-12 mt-4 px-0">
           <ButtonScrollContato name="Faça uma pergunta" variation="lg-azul" />
@@ -21,14 +22,12 @@
       <div class="mae_perguntas col-lg ml-lg-5 pl-lg-5 px-0">
         <div v-for="(item, index) in faqs" :key="item.question" class="faq">
           <button v-b-toggle="`faq-${index}`" class="question text-left btn px-0">
-            <h6>{{ item.question }}</h6>
+            <h6 v-html="item.question" />
             <ion-icon class="ml-2" name="add-outline" />
             <ion-icon class="ml-2" name="remove-outline" />
           </button>
           <b-collapse :id="`faq-${index}`">
-            <div class="response">
-              {{ item.response }}
-            </div>
+            <div class="response" v-html="item.response" />
           </b-collapse>
         </div>
       </div>
@@ -44,49 +43,146 @@ export default {
     return {
       faqs: [
         {
-          question: 'Alguma pergunt',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'O que faz um <br> detetive particular?',
+          response: `Na ficção, o detetive normalmente é um sujeito rodeado de mistérios
+          que ajuda a polícia a desvendar crimes e, por consequência, vive muitas situações de perigo.
+          Um detetive particular, na realidade, é um profissional capacitado para conduzir uma investigação, a fim
+          de descobrir certas informações e coletar as evidências pertinentes para cada cliente. Na vida real,
+          portanto, ele pode trabalhar em diversos tipos de casos, inclusive que não sejam criminais.
+          <br>
+          <br>
+          Existem várias tarefas que fazem parte do escopo de atividades de um detetive particular, sobretudo porque
+          existe uma variedade de serviços que são oferecidos para os seus clientes. Isso envolve fazer pesquisas
+          online, entrevistar pessoas, ficar de campana, seguir o investigado, se infiltrar nos lugares e etc.
+          `
         },
         {
-          question: 'Alguma pergun',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'Quais são os tipos de investigações realizadas por um detetive particular?',
+          response: `O detetive particular pode realizar diversos tipos de investigação, como casos de
+          direito de família, incluindo custódia dos filhos, divórcio e de pensão alimentícia. Eles também
+          podem ser contratados para ajudar a localizar ativos, localizar documentos ou fazer verificações
+          de antecedentes. Obviamente esses são apenas alguns exemplos do campo de atuação desse profissional.
+          <br>
+          <br>
+          De forma geral, entre as possibilidades de atuação de um detetive particular, podem ser destacadas:
+          <br>
+          <br>
+          <ul class="p-0 pl-4">
+            <li>
+              Investigação conjugal;
+            </li>
+            <li>
+              Investigação empresarial;
+            </li>
+            <li>
+              Investigação familiar;
+            </li>
+            <li>
+              Contrainteligência;
+            </li>
+            <li>
+              Monitoramento;
+            </li>
+            <li>
+              Localização de pessoas;
+            </li>
+          </ul>
+          `
         },
         {
-          question: 'Alguma pergu',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'Quanto custa para contratar um detetive particular?',
+          response: `Essa pergunta não tem uma resposta exata. Isso porque os custos da
+          investigação dependem de diversos fatores, como por exemplo o tipo de investigação, o tempo que
+          vai durar todo o processo investigativo, a quantidade de profissionais envolvidos e etc. Mas, em
+          média, os custos são:
+          <br>
+          <br>
+          <ul class="p-0 pl-4">
+            <li>
+              Investigação conjugal – R$ 1.000 a R$ 5.000;
+            </li>
+            <li>
+              Investigação empresarial – R$ 5.000 a R$ 20.000;
+            </li>
+            <li>
+              Investigação familiar – R$ 1.000 a R$ 5.000;
+            </li>
+            <li>
+              Contra inteligência – R$ 2.000 a R$ 10.000;
+            </li>
+            <li>
+              Localização de pessoas – R$ 2.000 a R$ 10.000;
+            </li>
+            <li>
+              Monitoramento – R$ 1.000 a R$ 1.200 (diária);
+            </li>
+            <li>
+              Investigação particular – R$ 1.000 a R$ 5.000.
+            </li>
+          </ul>
+          <br>
+          <br>
+          É válido ressaltar mais uma vez, no entanto, que como cada caso possui as suas particularidades,
+          o custo pode ser bastante variável. Essas médias citadas acima, portanto, não fazem parte de uma
+          tabela de preços oficial, podendo os valores serem diferentes na hora da contratação.
+          `
         },
         {
-          question: 'Alguma perg',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'Quanto tempo dura <br> uma investigação?',
+          response: `Outra pergunta que não tem uma resposta exata, pois o tempo que dura uma investigação
+          depende da complexidade de cada caso. Se o investigado for uma pessoa mais reservada, por exemplo, pode
+          levar mais tempo para o detetive particular poder reunir as informações necessárias e coletar as provas
+          que precisa. Contudo, também existem algumas estimativas. Mas, novamente, são apenas uma média:
+          <br>
+          <br>
+          <ul class="p-0 pl-4">
+            <li>
+              Investigação conjugal e familiar de 05 a 10 dias;
+            </li>
+            <li>
+              Investigação empresarial de 05 a 90 dias;
+            </li>
+          </ul>
+          `
         },
         {
-          question: 'Alguma per',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'A pessoa investigada pode acabar descobrindo sobre a investigação?',
+          response: `O detetive particular deve atuar seguindo o código de ética da profissão, mantendo o máximo sigilo
+          e discrição durante o andamento dos processos investigativos. Obviamente, existem sim riscos da pessoa investigada
+          descobrir sobre a investigação. Principalmente porque o próprio cliente pode acabar deixando escapar essa informação
+          por conta da ansiedade que é gerada ao longo do trabalho. Por isso, é muito importante saber controlar as próprias
+          emoções e manter o comportamento normal durante o período de investigações.
+          <br>
+          <br>
+          Alguns cuidados ainda são recomendados, como mudar as senhas de todos os dispositivos e contas de e-mail. Ou até
+          mesmo criar um e-mail novo somente para receber o material do resultado das investigações. O sigilo por parte do
+          cliente também é importante, sobretudo se tiver amigos em comum com a pessoa investigada.
+          <br>
+          <br>
+          Mas, de qualquer forma, o detetive tem o treinamento adequado para essas situações. Todos os procedimentos são
+          informados ao cliente no ato da contratação. Por exemplo, se for percebido que existe a chance da pessoa descobrir,
+          o trabalho será abortado no momento. Dessa forma, garantindo a continuidade da investigação posteriormente.
+          `
         },
         {
-          question: 'Alguma pe',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'Como e quais são as provas coletadas pelo detetive particular?',
+          response: `Para ajudá-lo a conduzir as investigações, o detetive particular pode contar com a ajuda de diversos
+          equipamentos tecnológicos, tais como câmeras, escutas e rastreadores. Dessa forma, é possível coletar vários
+          tipos de provas durante uma investigação particular. Como, por exemplo, fotos, vídeos, áudios, localizações e etc.`
         },
         {
-          question: 'Alguma perguntaa',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'As provas podem ser usadas em processos judiciais?',
+          response: `Sim, as evidências coletadas pelo detetive particular podem ser usadas como provas em processos
+          judiciais! Contudo, é necessário que tanto o profissional quanto o cliente tenha auxílio jurídico para tal.
+          E cabe ao detetive seguir o código de ética da profissão e agir em conformidade com as leis vigentes, prezando
+          sempre pela legitimidade e legalidade das provas obtidas ao longo do processo investigativo.`
         },
         {
-          question: 'Alguma perguntaaa',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
-        },
-        {
-          question: 'Alguma perguntaaaa',
-          response: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum suscipit
-                  deleniti doloremque possimus aut esse sapiente numquam`
+          question: 'Quais os diferenciais nos serviços prestados pela Universal Detetives?',
+          response: `A Universal Detetives é uma empresa que está há mais de 20 anos atuando na área de investigação
+          particular, oferecendo diversos tipos de investigação. Nossos diferenciais incluem uma equipe de detetives
+          particulares altamente qualificados, transparência em todo o processo, qualidade do material apresentado,
+          procedimentos de segurança para preservar o sigilo do nosso cliente e grande retorno aos mesmos.`
         }
       ]
     }

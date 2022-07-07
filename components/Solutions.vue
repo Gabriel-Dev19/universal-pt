@@ -54,21 +54,21 @@ export default {
       cars_solutions: [
         {
           icon: 'finger-print',
-          title: 'Registro de provas e documentação',
-          description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero iste nesciunt
-            ipsum dolor sit am adipisicing elit. Facilis, libero iste nesciunt`
+          title: 'Missão',
+          description: `Entregar resultados exatos e proporcionar mais segurança aos nossos clientes, por meio
+          da atuação especializada e do fornecimento de serviços de qualidade e excelência em investigação.`
         },
         {
-          icon: 'finger-print',
-          title: 'Registro de provas e',
-          description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero iste nesciunt
-            ipsum dolor sit am adipisicing elit. Facilis, libero iste nesciunt`
+          icon: 'eye-outline',
+          title: 'Visão',
+          description: `Ser reconhecida pelos clientes como referência nacional no ramo de investigação,
+          por meio da ética, do compromisso e do profissionalismo.`
         },
         {
-          icon: 'finger-print',
-          title: 'Registro de provas e documentação completa',
-          description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero iste nesciunt
-            ipsum dolor sit am adipisicing elit. Facilis, libero iste nesciunt`
+          icon: 'trophy-outline',
+          title: 'Valores',
+          description: `Ética, compromisso e profissionalismo - esses são os três pilares que norteiam nossas
+          atividades. Tudo para oferecer aos nossos clientes produtos, serviços e parcerias de excelência no que fazemos.`
         }
       ],
       numeros: [

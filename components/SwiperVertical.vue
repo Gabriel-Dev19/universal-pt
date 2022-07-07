@@ -9,18 +9,31 @@
           </h2>
         </div>
         <p class="p-title mt-3 mt-md-0">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias architecto magni
-          impedit rem facere ex soluta ipsum aut. Neque, quae? Earum aliquid placeat.
+          A atuação dos detetives da Universal Agência de Detetives Particulares pauta-se em permanência
+          pelo rigoroso sigilo dado as solicitações dos clientes.
         </p>
       </div>
       <div class="col-5 d-none d-lg-block px-0 img_valores">
         <img src="../assets/img/valores.webp" class="img-fluid shadow border" alt="">
       </div>
       <div class="col-lg-5 px-0 mae_swiper" @mouseenter="stopSlide" @mouseleave="runSlide">
+        <div class="d-flex flex-column slides-mobile d-lg-none">
+          <div v-for="swipers in items" :key="swipers.title" class="swiper-slide">
+            <div class="circulo_icon">
+              <ion-icon :name="swipers.icon" />
+            </div>
+            <h6>
+              {{ swipers.title }}
+            </h6>
+            <p>
+              {{ swipers.description }}
+            </p>
+          </div>
+        </div>
         <swiper
           id="swiper-valores"
           ref="swiperValores"
-          class="swiper p-2"
+          class="swiper p-2 d-none d-lg-block"
           :options="swiperOption"
         >
           <swiper-slide
@@ -61,33 +74,36 @@ export default {
         spaceBetween: 35,
         grabCursor: true,
         autoplay: {
-          delay: 1500,
+          delay: 4000,
           disableOnInteraction: false
         }
       },
       items: [
         {
-          title: 'Investigação empresarial',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
-          icon: 'cash-outline'
+          title: 'Sigilo garantigo',
+          description: 'Você tem sua privecidade totalmente protegida graças o profissionalismo dos nossos detetives.',
+          icon: 'shield-checkmark-outline'
         },
         {
-          title: 'Investigação conjugal',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
-          icon: 'cash-outline'
+          title: 'Profissionalismo',
+          description: 'Nossa equipe conta com prossionais capacitados que são treinados para coletar qualquer informação com o maior sigilo possível.',
+          icon: 'star-outline'
         },
         {
-          title: 'Investigação política',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
-          icon: 'cash-outline'
+          title: 'Comprometimento',
+          description: 'A Universal Detetives é totalmente comprometida e dedicada em resolver qualquer que seja seu problema',
+          icon: 'ribbon-outline'
         },
         {
-          title: 'Localização de pessoas',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
-          icon: 'cash-outline'
+          title: 'Honestidade',
+          description: 'Além do nosso compromisso com você, temos um compromisso com a verdade, por isso fornecemos apenas informações confiáveis',
+          icon: 'thumbs-up'
         }
       ]
     }
+  },
+  mounted () {
+
   },
   methods: {
     stopSlide () {
@@ -132,47 +148,46 @@ export default {
             height: 60vh !important;
           }
         }
+      }
 
-        .swiper-slide{
-          background-color: white;
-          padding: 20px 30px;
-          box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.179) !important;
-          border-radius: 35px 0 35px 0;
-          color: var(--grafite);
-          width: 100%;
+      .slides-mobile{
+        row-gap: 35px;
+      }
 
-          .circulo_icon{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background-color: var(--cinza_claro);
-            ion-icon{
-              font-size: 28px;
-            }
-          }
-
-          h6{
-            margin-top: 18px;
-            font-weight: 600;
-            font-size: 18px;
-          }
-
-          p{
-            font-size: 14px;
-            margin-bottom: 0 !important;
+      .swiper-slide{
+        background-color: white;
+        padding: 20px 30px;
+        box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.179) !important;
+        border-radius: 35px 0 35px 0;
+        color: var(--grafite);
+        width: 100%;
+        .circulo_icon{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background-color: var(--cinza_claro);
+          ion-icon{
+            font-size: 28px;
           }
         }
-
-        .swiper-slide:nth-child(even){
-          background-color: var(--azul);
-          color: var(--white);
-
-          .circulo_icon{
-            background-color: var(--azul_super_escuro);
-          }
+        h6{
+          margin-top: 18px;
+          font-weight: 600;
+          font-size: 18px;
+        }
+        p{
+          font-size: 14px;
+          margin-bottom: 0 !important;
+        }
+      }
+      .swiper-slide:nth-child(even){
+        background-color: var(--azul);
+        color: var(--white);
+        .circulo_icon{
+          background-color: var(--azul_super_escuro);
         }
       }
     }

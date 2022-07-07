@@ -10,6 +10,7 @@
       />
     </div>
     <Contato />
+    <Footer />
     <btnWhatsappFlutuante />
   </section>
 </template>

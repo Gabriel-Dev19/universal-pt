@@ -34,9 +34,7 @@
       <h1 class="text-white font-wide mt-4 px-0 col-md-8 mx-auto text-center text-uppercase">
         {{ titlePrincipal }}
       </h1>
-      <p v-if="description.length > 1" class="mx-auto px-0 col-md-8 fw-300 text-center text-white">
-        {{ description }}
-      </p>
+      <p v-if="description.length > 1" class="mx-auto px-0 col-md-8 fw-300 text-center text-white" v-html="description" />
       <div v-if="nameBtn.length > 1" class="d-flex mt-4 justify-content-center">
         <button v-scroll-to="optionsScroll" class="button_home btn font-wide">
           {{ nameBtn }}
@@ -86,9 +84,8 @@ export default {
     },
     description: {
       type: String,
-      default: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi iste deleniti
-        dolore quos dicta illum in consectetur aspernatur voluptates culpa amet tempore, repellat
-        quae eos odio vel. Assumenda!`
+      default: `Para a Universal Agência de Detetives sempre haverá uma <br>
+      solução que estará à altura das suas necessidades.`
     },
     hashBtn: {
       type: String,

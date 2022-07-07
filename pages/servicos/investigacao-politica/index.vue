@@ -14,36 +14,30 @@
         parte-azul="Serviços:"
         title-header="Investigação política"
         subtitle="Somos uma agência comprometida com a excelência e a dedicação"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis
-        aliquid perspiciatis quos, sequi ratione sunt possimus corrupti velit porro? Nobis
-        ipsa dicta quasi repellendus, ducimus et deleniti tenetur delectus?"
+        description="Atualmente na situação política do país, os políticos devem estar atentos pois
+        tudo pode ser motivo para a perda de votos, ou mesmo desmascarar desavenças e concorrentes."
       />
       <div class="container-text">
         <h2 class="azul mb-3">
-          Como a universal trabalha?
+          O que preciso saber?
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-        </p>
-        <h2 class="azul mb-3">
-          Algum outro tema?
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
+          A Universal Detetives, conta com equipe especializada para investigações políticas e de políticos, com tecnologia e modelo de processo diferenciado para cada caso.
+          <br>
+          <br>
+          Atualmente na situação política do país, os políticos devem estar atentos pois tudo pode ser motivo para a perda de votos, ou mesmo desmascarar desavenças e concorrentes.
+          <br>
+          <br>
+          A equipe da Universal Detetives está apta a resolver desde os simples até os mais complexos casos de investigação pública e política.
+          <br>
+          <br>
+          Sempre mantendo o foco, nossos agentes recebem treinamentos para estarem sempre bem informados, e assim, poderem chegar ao melhor resultado final desejado pelo cliente com fatos e dados evidenciados.
+          <br>
+          <br>
+          Agindo sempre dentro da lei, portando todas as provas levantadas durante o período investigativo poderão ser usadas em um tribunal. Além de manter compromisso e agindo sempre com o sigilo absoluto.
+          <br>
+          <br>
+          O diferencial da Universal Detetives, além de manter um arsenal de equipamentos de última geração contem uns dos maiores bancos de dados atualizados do país, o que torna nosso trabalho mais rápido e eficiente.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato name="Fale com um especialista" variation="lg-azul" />
@@ -58,7 +52,10 @@ import HeaderSections from '~/components/parts/HeaderSections.vue'
 
 export default {
   components: { HeaderSections, ButtonScrollContato },
-  layout: 'layoutSobre'
+  layout: 'layoutSobre',
+  head: {
+    title: 'Investigação política :: Universal Detetives'
+  }
 }
 </script>
 <style lang="scss" scoped>

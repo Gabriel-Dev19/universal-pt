@@ -8,7 +8,7 @@
         <div class="row mx-0 col-lg-5 px-0">
           <Badge :name="titleBadge" />
           <h2 class="col-12 px-0">
-            <span class="text-azul-escuro"> {{ parteAzul }} </span> {{ titleHeader }}
+            <span class="text-azul-escuro d-block"> {{ parteAzul }} </span> {{ titleHeader }}
           </h2>
         </div>
         <div class="col-lg px-0 ml-lg-5 mt-4 mt-lg-0">
@@ -88,7 +88,7 @@ export default {
       border-radius: 25px;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: flex-start;
 
       @media (max-width: 576px) {
         margin-top: 200px;

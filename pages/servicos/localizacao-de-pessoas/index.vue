@@ -14,36 +14,21 @@
         parte-azul="Serviços:"
         title-header="Localização de pessoas"
         subtitle="Somos uma agência comprometida com a excelência e a dedicação"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis
-        aliquid perspiciatis quos, sequi ratione sunt possimus corrupti velit porro? Nobis
-        ipsa dicta quasi repellendus, ducimus et deleniti tenetur delectus?"
+        description="Localizamos pessoas desaparecidas, familiares e amigos que o tempo se encarregou de
+        afastar ou que eventualmente possam ter deixado de dar notícias, voluntária ou involuntariamente."
       />
       <div class="container-text">
         <h2 class="azul mb-3">
-          Como a universal trabalha?
+          Localização de Pessoas desaparecidas, Familiares ou Amigos
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
+          Localizamos pessoas desaparecidas, familiares e amigos que o tempo se encarregou de afastar ou que eventualmente possam ter deixado de dar notícias, voluntária ou involuntariamente.
         </p>
         <h2 class="azul mb-3">
-          Algum outro tema?
+          Localização de Namorados
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
+          Aquele namorado ou namorada da adolescência não sai da sua cabeça? Aquele "flirt" de verão terminou, mas ficou a lembrança e a vontade do reencontro? Podemos contribuir para que volte a ser a ter um sorriso nos lábios! Entre em contato conosco agora mesmo que teremos a satisfação em lhe ajudar a desvendar essa situação.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato name="Fale com um especialista" variation="lg-azul" />
@@ -58,7 +43,10 @@ import HeaderSections from '~/components/parts/HeaderSections.vue'
 
 export default {
   components: { HeaderSections, ButtonScrollContato },
-  layout: 'layoutSobre'
+  layout: 'layoutSobre',
+  head: {
+    title: 'Localização de pessoas :: Universal Detetives'
+  }
 }
 </script>
 <style lang="scss" scoped>

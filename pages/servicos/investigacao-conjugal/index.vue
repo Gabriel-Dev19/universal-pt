@@ -14,36 +14,19 @@
         parte-azul="Serviços:"
         title-header="Investigação conjugal"
         subtitle="Somos uma agência comprometida com a excelência e a dedicação"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis
-        aliquid perspiciatis quos, sequi ratione sunt possimus corrupti velit porro? Nobis
-        ipsa dicta quasi repellendus, ducimus et deleniti tenetur delectus?"
+        description="Quando os ciúmes e as desconfianças de traição, brigas e discussões sobre a infidelidade
+        do cônjuge são frequentes na vida do casal, pode ter certeza que é a hora de contratar um profissional
+        de investigação particular."
       />
       <div class="container-text">
         <h2 class="azul mb-3">
-          Como a universal trabalha?
+          O que preciso saber?
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-        </p>
-        <h2 class="azul mb-3">
-          Algum outro tema?
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
+          Quando os ciúmes e as desconfianças de traição, brigas e discussões sobre a infidelidade do cônjuge são frequentes na vida do casal, pode ter certeza que é a hora de contratar um profissional de investigação particular para tentar descobrir a verdade e acalmar seus ânimos afim de ter sua tão sonhada paz novamente.
+          <br>
+          <br>
+          A Universal Detetives conta com profissionais qualificados e altamente treinados para poder ajudar você a desvendar essa situação, não perca mais tempo entre em contato conosco hoje mesmo.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato name="Fale com um especialista" variation="lg-azul" />
@@ -58,7 +41,10 @@ import HeaderSections from '~/components/parts/HeaderSections.vue'
 
 export default {
   components: { HeaderSections, ButtonScrollContato },
-  layout: 'layoutSobre'
+  layout: 'layoutSobre',
+  head: {
+    title: 'Investigação conjugal :: Universal Detetives'
+  }
 }
 </script>
 <style lang="scss" scoped>

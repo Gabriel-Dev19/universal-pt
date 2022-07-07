@@ -24,7 +24,7 @@
         <swiper-slide v-for="item in profiles" :key="item.name">
           <div class="content-swiper">
             <div class="circulo-profile">
-              <img :src="item.img" alt="">
+              <ion-icon name="person-outline" />
             </div>
             <div class="mt-2 d-flex">
               <div class="col px-0">
@@ -92,46 +92,25 @@ export default {
       },
       profiles: [
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Silva',
-          profission: 'Gerente de hotel',
-          comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
-              officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
+          name: 'Sofia H.',
+          profission: 'Corretora de imóveis',
+          comment: `(...) A vida continua... é triste constatar que em 20 anos nunca conheci realmente o meu marido...
+          Apesar de estar arrasada com o resultado, só tenho a agradecer vocês! Caso alguma amiga minha precise dos
+          serviços de detetives, com certeza indicarei a Universal Detetives!`
         },
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Gabriel',
-          profission: 'Gerente de hotel',
-          comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
-              officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
+          name: 'Felipe J.',
+          profission: 'Product Manager',
+          comment: `(...) Excelente trabalho! No início estava relutante em contratar este tipo de serviço,
+          mas fiquei bastante satisfeito! Quando voltar a viajar já sei a quem recorrer! Se precisarem
+          de alguma coisa que possa ajudar, estou à disposição! (...)`
         },
         {
-          img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alguma',
-          profission: 'Gerente de hotel',
-          comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
-              officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
-        },
-        {
-          img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Coisa',
-          profission: 'Gerente de hotel',
-          comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
-              officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
-        },
-        {
-          img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Alberto',
-          profission: 'Gerente de hotel',
-          comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
-              officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
-        },
-        {
-          img: require('../assets/img/detetive-lupa.webp'),
-          name: 'José Goiás',
-          profission: 'Gerente de hotel',
-          comment: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vero vitae nostrum a ex,
-              officiis laboriosam, quas nobis, nulla officia voluptatibus maiores`
+          name: 'Antônio M.',
+          profission: 'Gerente de empresa',
+          comment: `(...) Agradecemos imensamente o trabalho de vocês. A administração estava bastante
+          apreensiva em relação ao que o indivíduo estava fazendo, porém tudo ficou altamente esclarecido.
+          Caso necessitemos novamente, a vossa agência será uma referência. Obrigado!`
         }
       ]
     }
@@ -215,13 +194,16 @@ section{
             height: 65px;
             border-radius: 50%;
             border: 4px solid white;
+            background-color: #e6e6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: -50px;
             overflow: hidden;
 
-            img{
-              height: 100%;
-              width: 100%;
-              object-fit: cover;
+            ion-icon{
+              font-size: 35px;
+              min-width: 35px;
             }
           }
 
