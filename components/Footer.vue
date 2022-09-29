@@ -8,13 +8,14 @@
       </div>
       <div class="col-xl mr-xl-5 px-0">
         <p class="text-center text-xl-left">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quam rem dicta praesentium.
-          Libero cumque placeat error repudiandae ullam fugiat adipisci soluta
+          A Universal Agência de Detetives, é uma agência com experiência de 21 anos no ramo
+          de investigação particular. Contamos com um conjunto de profissionais dedicados
+          e qualificados.
         </p>
         <p class="text-center text-xl-left">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quam rem dicta praesentium.
-          Libero cumque placeat error repudiandae adipisicing elit. Sunt quam rem dicta praesentium.
-          Libero cumque placeat error repudiandae
+          Dispomos de uma equipe de trabalho multidisciplinar, profissional e competente.
+          Temos uma vasta gama de serviços de investigação profissionais destinados a
+          empresas e particulares.
         </p>
         <div class="row justify-content-center justify-content-xl-start mt-4 mx-0">
           <a v-for="item in redes_sociais" :key="item.icon" :href="item.href" class="links_quadrados_redes_sociais">
@@ -108,6 +109,10 @@ export default {
         {
           name: 'Curso de detetive',
           routerTo: '/servicos/curso-de-detetive-particular'
+        },
+        {
+          name: 'Política de privacidade',
+          routerTo: '/politica-de-privacidade'
         }
       ],
       links_rodape_localidades: [
@@ -156,6 +161,10 @@ footer{
       &:last-child{
         margin-right: 0 !important;
       }
+    }
+
+    .link-seta{
+      font-size: 15px !important;
     }
   }
 

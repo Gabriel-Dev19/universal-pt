@@ -211,10 +211,18 @@ export default {
       position: relative;
       padding: 0 20px;
 
+      @media (max-width: 575.95px) {
+        padding: 0;
+      }
+
       .link_logo{
         position: absolute;
         top: -5px;
         left: 15px;
+
+        @media (max-width: 575.95px) {
+          left: 0;
+        }
       }
 
       .circulo_branco{
@@ -227,6 +235,10 @@ export default {
         height: 87px;
         border-radius: 50%;
         box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.097) !important;
+
+        @media (max-width: 575.95px) {
+          left: 13px;
+        }
       }
     }
 
@@ -250,6 +262,10 @@ export default {
 
       &.translate-button{
         transform: translateX(25px);
+
+        @media (max-width: 575.95px) {
+          transform: translateX(8px);
+        }
       }
     }
 

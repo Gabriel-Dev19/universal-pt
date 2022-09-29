@@ -71,47 +71,47 @@ export default {
       slides: [
         {
           title: 'Investigação empresarial',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Existem graves acontecimentos de ordem administrativa e laboral com que por vezes as empresas se deparam. Fatores determinantes de origem interna ou externa, colidem com os interesses econômicos, jurídicos e sociais da empresa.',
           icon: 'cash-outline'
         },
         {
           title: 'Investigação conjugal',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Quando os ciúmes e as desconfianças de traição, brigas e discussões sobre a infidelidade do cônjuge são frequentes na vida do casal, pode ter certeza que é a hora de contratar um profissional de investigação particular.',
           icon: 'heart-dislike'
         },
         {
           title: 'Localização de pessoas',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Localizamos pessoas desaparecidas, familiares e amigos que o tempo se encarregou de afastar ou que eventualmente possam ter deixado de dar notícias, voluntária ou involuntariamente.',
           icon: 'locate-outline'
         },
         {
           title: 'Filhos rebeldes',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Os seus filhos já não se contentam em ficar debaixo da sua vista, querem sair à noite com os amigos, é normal. No entanto é necessário prevenir excessos.',
           icon: 'man-outline'
         },
         {
           title: 'Curso de detetive',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Venha se especializar com quem realmente entende do assunto. Realizando nosso Curso de Detetive Particular da Universal Detetives, você estará recebendo online um material de qualidade para estudar em suas horas vagas, dentro do seu próprio ritmo.',
           icon: 'school'
         },
         {
           title: 'Investigação política',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Atualmente na situação política do país, os políticos devem estar atentos pois tudo pode ser motivo para a perda de votos, ou mesmo desmascarar desavenças e concorrentes.',
           icon: 'document-attach-outline'
         },
         {
           title: 'Celular VIP',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Saiba TUDO o que seu filho faz no celular em apenas alguns minutos com o aplicativo fácil de instalar do CELULAR VIP, a maneira mais fácil de supervisionar todas as atividades do telefone do seu filho*',
           icon: 'phone-portrait'
         },
         {
           title: 'Coleta de provas',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Coletamos provas que podem ser usadas em ações judiciais de forma segura e discreta.',
           icon: 'finger-print-outline'
         },
         {
           title: 'Campanas',
-          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, soluta eligendi',
+          description: 'Realizamos campanas de forma discreta dispondo dos melhores detetives particulares.',
           icon: 'footsteps-outline'
         }
       ]
@@ -183,6 +183,11 @@ export default {
         p{
           font-size: 14px;
           margin-bottom: 0 !important;
+          display: -webkit-box !important;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
       .swiper-slide[data-swiper-slide-index="1"],

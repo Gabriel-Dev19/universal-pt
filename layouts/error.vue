@@ -12,6 +12,9 @@
     <Contato />
     <Footer />
     <btnWhatsappFlutuante />
+    <client-only>
+      <Cookie />
+    </client-only>
   </section>
 </template>
 
@@ -19,6 +22,7 @@
 import Vue from 'vue'
 import VueScrollTo from '../node_modules/vue-scrollto'
 import btnWhatsappFlutuante from '~/components/buttons/btn-whatsapp-flutuante.vue'
+import Cookie from '~/components/Cookie.vue'
 Vue.use(VueScrollTo)
 Vue.directive('scroll', {
   inserted (el, binding) {
@@ -31,7 +35,7 @@ Vue.directive('scroll', {
   }
 })
 export default {
-  components: { btnWhatsappFlutuante },
+  components: { btnWhatsappFlutuante, Cookie },
   layout: 'error',
   // eslint-disable-next-line vue/require-prop-types
   props: ['error']

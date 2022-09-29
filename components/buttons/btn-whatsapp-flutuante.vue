@@ -108,10 +108,16 @@ export default {
     this.$root.$on('ShowWhats', () => {
       this.ToggleWhats()
     })
+    this.$root.$on('ShowWhatsRemote', () => {
+      this.ShowWhats()
+    })
   },
   methods: {
     ToggleWhats () {
       this.ShowContent = !this.ShowContent
+    },
+    ShowWhats () {
+      this.ShowContent = true
     }
   }
 }

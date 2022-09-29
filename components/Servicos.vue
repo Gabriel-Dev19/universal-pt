@@ -122,7 +122,7 @@ export default {
           routerTo: '/servicos/celular-VIP'
         },
         {
-          img: require('../assets/img/servicos/celular-vip.webp'),
+          img: require('../assets/img/servicos/curso-de-detetive.jpg'),
           altImg: 'Curso de detetive particular universal detetives',
           badge: 'aprendizado',
           title: 'Curso de detetive',

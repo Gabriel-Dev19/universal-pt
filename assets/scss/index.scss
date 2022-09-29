@@ -164,13 +164,16 @@ button:focus, .btn:focus{
 
 h2{
     font-size: 35px;
-    font-weight: 600;
 
     @media (max-width: 576px) {
         &{
             font-size: 27px;
         }
     }
+}
+
+h2, h3{
+    font-weight: 600;
 
     &.azul{
         color: var(--azul_escuro);
