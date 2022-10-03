@@ -3,7 +3,7 @@
     <Home
       name-btn="Nossos serviços"
       hash-btn="servicos"
-      title-principal="Agência de detetives particulares"
+      title-principal="Agência de detectives privados"
     />
     <CardsSwiper />
     <SwiperVertical />

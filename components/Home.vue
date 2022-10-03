@@ -28,7 +28,7 @@
         </div>
       </div>
       <h5 class="text-white text-center mb-0 text-uppercase mt-2 font-wide">
-        Detetives particulares
+        Detectives Privados
       </h5>
       <div class="separation_home mx-auto col-5" />
       <h1 class="text-white font-wide mt-4 px-0 col-md-8 mx-auto text-center text-uppercase">
@@ -80,7 +80,7 @@ export default {
     },
     titlePrincipal: {
       type: String,
-      default: 'Agência de detetives particulares'
+      default: 'Agência de detectives privados'
     },
     description: {
       type: String,

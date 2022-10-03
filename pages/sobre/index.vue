@@ -36,7 +36,7 @@
           Código de Ética
         </h2>
         <p>
-          A atuação dos detetives da Universal Agência de Detetives Particulares pauta-se em permanência pelo rigoroso sigilo dado as solicitações dos clientes, não aceitando igualmente todo o tipo de investigação que indicie e devasse a privacidade de terceiros, garantindo assim os direitos e garantias de qualquer cidadão, bem como todo tipo de trabalho que coloquem em risco a vida de qualquer pessoa, dispondo do direito de denunciar as autoridades qualquer tipo de situação que promova a utilização de violência física, psicológica ou outra.
+          A atuação dos detetives da Universal Agência de Detectives Privados pauta-se em permanência pelo rigoroso sigilo dado as solicitações dos clientes, não aceitando igualmente todo o tipo de investigação que indicie e devasse a privacidade de terceiros, garantindo assim os direitos e garantias de qualquer cidadão, bem como todo tipo de trabalho que coloquem em risco a vida de qualquer pessoa, dispondo do direito de denunciar as autoridades qualquer tipo de situação que promova a utilização de violência física, psicológica ou outra.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato name="Fale com um especialista" variation="lg-azul" />

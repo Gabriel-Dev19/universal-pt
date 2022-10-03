@@ -3,12 +3,12 @@
     <Home
       name-btn="Veja as cidades"
       hash-btn="cidades"
-      title-principal="Detetive particular no estado de Braga"
+      title-principal="Detective privado no distrito de Braga"
     />
     <div class="container container-text-cidades row mx-auto justify-content-center">
       <div class="col-10 px-0">
         <h2 class="azul mb-3 text-center">
-          Encontre um detetive em Braga
+          Encontre um detective em Braga
         </h2>
         <p class="text-center">
           A UNIVERSAL DETECTIVES está em Braga e desejamos ajudar você a solucionar suas dúvidas. Com <span class="P-negrito">mais de 20 anos de experiência</span> e centenas de casos solucionados, atuamos em todo o território nacional e países do Mercosul. Nosso principal objetivo é esclarecer as dúvidas de nossos clientes, antes de tomar uma atitude diante a situação em que você está vivenciando, é importante que você tenha plena certeza de tudo que está acontecendo.
@@ -94,7 +94,7 @@
 export default {
   layout: 'layoutSobre',
   head: {
-    title: 'Detetive particular em Braga - Universal Detetives Particulares'
+    title: 'Detective privado em Braga - Universal Detectives Privados'
   },
   methods: {
     Barcelos () {

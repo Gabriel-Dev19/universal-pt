@@ -9,7 +9,7 @@
           </h2>
         </div>
         <p class="p-title mt-3 mt-md-0">
-          A atuação dos detetives da Universal Agência de Detetives Particulares pauta-se em permanência
+          A atuação dos detetives da Universal Agência de Detectives Privados pauta-se em permanência
           pelo rigoroso sigilo dado as solicitações dos clientes.
         </p>
       </div>

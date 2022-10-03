@@ -130,7 +130,7 @@ export default {
       LinksMobileCollapseLocalidades: [
         { name: 'Aveiro', routerTo: '/detective-privado-em-Aveiro' },
         { name: 'Braga', routerTo: '/detective-privado-em-Braga' },
-        { name: 'Bragagança', routerTo: '/detective-privado-em-Bragaganca' },
+        { name: 'Bragança', routerTo: '/detective-privado-em-Braganca' },
         { name: 'Castelo Branco', routerTo: '/detective-privado-em-Castelo-Branco' },
         { name: 'Coimbra', routerTo: '/detective-privado-em-Coimbra' },
         { name: 'Évora', routerTo: '/detective-privado-em-Evora' },

@@ -3,7 +3,7 @@
     <Home
       name-btn="Saiba mais"
       hash-btn="sobre"
-      :title-principal="`Detetive particular em ${nameCidades}`"
+      :title-principal="`Detective privado em ${nameCidades}`"
     />
     <div id="sobre" class="container">
       <HeaderSections

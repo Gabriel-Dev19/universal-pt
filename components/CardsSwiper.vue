@@ -111,7 +111,7 @@ export default {
         },
         {
           title: 'Campanas',
-          description: 'Realizamos campanas de forma discreta dispondo dos melhores detetives particulares.',
+          description: 'Realizamos campanas de forma discreta dispondo dos melhores detectives privados.',
           icon: 'footsteps-outline'
         }
       ]
