@@ -54,7 +54,7 @@
                 class="dropdown-localidades"
                 :class="{'position-right': Nav_Scroll}"
               >
-                <div class="box_content shadow-lg">
+                <div class="box_content shadow-lg" style="height: 450px; overflow: auto;">
                   <nuxt-link v-for="items in items_localidades" :key="items.name" :to="items.routerTo" class="btn links_box_dropdown">
                     {{ items.name }}
                     <div class="circulo_link">
@@ -99,15 +99,23 @@ export default {
         { name: 'Celular VIP', routerTo: '/servicos/celular-VIP' }
       ],
       items_localidades: [
-        { name: 'Santa Catarina', routerTo: '/detetive-particular-em-Santa-Catarina' },
-        { name: 'Paraná', routerTo: '/detetive-particular-no-Parana' },
-        { name: 'Rio Grande do Sul', routerTo: '/detetive-particular-no-Rio-Grande-do-Sul' },
-        { name: 'São Paulo', routerTo: '/detetive-particular-em-Sao-Paulo' },
-        { name: 'Rio de Janeiro', routerTo: '/detetive-particular-no-Rio-de-Janeiro' },
-        { name: 'Distrito Federal', routerTo: '/detetive-particular-no-Distrito-Federal' },
-        { name: 'Minas Gerais', routerTo: '/detetive-particular-em-Minas-Gerais' },
-        { name: 'Mato Grosso do Sul', routerTo: '/detetive-particular-no-Mato-Grosso-do-Sul' },
-        { name: 'Goiás', routerTo: '/detetive-particular-em-Goias' }
+        { name: 'Aveiro', routerTo: '/detective-privado-em-Aveiro' },
+        { name: 'Braga', routerTo: '/detective-privado-em-Braga' },
+        { name: 'Bragagança', routerTo: '/detective-privado-em-Bragaganca' },
+        { name: 'Castelo Branco', routerTo: '/detective-privado-em-Castelo-Branco' },
+        { name: 'Coimbra', routerTo: '/detective-privado-em-Coimbra' },
+        { name: 'Évora', routerTo: '/detective-privado-em-Evora' },
+        { name: 'Faro', routerTo: '/detective-privado-em-Faro' },
+        { name: 'Guarda', routerTo: '/detective-privado-em-Guarda' },
+        { name: 'Leiria', routerTo: '/detective-privado-em-Leiria' },
+        { name: 'Lisboa', routerTo: '/detective-privado-em-Lisboa' },
+        { name: 'Portalegre', routerTo: '/detective-privado-em-Portalegre' },
+        { name: 'Porto', routerTo: '/detective-privado-em-Porto' },
+        { name: 'Santarém', routerTo: '/detective-privado-em-Santarem' },
+        { name: 'Setúbal', routerTo: '/detective-privado-em-Setubal' },
+        { name: 'Viana do Castelo', routerTo: '/detective-privado-em-Viana-do-Castelo' },
+        { name: 'Vila Real', routerTo: '/detective-privado-em-Vila-Real' },
+        { name: 'Viseu', routerTo: '/detective-privado-em-Viseu' }
       ],
       redes_sociais: [
         { icon: 'logo-twitter', linkTo: '/' },

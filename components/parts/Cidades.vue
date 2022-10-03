@@ -11,26 +11,20 @@
         :is-reverse="true"
         :img="require('../../assets/img/detetive-lupa.webp')"
         title-badge="sobre nós"
-        parte-azul="Encontre detetives:"
+        parte-azul="Encontre detectives em:"
         :title-header="nameCidades"
         subtitle="Somos uma agência comprometida com a excelência e a dedicação"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis
-        aliquid perspiciatis quos, sequi ratione sunt possimus corrupti velit porro? Nobis
-        ipsa dicta quasi repellendus, ducimus et deleniti tenetur delectus?"
+        description="Atuamos a mais de 20 anos em todo o território nacional além de diversos países do mercosul, solucionando casos de qualquer que seja a complexidade e ajudando a esclarecer todas as dúvidas dos nossos clientes."
       />
       <div class="container-text">
         <h2 class="azul mb-3">
-          Algum tema?
+          Detectives Privados em {{ nameCidades }}
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ex nostrum quam tempora, cupiditate possimus in reprehenderit
-          rem recusandae doloremque, officiis assumenda. Officiis eius sequi perspiciatis
-          vero non expedita et aperiam?
+          A UNIVERSAL DETECTIVES está em <span class="P-negrito"> {{ nameCidades }} </span> e desejamos ajudar você a solucionar suas dúvidas. Com <span class="P-negrito">mais de 20 anos de experiência</span> e centenas de casos solucionados, atuamos em todo o território nacional e países do Mercosul. Nosso principal objetivo é esclarecer as dúvidas de nossos clientes, antes de tomar uma atitude diante a situação em que você está vivenciando, é importante que você tenha plena certeza de tudo que está acontecendo.
+        </p>
+        <p>
+          Nossa agência é especializada em investigações de caráter conjugal, industrial, empresarial, comercial, familiar, política e assuntos privados. Seja qual for a complexidade dos desafios que você vêm enfrentando, a UNIVERSAL DETECTIVES terá a satisfação em ajuda-lo a desvendar o seu caso.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato v-if="showScroll" name="Preencha nosso formulário" variation="lg-azul" />
@@ -87,5 +81,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+  .P-negrito {
+    font-weight: 600;
+  }
 </style>
