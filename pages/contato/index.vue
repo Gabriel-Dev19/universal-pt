@@ -11,7 +11,13 @@
 </template>
 <script>
 export default {
-
+  head: {
+    link: [
+      { rel: 'alternate', href: 'https://universaldetetives.com.br/contato', hreflang: 'x-default' },
+      { rel: 'alternate', href: 'https://universaldetetives.com.br/contato', hreflang: 'pt-br' },
+      { rel: 'alternate', href: 'https://universaldetectives.pt/contato', hreflang: 'pt' }
+    ]
+  }
 }
 </script>
 <style lang="scss" scoped>

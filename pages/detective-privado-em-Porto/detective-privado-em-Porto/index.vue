@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Cidades name-cidades="Ovar" :show-scroll="true" />
+    <Cidades name-cidades="Porto" :show-scroll="true" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   components: { Cidades },
   layout: 'layoutSobre',
   head: {
-    title: 'Detective privado em Ovar - Universal Detectives Privados'
+    title: 'Detective privado em Porto - Universal Detectives Privados'
   }
 }
 </script>
