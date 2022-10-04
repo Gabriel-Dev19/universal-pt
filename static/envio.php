@@ -13,18 +13,18 @@ $data_e_horario = $data['data_e_horario'];
 $mensagem = $data['mensagem'];
 $tipo_pessoa = $data['tipo_pessoa'];
 
-$toEmail = "contato@universaldetetives.com.br";
-$email_send = "universaldetetives@contato.com.br";
+$toEmail = "contacto@universaldetectives.pt";
+$email_send = "universaldetectives@contato.pt";
 $showMessage = '';
 
 
-$subject = "Contato site UNIVERSAL Detetives";
+$subject = "Contacto site UNIVERSAL Detectives";
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-utf-8' . "\r\n";
 $headers .= 'From: ' . 'UNIVERSAL DETETIVES ' .$email_send."\r\n".
 'Reply-To: '.$email."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-$message = 'Olá,<br/><br/> Você recebeu uma mensagem do site UNIVERSAL Detetives. Confira abaixo os detalhes da solicitação do cliente: <br/><br/>'
+$message = 'Olá,<br/><br/> Você recebeu uma mensagem do site UNIVERSAL Detectives. Confira abaixo os detalhes da solicitação do cliente: <br/><br/>'
 . '<b>Nome:</b>      ' . $nome . '<br/>'	
 . '<b>E-mail:</b>    ' . $email . '<br/>'
 . '<b>Telefone:</b>  ' . $telefone . '<br/>'
@@ -36,7 +36,7 @@ $message = 'Olá,<br/><br/> Você recebeu uma mensagem do site UNIVERSAL Detetiv
 . '<b>Data e horário para retorno:</b>     ' . $data_e_horario . '<br/>';
 
 mail($toEmail, $subject, $message, $headers);
-$showMessage = "Mensagem enviada com sucesso em breve entraremos em contato";
+$showMessage = "Mensagem enviada com sucesso em breve entraremos em contacto";
 
 $jsonData = array(
 	"message"	=> $showMessage

@@ -9,7 +9,7 @@
           </h2>
         </div>
         <p class="p-title mt-3 mt-md-0">
-          A atuação dos detetives da Universal Agência de Detectives Privados pauta-se em permanência
+          A atuação dos detectives da Universal Agência de Detectives Privados pauta-se em permanência
           pelo rigoroso sigilo dado as solicitações dos clientes.
         </p>
       </div>
@@ -81,17 +81,17 @@ export default {
       items: [
         {
           title: 'Sigilo garantigo',
-          description: 'Você tem sua privecidade totalmente protegida graças o profissionalismo dos nossos detetives.',
+          description: 'Você tem sua privecidade totalmente protegida graças o profissionalismo dos nossos detectives.',
           icon: 'shield-checkmark-outline'
         },
         {
           title: 'Profissionalismo',
-          description: 'Nossa equipe conta com prossionais capacitados que são treinados para coletar qualquer informação com o maior sigilo possível.',
+          description: 'Nossa equipa conta com prossionais capacitados que são treinados para coletar qualquer informação com o maior sigilo possível.',
           icon: 'star-outline'
         },
         {
           title: 'Comprometimento',
-          description: 'A Universal Detetives é totalmente comprometida e dedicada em resolver qualquer que seja seu problema',
+          description: 'A Universal Detectives é totalmente comprometida e dedicada em resolver qualquer que seja seu problema',
           icon: 'ribbon-outline'
         },
         {

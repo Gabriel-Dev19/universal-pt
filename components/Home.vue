@@ -84,7 +84,7 @@ export default {
     },
     description: {
       type: String,
-      default: `Para a Universal Agência de Detetives sempre haverá uma <br>
+      default: `Para a Universal Agência de Detectives sempre haverá uma <br>
       solução que estará à altura das suas necessidades.`
     },
     hashBtn: {
@@ -95,10 +95,7 @@ export default {
   data () {
     return {
       telefones: [
-        { name: 'Florianópolis', numero: '(48) 4052-8425', href: '4840528425' },
-        { name: 'Baln. Camboriú', numero: '(47) 4054-9580', href: '4740549580' },
-        { name: 'Curitiba', numero: '(41) 4063-9171', href: '4140639171' },
-        { name: 'Caçador', numero: '(49) 3240-0977', href: '4932400977' }
+        { name: 'Entre em contacto', numero: '+351 913 342 032', href: '351913342032' }
       ],
       Quantidade_retira_hash: 0,
       optionsScroll: {

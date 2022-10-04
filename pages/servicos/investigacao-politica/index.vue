@@ -22,13 +22,13 @@
           O que preciso saber?
         </h2>
         <p>
-          A Universal Detetives, conta com equipe especializada para investigações políticas e de políticos, com tecnologia e modelo de processo diferenciado para cada caso.
+          A Universal Detectives, conta com equipa especializada para investigações políticas e de políticos, com tecnologia e modelo de processo diferenciado para cada caso.
           <br>
           <br>
           Atualmente na situação política do país, os políticos devem estar atentos pois tudo pode ser motivo para a perda de votos, ou mesmo desmascarar desavenças e concorrentes.
           <br>
           <br>
-          A equipe da Universal Detetives está apta a resolver desde os simples até os mais complexos casos de investigação pública e política.
+          A equipa da Universal Detectives está apta a resolver desde os simples até os mais complexos casos de investigação pública e política.
           <br>
           <br>
           Sempre mantendo o foco, nossos agentes recebem treinamentos para estarem sempre bem informados, e assim, poderem chegar ao melhor resultado final desejado pelo cliente com fatos e dados evidenciados.
@@ -37,7 +37,7 @@
           Agindo sempre dentro da lei, portando todas as provas levantadas durante o período investigativo poderão ser usadas em um tribunal. Além de manter compromisso e agindo sempre com o sigilo absoluto.
           <br>
           <br>
-          O diferencial da Universal Detetives, além de manter um arsenal de equipamentos de última geração contem uns dos maiores bancos de dados atualizados do país, o que torna nosso trabalho mais rápido e eficiente.
+          O diferencial da Universal Detectives, além de manter um arsenal de equipamentos de última geração contem uns dos maiores bancos de dados atualizados do país, o que torna nosso trabalho mais rápido e eficiente.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato name="Fale com um especialista" variation="lg-azul" />
@@ -54,7 +54,7 @@ export default {
   components: { HeaderSections, ButtonScrollContato },
   layout: 'layoutSobre',
   head: {
-    title: 'Investigação política :: Universal Detetives'
+    title: 'Investigação política :: Universal Detectives'
   }
 }
 </script>

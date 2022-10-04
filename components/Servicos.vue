@@ -7,8 +7,8 @@
         :img="require('../assets/img/detetive-lupa.webp')"
         title-badge="serviços"
         parte-azul="Nossos serviços"
-        title-header="de investigação particular"
-        subtitle="Realizamos todos os tipos de serviços de investigação particular"
+        title-header="de investigação privada"
+        subtitle="Realizamos todos os tipos de serviços de investigação privada"
         description="Conheça os nossos serviços de investigação direcionados para particulares e empresas.
         Averiguamos todo o tipo de situações dentro do âmbito privado, resolvemos os mais variados
         assuntos, tais como problemas com filhos menores, casos conjugais, setor industrial, comercial,
@@ -71,7 +71,7 @@ export default {
           title: 'Investigação conjugal',
           description: `Quando os ciúmes e as desconfianças de traição, brigas e discussões sobre a infidelidade
           do cônjuge são frequentes na vida do casal, pode ter certeza que é a hora de contratar um profissional
-          de investigação particular para tentar descobrir a verdade e acalmar seus ânimos afim de ter sua tão
+          de investigação privada para tentar descobrir a verdade e acalmar seus ânimos afim de ter sua tão
           sonhada paz novamente.`,
           linkTitle: 'Investigação conjugal',
           routerTo: '/servicos/investigacao-conjugal'
@@ -81,7 +81,7 @@ export default {
           altImg: 'Investigação politica',
           badge: 'Eleições fraudulentas',
           title: 'Investigação politica',
-          description: `A equipe da Universal Detetives está apta a resolver desde os simples até os mais complexos casos
+          description: `A equipa da Universal Detectives está apta a resolver desde os simples até os mais complexos casos
           de investigação pública e política. Sempre mantendo o foco, nossos agentes recebem treinamentos para
           estarem sempre bem informados, e assim, poderem chegar ao melhor resultado final desejado pelo cliente
           com fatos e dados evidenciados.`,
@@ -112,25 +112,25 @@ export default {
         },
         {
           img: require('../assets/img/servicos/celular-vip.webp'),
-          altImg: 'Celular VIP',
-          badge: 'Celular VIP',
-          title: 'Celular VIP',
-          description: `Celular VIP é um incrível aplicativo de monitoramento móvel! Através dele você poderá gravar tudo,
+          altImg: 'Telemóvel VIP',
+          badge: 'Telemóvel VIP',
+          title: 'Telemóvel VIP',
+          description: `Telemóvel VIP é um incrível aplicativo de monitoramento móvel! Através dele você poderá gravar tudo,
           desde o histórico de chamadas, mensagens de texto, as palavras digitadas, mesmo as deletadas, em todos os apps,
           como Facebook e mais.`,
-          linkTitle: 'Celular VIP',
+          linkTitle: 'Telemóvel VIP',
           routerTo: '/servicos/celular-VIP'
         },
         {
           img: require('../assets/img/servicos/curso-de-detetive.jpg'),
-          altImg: 'Curso de detetive particular universal detetives',
+          altImg: 'Curso de detective privado universal detectives',
           badge: 'aprendizado',
-          title: 'Curso de detetive',
-          description: `Venha se especializar com quem realmente entende do assunto. Realizando nosso Curso de Detetive
-          Particular da Universal Detetives, você estará recebendo online um material de qualidade para estudar em suas
+          title: 'Curso de detective',
+          description: `Venha se especializar com quem realmente entende do assunto. Realizando nosso Curso de Detective
+          Privado da Universal Detectives, você estará recebendo online um material de qualidade para estudar em suas
           horas vagas, dentro do seu próprio ritmo.`,
-          linkTitle: 'Curso de detetive',
-          routerTo: '/servicos/curso-de-detetive-particular'
+          linkTitle: 'Curso de detective',
+          routerTo: '/servicos/curso-de-detective-privado'
         }
       ]
     }

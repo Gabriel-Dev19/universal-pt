@@ -76,7 +76,7 @@ export default {
         },
         {
           title: 'Investigação conjugal',
-          description: 'Quando os ciúmes e as desconfianças de traição, brigas e discussões sobre a infidelidade do cônjuge são frequentes na vida do casal, pode ter certeza que é a hora de contratar um profissional de investigação particular.',
+          description: 'Quando os ciúmes e as desconfianças de traição, brigas e discussões sobre a infidelidade do cônjuge são frequentes na vida do casal, pode ter certeza que é a hora de contratar um profissional de investigação privada.',
           icon: 'heart-dislike'
         },
         {
@@ -90,8 +90,8 @@ export default {
           icon: 'man-outline'
         },
         {
-          title: 'Curso de detetive',
-          description: 'Venha se especializar com quem realmente entende do assunto. Realizando nosso Curso de Detetive Particular da Universal Detetives, você estará recebendo online um material de qualidade para estudar em suas horas vagas, dentro do seu próprio ritmo.',
+          title: 'Curso de detective',
+          description: 'Venha se especializar com quem realmente entende do assunto. Realizando nosso Curso de Detective Privado da Universal Detectives, você estará recebendo online um material de qualidade para estudar em suas horas vagas, dentro do seu próprio ritmo.',
           icon: 'school'
         },
         {
@@ -100,8 +100,8 @@ export default {
           icon: 'document-attach-outline'
         },
         {
-          title: 'Celular VIP',
-          description: 'Saiba TUDO o que seu filho faz no celular em apenas alguns minutos com o aplicativo fácil de instalar do CELULAR VIP, a maneira mais fácil de supervisionar todas as atividades do telefone do seu filho*',
+          title: 'Telemóvel VIP',
+          description: 'Saiba TUDO o que seu filho faz no telemóvel em apenas alguns minutos com o aplicativo fácil de instalar do TELEMÓVEL VIP, a maneira mais fácil de supervisionar todas as atividades do telefone do seu filho*',
           icon: 'phone-portrait'
         },
         {

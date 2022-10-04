@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row mae_tema mx-0">
         <div class="col-12 d-flex px-0">
-          <Badge name="contato" />
+          <Badge name="contacto" />
         </div>
         <h2 class="col-lg-9 px-0">
-          Entre em contato com nossa equipe!
+          Entre em contacto com nossa equipa!
         </h2>
         <p class="col-lg-9 mt-2 px-0">
-          Preencha nosso formulário de contato abaixo e um especialista entrará em contato com você.
+          Preencha nosso formulário de contacto abaixo e um especialista entrará em contacto com você.
           Ou fale pelos canais de atendimento {{ VarificaAoLado }}
         </p>
       </div>
@@ -50,9 +50,9 @@
             </div>
           </div>
           <div class="form-group">
-            <input v-model="estado" type="text" class="form-control" placeholder="Estado">
+            <input v-model="estado" type="text" class="form-control" placeholder="Distrito">
             <div v-show="ShowMsgError" v-if="$v.estado.$error" class="error">
-              Digite seu estado
+              Digite seu distrito
             </div>
           </div>
           <div class="form-group">
@@ -72,11 +72,11 @@
               <option value="Localização de pessoas">
                 Localização de pessoas
               </option>
-              <option value="Curso de detetive particular">
-                Curso de detetive particular
+              <option value="Curso de detective privado">
+                Curso de detective privado
               </option>
-              <option value="Celular VIP">
-                Celular VIP
+              <option value="Telemóvel VIP">
+                Telemóvel VIP
               </option>
               <option value="Acompanhamento de filhos">
                 Acompanhamento de filhos
@@ -103,7 +103,7 @@
             </div>
           </div>
           <div class="form-group">
-            <input v-model="data_e_horario" type="text" class="form-control" placeholder="Data e hora para contato">
+            <input v-model="data_e_horario" type="text" class="form-control" placeholder="Data e hora para contacto">
             <div v-show="ShowMsgError" v-if="$v.data_e_horario.$error" class="error">
               Informe uma data e horário
             </div>
@@ -120,33 +120,33 @@
             </button>
           </div>
         </form>
-        <div class="ml-xl-5 px-0 mt-5 mt-xl-3 col-xl">
+        <div class="ml-xl-5 px-0 mt-xl-3 col-xl">
+          <div class="contatos_description mt-4 pt-2 px-0">
+            <ion-icon name="call-outline" />
+            <div class="col px-0 ml-2 mt-2">
+              <h6 class="mb-3">
+                Entre em contacto:
+              </h6>
+              <a v-for="item in telefones" :key="item.cidade" :href="item.href" class="d-block my-2">
+                <span class="col-12 d-block px-0 text-grafite">
+                  <b> {{ item.cidade }} </b> {{ item.numero }}
+                </span>
+              </a>
+            </div>
+          </div>
           <div class="contatos_description px-0">
             <ion-icon name="at-outline" />
             <div class="col px-0 ml-2 mt-2">
               <h6>
                 Redes sociais:
               </h6>
-              <div class="row mt-3 mx-0">
-                <a v-for="item in redes_sociais" :key="item.icon" :href="item.href" class="mr-2">
-                  <div class="caixa-icon">
+              <div class=" d-flex flex-column mt-3 mx-0">
+                <a v-for="item in redes_sociais" :key="item.icon" :href="item.href" class="d-flex align-items-center mr-2">
+                  <div class="caixa-icon mr-2">
                     <ion-icon :name="`logo-${item.icon}`" />
-                  </div>
+                  </div> {{ item.rede }}
                 </a>
               </div>
-            </div>
-          </div>
-          <div class="contatos_description mt-4 pt-2 px-0">
-            <ion-icon name="call-outline" />
-            <div class="col px-0 ml-2 mt-2">
-              <h6 class="mb-3">
-                Telefones:
-              </h6>
-              <a v-for="item in telefones" :key="item.cidade" :href="item.href" class="d-block mt-2">
-                <span class="col-12 d-block px-0 text-grafite">
-                  <b>{{ item.cidade }}</b> {{ item.numero }}
-                </span>
-              </a>
             </div>
           </div>
           <div class="contatos_description overflow-hidden mt-4 pt-2 px-0">
@@ -155,8 +155,8 @@
               <h6 class="mb-3">
                 E-mail:
               </h6>
-              <a href="" class="d-block px-0">
-                <span class="text-grafite d-block col-11 px-0" style="word-wrap: break-word;">contato@universaldetetives.com.br</span>
+              <a href="mailto:contacto@universaldetectives.pt" class="d-block px-0">
+                <span class="text-grafite d-block col-11 px-0" style="word-wrap: break-word;">contacto@universaldetectives.pt</span>
               </a>
             </div>
           </div>
@@ -181,7 +181,7 @@
         </h5>
         <p class="text-white text-center">
           Sua mensagem será enviada para nossa central de atendimento e logo entraremos
-          em contato.
+          em contacto.
         </p>
         <div class="d-flex mb-2 justify-content-center">
           <button class="btn btn-outline-light" @click="$refs.ModalSuccess.hide()">
@@ -225,32 +225,17 @@ export default {
       mask: '(##) ####-####',
 
       redes_sociais: [
-        { icon: 'twitter', href: '' },
-        { icon: 'facebook', href: '' },
-        { icon: 'instagram', href: '' },
-        { icon: 'pinterest', href: '' },
-        { icon: 'youtube', href: '' }
+        { icon: 'twitter', rede: 'Twitter', href: '' },
+        { icon: 'facebook', rede: 'Facebook', href: '' },
+        { icon: 'instagram', rede: 'Instagram', href: '' },
+        { icon: 'pinterest', rede: 'Pinterest', href: '' },
+        { icon: 'youtube', rede: 'Youtube', href: '' }
       ],
       telefones: [
         {
-          cidade: 'Florianópolis',
-          numero: '+55 (48) 4052-8425',
-          href: 'tel:4840528425'
-        },
-        {
-          cidade: 'Baln. Camboriú',
-          numero: '+55 (47) 4054-9580',
-          href: 'tel:4740549580'
-        },
-        {
-          cidade: 'Curitiba',
-          numero: '+55 (41) 4063-9171',
-          href: 'tel:4140639171'
-        },
-        {
-          cidade: 'Caçador',
-          numero: '+55 (49) 3240-0977',
-          href: 'tel:4932400977'
+          cidade: 'Telefone',
+          numero: '+351 913 342 032',
+          href: 'tel:351913342032'
         }
       ]
     }
@@ -307,7 +292,7 @@ export default {
       this.$v.$touch()
       if (this.$v.$invalid === false) {
         axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-        axios.post('http://universaldetetives.com.br/envio.php', JSON.stringify({
+        axios.post('http://universaldetectives.pt/envio.php', JSON.stringify({
           nome: this.nome,
           email: this.email,
           telefone: this.telefone,

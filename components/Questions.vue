@@ -96,7 +96,7 @@ export default {
           profission: 'Corretora de imóveis',
           comment: `(...) A vida continua... é triste constatar que em 20 anos nunca conheci realmente o meu marido...
           Apesar de estar arrasada com o resultado, só tenho a agradecer vocês! Caso alguma amiga minha precise dos
-          serviços de detetives, com certeza indicarei a Universal Detetives!`
+          serviços de detectives, com certeza indicarei a Universal Detectives!`
         },
         {
           name: 'Felipe J.',

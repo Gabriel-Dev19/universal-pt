@@ -3,7 +3,7 @@
     <Home
       name-btn="Nossos serviços"
       hash-btn="servicos"
-      title-principal="Serviços de detetive particular"
+      title-principal="Serviços de detective privado"
     />
     <Servicos />
     <Solutions />

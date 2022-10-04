@@ -18,7 +18,7 @@
               Canal de atendimento
             </h5>
             <p class="small mb-1">
-              Fale com um especialista na sua região.
+              Fale com um de nossos especialistas agora mesmo.
             </p>
             <div class="d-flex small align-items-center">
               <div class="bolinha-verde" />
@@ -30,10 +30,7 @@
       <hr>
       <transition enter-active-class="animate_show_content_whatsapp" leave-active-class="animate_hide_content_whatsapp">
         <div v-show="ShowContent" class="content_numeros" @click.stop="">
-          <a v-for="item in numeros_whats" :key="item.name" :href="`https://wa.me/55${item.numeroLink}?text=Olá,+estou+visitando+o+site+da+Universal+Detetives+e+gostaria+de+receber+mais+informações`" target="_blank" class="pl-4 d-block">
-            <span class="d-block text-grafite" style="font-weight: 600">
-              <ion-icon class="text-azul" name="location-outline" /> {{ item.name }}
-            </span>
+          <a v-for="item in numeros_whats" :key="item.name" :href="`https://wa.me/${item.numeroLink}?text=Olá,+estou+visitando+o+site+da+Universal+Detectives+e+gostaria+de+receber+mais+informações`" target="_blank" class="pl-4 d-block">
             <div class="d-flex">
               <a class="link-seta cinza">
                 {{ item.numero }}
@@ -58,48 +55,8 @@ export default {
       numeros_whats: [
         {
           name: 'Santa Catarina',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'Paraná',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'Rio Grande do Sul',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'São Paulo',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'Rio de Janeiro',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'Minas Gerais',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'Distrito Federal',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'Mato Grosso do Sul',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
-        },
-        {
-          name: 'Goiás',
-          numeroLink: '47991062096',
-          numero: '+55 (47) 99106-2096'
+          numeroLink: '+351913342032',
+          numero: '+351 913 342 032'
         }
       ]
     }

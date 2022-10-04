@@ -4,7 +4,7 @@
       <div class="container" :class="{'justify-content-between my-0': !Nav_Scroll, 'justify-content-end my-1': Nav_Scroll}">
         <transition enter-active-class="animate__animated animate__fadeInUp">
           <a v-show="Nav_Scroll" href="" class="link_logo">
-            <img src="../assets/img/logo-universal.webp" width="150" alt="Logo Universal detetives">
+            <img src="../assets/img/logo-universal.webp" width="150" alt="Logo Universal detectives">
           </a>
         </transition>
         <transition enter-active-class="animate__animated animate__fadeInUp">
@@ -94,9 +94,9 @@ export default {
         { name: 'Investigação conjugal', routerTo: '/servicos/investigacao-conjugal' },
         { name: 'Investigação política', routerTo: '/servicos/investigacao-politica' },
         { name: 'Localização de pessoas', routerTo: '/servicos/localizacao-de-pessoas' },
-        { name: 'Curso de detetive particular', routerTo: '/servicos/curso-de-detetive-particular' },
+        { name: 'Curso de detective privado', routerTo: '/servicos/curso-de-detective-privado' },
         { name: 'Acompanhamento de filhos', routerTo: '/servicos/acompanhamento-de-filhos' },
-        { name: 'Celular VIP', routerTo: '/servicos/celular-VIP' }
+        { name: 'Telemóvel VIP', routerTo: '/servicos/celular-VIP' }
       ],
       items_localidades: [
         { name: 'Aveiro', routerTo: '/detective-privado-em-Aveiro' },

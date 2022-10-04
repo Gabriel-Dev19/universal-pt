@@ -67,7 +67,7 @@
           </li>
         </ul>
         <p>
-          Para mais informações, não hesite em entrar em contato conosco hoje mesmo que teremos satisfação em lhe auxiliar
+          Para mais informações, não hesite em entrar em contacto conosco hoje mesmo que teremos satisfação em lhe auxiliar
           da melhor forma possível.
         </p>
         <div class="row mx-0">
@@ -85,7 +85,7 @@ export default {
   components: { HeaderSections, ButtonScrollContato },
   layout: 'layoutSobre',
   head: {
-    title: 'Investigação empresarial :: Universal Detetives'
+    title: 'Investigação empresarial :: Universal Detectives'
   }
 }
 </script>

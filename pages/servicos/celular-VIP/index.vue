@@ -3,7 +3,7 @@
     <Home
       name-btn="saiba mais"
       hash-btn="sobre"
-      title-principal="Celular VIP"
+      title-principal="Telemóvel VIP"
     />
     <div id="sobre" class="container">
       <HeaderSections
@@ -12,21 +12,21 @@
         :img="require('../../../assets/img/servicos/celular-vip.webp')"
         title-badge="filhos menores"
         parte-azul="Serviços:"
-        title-header="Celular VIP"
+        title-header="Telemóvel VIP"
         subtitle="Somos uma agência comprometida com a excelência e a dedicação"
-        description="Saiba TUDO o que seu filho faz no celular em apenas alguns minutos com o aplicativo
-        fácil de instalar do CELULAR VIP, a maneira mais fácil de supervisionar todas as atividades do
+        description="Saiba TUDO o que seu filho faz no telemóvel em apenas alguns minutos com o aplicativo
+        fácil de instalar do TELEMÓVEL VIP, a maneira mais fácil de supervisionar todas as atividades do
         telefone do seu filho*"
       />
       <div class="container-text celular-vip-text">
         <h2 class="azul mb-3">
-          Com Celular VIP, nunca foi tão fácil ser pai na era digital
+          Com Telemóvel VIP, nunca foi tão fácil ser pai na era digital
         </h2>
         <p>
-          Celular VIP é um incrível aplicativo de monitoramento móvel! Através dele você poderá gravar tudo,
+          Telemóvel VIP é um incrível aplicativo de monitoramento móvel! Através dele você poderá gravar tudo,
           desde o histórico de chamadas, mensagens de texto, as palavras digitadas, mesmo as deletadas, em todos
           os apps, como Facebook e mais. Este produto é feito para monitorar seu filho* 24 horas de forma fácil.
-          Você não vai perder nada. Você tem acesso a um painel de controle online exclusivo, apoio ao cliente e
+          Você não vai perder nada. Você tem acesso a um painel de controlo online exclusivo, apoio ao cliente e
           uma das melhores soluções de monitoramento móvel para proteger seu filho* contra danos, cyberbullying,
           predadores infantis e atitudes ruins que podem persegui-lo por anos.
         </p>
@@ -53,7 +53,7 @@
           <li>
             <ion-icon name="radio-outline" />
             <p>
-              Escuta Ambiente mesmo com o telefone bloqueado, você pode ouvir o que se passa ao redor , o Celular Vip captura o audio ambiente.
+              Escuta Ambiente mesmo com o telefone bloqueado, você pode ouvir o que se passa ao redor , o Telemóvel Vip captura o audio ambiente.
             </p>
           </li>
           <li>
@@ -84,7 +84,7 @@ export default {
   components: { HeaderSections, ButtonScrollContato },
   layout: 'layoutSobre',
   head: {
-    title: 'Celular VIP :: Universal Detetives'
+    title: 'Telemóvel VIP :: Universal Detectives'
   }
 }
 </script>

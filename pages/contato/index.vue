@@ -3,7 +3,7 @@
     <Home
       name-btn="Contato"
       hash-btn="contato"
-      title-principal="Contate nossa equipe"
+      title-principal="Contate nossa equipa"
     />
     <Contato />
     <Footer />

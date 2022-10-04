@@ -8,12 +8,12 @@
       </div>
       <div class="col-xl mr-xl-5 px-0">
         <p class="text-center text-xl-left">
-          A Universal Agência de Detetives, é uma agência com experiência de 21 anos no ramo
-          de investigação particular. Contamos com um conjunto de profissionais dedicados
+          A Universal Agência de Detectives, é uma agência com experiência de 21 anos no ramo
+          de investigação privada. Contamos com um conjunto de profissionais dedicados
           e qualificados.
         </p>
         <p class="text-center text-xl-left">
-          Dispomos de uma equipe de trabalho multidisciplinar, profissional e competente.
+          Dispomos de uma equipa de trabalho multidisciplinar, profissional e competente.
           Temos uma vasta gama de serviços de investigação profissionais destinados a
           empresas e particulares.
         </p>
@@ -43,7 +43,7 @@
         </div>
         <div class="col-sm px-0 mt-5 mt-sm-0 ml-sm-5">
           <h5 style="font-weight: 600">
-            Localidades atendidas:
+            Distritos Atendidos:
           </h5>
           <div v-for="item in links_rodape_localidades" :key="item.name" class="d-flex">
             <nuxt-link :to="item.routerTo" class="link-seta cinza mt-2">
@@ -61,7 +61,7 @@
     <div class="notas">
       <div class="container">
         <p class="mb-0 text-center text-lg-left col-lg px-0">
-          &copy; Copyright - Universal Detetives - Todos os direitos reservados
+          &copy; Copyright - Universal Detectives - Todos os direitos reservados
         </p>
         <a class="text-center text-lg-right col-lg px-0" href="https://wa.me/5588996912604?text=Olá,+Gabriel+gostaria+de+receber+mais+informações+sobre+seu+trabalho+como+programador" target="_blank" rel="noopener noreferrer">
           Projetado e desenvolvido por Gabriel Camurça <ion-icon name="logo-vue" />
@@ -99,7 +99,7 @@ export default {
           routerTo: '/servicos/localizacao-de-pessoas'
         },
         {
-          name: 'Celular VIP',
+          name: 'Telemóvel VIP',
           routerTo: '/servicos/celular-VIP'
         },
         {
@@ -107,8 +107,8 @@ export default {
           routerTo: '/servicos/acompanhamento-de-filhos'
         },
         {
-          name: 'Curso de detetive',
-          routerTo: '/servicos/curso-de-detetive-particular'
+          name: 'Curso de detective',
+          routerTo: '/servicos/curso-de-detective-privado'
         },
         {
           name: 'Política de privacidade',
@@ -116,15 +116,15 @@ export default {
         }
       ],
       links_rodape_localidades: [
-        { name: 'Santa Catarina', routerTo: '/detetive-particular-em-Santa-Catarina' },
-        { name: 'Paraná', routerTo: '/detetive-particular-no-Parana' },
-        { name: 'Rio Grande do Sul', routerTo: '/detetive-particular-no-Rio-Grande-do-Sul' },
-        { name: 'São Paulo', routerTo: '/detetive-particular-em-Sao-Paulo' },
-        { name: 'Rio de Janeiro', routerTo: '/detetive-particular-no-Rio-de-Janeiro' },
-        { name: 'Distrito Federal', routerTo: '/detetive-particular-no-Distrito-Federal' },
-        { name: 'Minas Gerais', routerTo: '/detetive-particular-em-Minas-Gerais' },
-        { name: 'Mato Grosso do Sul', routerTo: '/detetive-particular-no-Mato-Grosso-do-Sul' },
-        { name: 'Goiás', routerTo: '/detetive-particular-em-Goias' }
+        { name: 'Aveiro', routerTo: '/detective-privado-em-Aveiro' },
+        { name: 'Braga', routerTo: '/detective-privado-em-Braga' },
+        { name: 'Évora', routerTo: '/detective-privado-em-Evora' },
+        { name: 'Faro', routerTo: '/detective-privado-em-Faro' },
+        { name: 'Leiria', routerTo: '/detective-privado-em-Leiria' },
+        { name: 'Lisboa', routerTo: '/detective-privado-em-Lisboa' },
+        { name: 'Porto', routerTo: '/detective-privado-em-Porto' },
+        { name: 'Santarém', routerTo: '/detective-privado-em-Santarem' },
+        { name: 'Setúbal', routerTo: '/detective-privado-em-Setubal' }
       ]
     }
   }

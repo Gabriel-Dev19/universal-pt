@@ -11,7 +11,7 @@
           Política de privacidade
         </h2>
         <p>
-          A sua privacidade é importante para nós. É política da Universal Detetives respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar em nosso site, e outros sites que possuímos e operamos.
+          A sua privacidade é importante para nós. É política da Universal Detectives respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar em nosso site, e outros sites que possuímos e operamos.
         </p>
         <p>
           Solicitamos informações pessoais somente quando realmente precisamos delas para lhes fornecer um serviço no qual identificamos seu interesse. Realizamos a coleta de dados pessoais por meios lícitos, com o seu conhecimento e consentimento. E informamos por que estamos coletando seus dados e como serão utilizados.
@@ -53,7 +53,7 @@
           Cookies relacionados a boletins por e-mail - Este site oferece serviços de assinatura de boletim informativo ou e-mail e os cookies podem ser usados para lembrar se você já está registrado e se deve mostrar determinadas notificações válidas apenas para usuários inscritos / não inscritos.
         </p>
         <p>
-          Cookies relacionados a formulários - Quando você envia dados por meio de um formulário como os encontrados nas páginas de contato ou nos formulários de comentários, os cookies podem ser configurados para lembrar os detalhes do usuário para correspondência futura.
+          Cookies relacionados a formulários - Quando você envia dados por meio de um formulário como os encontrados nas páginas de contacto ou nos formulários de comentários, os cookies podem ser configurados para lembrar os detalhes do usuário para correspondência futura.
         </p>
         <p>
           Cookies de preferências do site - Para proporcionar uma ótima experiência neste site, fornecemos a funcionalidade para definir suas preferências de como esse site é executado quando você o usa. Para lembrar suas preferências, precisamos definir cookies para que essas informações possam ser chamadas sempre que você interagir com uma página for afetada por suas preferências.
@@ -79,7 +79,7 @@
 export default {
   layout: 'layoutSobre',
   head: {
-    title: 'Política de privacidade e cookies :: Universal Detetives'
+    title: 'Política de privacidade e cookies :: Universal Detectives'
   }
 }
 </script>

@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="d-flex mt-5 pt-4 justify-content-center">
-        <ButtonScrollContato name="Entre em contato com nossa equipe" variation="seta" />
+        <ButtonScrollContato name="Entre em contacto com nossa equipa" variation="seta" />
       </div>
     </div>
   </section>
@@ -84,7 +84,7 @@ export default {
         },
         {
           numero: 57,
-          description: 'detetives credenciados',
+          description: 'detectives credenciados',
           icon: 'medal-outline'
         },
         {

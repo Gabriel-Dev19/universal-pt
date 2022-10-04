@@ -28,7 +28,7 @@
           Localização de Namorados
         </h2>
         <p>
-          Aquele namorado ou namorada da adolescência não sai da sua cabeça? Aquele "flirt" de verão terminou, mas ficou a lembrança e a vontade do reencontro? Podemos contribuir para que volte a ser a ter um sorriso nos lábios! Entre em contato conosco agora mesmo que teremos a satisfação em lhe ajudar a desvendar essa situação.
+          Aquele namorado ou namorada da adolescência não sai da sua cabeça? Aquele "flirt" de verão terminou, mas ficou a lembrança e a vontade do reencontro? Podemos contribuir para que volte a ser a ter um sorriso nos lábios! Entre em contacto conosco agora mesmo que teremos a satisfação em lhe ajudar a desvendar essa situação.
         </p>
         <div class="row mx-0">
           <ButtonScrollContato name="Fale com um especialista" variation="lg-azul" />
@@ -45,7 +45,7 @@ export default {
   components: { HeaderSections, ButtonScrollContato },
   layout: 'layoutSobre',
   head: {
-    title: 'Localização de pessoas :: Universal Detetives'
+    title: 'Localização de pessoas :: Universal Detectives'
   }
 }
 </script>

@@ -48,7 +48,7 @@ export default {
   components: { HeaderSections, ButtonScrollContato },
   layout: 'layoutSobre',
   head: {
-    title: 'Acompanhamento de filhos :: Universal Detetives'
+    title: 'Acompanhamento de filhos :: Universal Detectives'
   }
 }
 </script>

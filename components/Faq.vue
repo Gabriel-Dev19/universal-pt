@@ -7,16 +7,16 @@
           Perguntas frequentes
         </h2>
         <p class="col-12 px-0 mb-0 mt-2">
-          A profissão do detetive particular é completamente rodeada de mistérios. Consequentemente, é normal
+          A profissão do detective privado é completamente rodeada de mistérios. Consequentemente, é normal
           que surjam diversas perguntas relacionadas ao dia a
-          dia desses profissionais e às agências de detetives. Afinal, existem muitos equívocos comuns
+          dia desses profissionais e às agências de detectives. Afinal, existem muitos equívocos comuns
           sobre o que ou como um investigador realmente é.
         </p>
         <div class="col-12 mt-4 px-0">
           <ButtonScrollContato name="Faça uma pergunta" variation="lg-azul" />
         </div>
         <div class="col-12 mt-4 pt-2 px-0">
-          <ButtonScrollContato name="Contate nossa equipe" variation="seta" />
+          <ButtonScrollContato name="Contate nossa equipa" variation="seta" />
         </div>
       </div>
       <div class="mae_perguntas col-lg ml-lg-5 pl-lg-5 px-0">
@@ -43,28 +43,28 @@ export default {
     return {
       faqs: [
         {
-          question: 'O que faz um <br> detetive particular?',
-          response: `Na ficção, o detetive normalmente é um sujeito rodeado de mistérios
+          question: 'O que faz um <br> detective privado?',
+          response: `Na ficção, o detective normalmente é um sujeito rodeado de mistérios
           que ajuda a polícia a desvendar crimes e, por consequência, vive muitas situações de perigo.
-          Um detetive particular, na realidade, é um profissional capacitado para conduzir uma investigação, a fim
+          Um detective privado, na realidade, é um profissional capacitado para conduzir uma investigação, a fim
           de descobrir certas informações e coletar as evidências pertinentes para cada cliente. Na vida real,
           portanto, ele pode trabalhar em diversos tipos de casos, inclusive que não sejam criminais.
           <br>
           <br>
-          Existem várias tarefas que fazem parte do escopo de atividades de um detetive particular, sobretudo porque
+          Existem várias tarefas que fazem parte do escopo de atividades de um detective privado, sobretudo porque
           existe uma variedade de serviços que são oferecidos para os seus clientes. Isso envolve fazer pesquisas
           online, entrevistar pessoas, ficar de campana, seguir o investigado, se infiltrar nos lugares e etc.
           `
         },
         {
-          question: 'Quais são os tipos de investigações realizadas por um detetive particular?',
-          response: `O detetive particular pode realizar diversos tipos de investigação, como casos de
+          question: 'Quais são os tipos de investigações realizadas por um detective privado?',
+          response: `O detective privado pode realizar diversos tipos de investigação, como casos de
           direito de família, incluindo custódia dos filhos, divórcio e de pensão alimentícia. Eles também
           podem ser contratados para ajudar a localizar ativos, localizar documentos ou fazer verificações
           de antecedentes. Obviamente esses são apenas alguns exemplos do campo de atuação desse profissional.
           <br>
           <br>
-          De forma geral, entre as possibilidades de atuação de um detetive particular, podem ser destacadas:
+          De forma geral, entre as possibilidades de atuação de um detective privado, podem ser destacadas:
           <br>
           <br>
           <ul class="p-0 pl-4">
@@ -90,7 +90,7 @@ export default {
           `
         },
         {
-          question: 'Quanto custa para contratar um detetive particular?',
+          question: 'Quanto custa para contratar um detective privado?',
           response: `Essa pergunta não tem uma resposta exata. Isso porque os custos da
           investigação dependem de diversos fatores, como por exemplo o tipo de investigação, o tempo que
           vai durar todo o processo investigativo, a quantidade de profissionais envolvidos e etc. Mas, em
@@ -99,25 +99,25 @@ export default {
           <br>
           <ul class="p-0 pl-4">
             <li>
-              Investigação conjugal – R$ 1.000 a R$ 5.000;
+              Investigação conjugal –  1.000 € a  5.000 €;
             </li>
             <li>
-              Investigação empresarial – R$ 5.000 a R$ 20.000;
+              Investigação empresarial –  5.000 € a  20.000 €;
             </li>
             <li>
-              Investigação familiar – R$ 1.000 a R$ 5.000;
+              Investigação familiar –  1.000 € a  5.000 €;
             </li>
             <li>
-              Contra inteligência – R$ 2.000 a R$ 10.000;
+              Contra inteligência –  2.000 € a  10.000 €;
             </li>
             <li>
-              Localização de pessoas – R$ 2.000 a R$ 10.000;
+              Localização de pessoas –  2.000 € a  10.000 €;
             </li>
             <li>
-              Monitoramento – R$ 1.000 a R$ 1.200 (diária);
+              Monitoramento –  1.000 € a  1.200 € (diária);
             </li>
             <li>
-              Investigação particular – R$ 1.000 a R$ 5.000.
+              Investigação privado –  1.000 € a  5.000 €.
             </li>
           </ul>
           <br>
@@ -131,7 +131,7 @@ export default {
           question: 'Quanto tempo dura <br> uma investigação?',
           response: `Outra pergunta que não tem uma resposta exata, pois o tempo que dura uma investigação
           depende da complexidade de cada caso. Se o investigado for uma pessoa mais reservada, por exemplo, pode
-          levar mais tempo para o detetive particular poder reunir as informações necessárias e coletar as provas
+          levar mais tempo para o detective privado poder reunir as informações necessárias e coletar as provas
           que precisa. Contudo, também existem algumas estimativas. Mas, novamente, são apenas uma média:
           <br>
           <br>
@@ -147,7 +147,7 @@ export default {
         },
         {
           question: 'A pessoa investigada pode acabar descobrindo sobre a investigação?',
-          response: `O detetive particular deve atuar seguindo o código de ética da profissão, mantendo o máximo sigilo
+          response: `O detective privado deve atuar seguindo o código de ética da profissão, mantendo o máximo sigilo
           e discrição durante o andamento dos processos investigativos. Obviamente, existem sim riscos da pessoa investigada
           descobrir sobre a investigação. Principalmente porque o próprio cliente pode acabar deixando escapar essa informação
           por conta da ansiedade que é gerada ao longo do trabalho. Por isso, é muito importante saber controlar as próprias
@@ -159,28 +159,28 @@ export default {
           cliente também é importante, sobretudo se tiver amigos em comum com a pessoa investigada.
           <br>
           <br>
-          Mas, de qualquer forma, o detetive tem o treinamento adequado para essas situações. Todos os procedimentos são
+          Mas, de qualquer forma, o detective tem o treinamento adequado para essas situações. Todos os procedimentos são
           informados ao cliente no ato da contratação. Por exemplo, se for percebido que existe a chance da pessoa descobrir,
           o trabalho será abortado no momento. Dessa forma, garantindo a continuidade da investigação posteriormente.
           `
         },
         {
-          question: 'Como e quais são as provas coletadas pelo detetive particular?',
-          response: `Para ajudá-lo a conduzir as investigações, o detetive particular pode contar com a ajuda de diversos
+          question: 'Como e quais são as provas coletadas pelo detective privado?',
+          response: `Para ajudá-lo a conduzir as investigações, o detective privado pode contar com a ajuda de diversos
           equipamentos tecnológicos, tais como câmeras, escutas e rastreadores. Dessa forma, é possível coletar vários
-          tipos de provas durante uma investigação particular. Como, por exemplo, fotos, vídeos, áudios, localizações e etc.`
+          tipos de provas durante uma investigação privada. Como, por exemplo, fotos, vídeos, áudios, localizações e etc.`
         },
         {
           question: 'As provas podem ser usadas em processos judiciais?',
-          response: `Sim, as evidências coletadas pelo detetive particular podem ser usadas como provas em processos
+          response: `Sim, as evidências coletadas pelo detective privado podem ser usadas como provas em processos
           judiciais! Contudo, é necessário que tanto o profissional quanto o cliente tenha auxílio jurídico para tal.
-          E cabe ao detetive seguir o código de ética da profissão e agir em conformidade com as leis vigentes, prezando
+          E cabe ao detective seguir o código de ética da profissão e agir em conformidade com as leis vigentes, prezando
           sempre pela legitimidade e legalidade das provas obtidas ao longo do processo investigativo.`
         },
         {
-          question: 'Quais os diferenciais nos serviços prestados pela Universal Detetives?',
-          response: `A Universal Detetives é uma empresa que está há mais de 20 anos atuando na área de investigação
-          particular, oferecendo diversos tipos de investigação. Nossos diferenciais incluem uma equipe de detetives
+          question: 'Quais os diferenciais nos serviços prestados pela Universal Detectives?',
+          response: `A Universal Detectives é uma empresa que está há mais de 20 anos atuando na área de investigação
+          privado, oferecendo diversos tipos de investigação. Nossos diferenciais incluem uma equipa de detectives
           particulares altamente qualificados, transparência em todo o processo, qualidade do material apresentado,
           procedimentos de segurança para preservar o sigilo do nosso cliente e grande retorno aos mesmos.`
         }

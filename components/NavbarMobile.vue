@@ -4,7 +4,7 @@
       <div class="filha-nav d-flex justify-content-end">
         <transition enter-active-class="animate__animated animate__fadeInUp">
           <a v-show="Show_Logo" href="" class="link_logo">
-            <img src="../assets/img/logo-universal.webp" width="120" alt="Logo Universal detetives">
+            <img src="../assets/img/logo-universal.webp" width="120" alt="Logo Universal detectives">
           </a>
         </transition>
         <transition enter-active-class="animate__animated animate__fadeInUp">
@@ -65,7 +65,7 @@
             </div>
           </b-collapse>
           <a v-scroll-to="{ offset: -190, el: '#contato' }" class="nuxt-link-mobile" @click="Toggle_Nav">
-            Contate nossa equipe
+            Contate nossa equipa
             <ion-icon name="arrow-forward-outline" />
           </a>
           <div class="nav_redes_sociais mt-4 ml-3 pl-1">
@@ -118,11 +118,11 @@ export default {
           routerTo: '/servicos/acompanhamento-de-filhos'
         },
         {
-          name: 'Curso de detetive particular',
-          routerTo: '/servicos/curso-de-detetive-particular'
+          name: 'Curso de detective privado',
+          routerTo: '/servicos/curso-de-detective-privado'
         },
         {
-          name: 'Celular VIP',
+          name: 'Telemóvel VIP',
           routerTo: '/servicos/celular-VIP'
         }
       ],
