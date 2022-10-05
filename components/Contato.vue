@@ -120,33 +120,33 @@
             </button>
           </div>
         </form>
-        <div class="ml-xl-5 px-0 mt-xl-3 col-xl">
-          <div class="contatos_description mt-4 pt-2 px-0">
-            <ion-icon name="call-outline" />
-            <div class="col px-0 ml-2 mt-2">
-              <h6 class="mb-3">
-                Entre em contacto:
-              </h6>
-              <a v-for="item in telefones" :key="item.cidade" :href="item.href" class="d-block my-2">
-                <span class="col-12 d-block px-0 text-grafite">
-                  <b> {{ item.cidade }} </b> {{ item.numero }}
-                </span>
-              </a>
-            </div>
-          </div>
+        <div class="ml-xl-5 px-0 mt-5 mt-xl-3 col-xl">
           <div class="contatos_description px-0">
             <ion-icon name="at-outline" />
             <div class="col px-0 ml-2 mt-2">
               <h6>
                 Redes sociais:
               </h6>
-              <div class=" d-flex flex-column mt-3 mx-0">
-                <a v-for="item in redes_sociais" :key="item.icon" :href="item.href" class="d-flex align-items-center mr-2">
-                  <div class="caixa-icon mr-2">
+              <div class="row mt-3 mx-0">
+                <a v-for="item in redes_sociais" :key="item.icon" :href="item.href" class="mr-2">
+                  <div class="caixa-icon">
                     <ion-icon :name="`logo-${item.icon}`" />
-                  </div> {{ item.rede }}
+                  </div>
                 </a>
               </div>
+            </div>
+          </div>
+          <div class="contatos_description mt-4 pt-2 px-0">
+            <ion-icon name="call-outline" />
+            <div class="col px-0 ml-2 mt-2">
+              <h6 class="mb-3">
+                Entre em contacto:
+              </h6>
+              <a v-for="item in telefones" :key="item.cidade" :href="item.href" class="d-block mt-2">
+                <span class="col-12 d-block px-0 text-grafite">
+                  <b>{{ item.cidade }}</b> {{ item.numero }}
+                </span>
+              </a>
             </div>
           </div>
           <div class="contatos_description overflow-hidden mt-4 pt-2 px-0">
